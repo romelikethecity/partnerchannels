@@ -1,0 +1,132 @@
+/* ============================================================
+   Partner Channels — Design Tokens
+   Direction: Dark Mode Default
+   Generated: 2026-04-03
+   ============================================================ */
+
+:root {
+  /* ---- Backgrounds (DARK MODE DEFAULT) ---- */
+  --pc-bg-primary: #0F172A;
+  --pc-bg-surface: #1E293B;
+  --pc-bg-tinted: #1E3A5F;
+  --pc-bg-dark: #0F172A;
+  --pc-bg-dark-surface: #0B1120;
+  --pc-bg-darker: #070D1A;
+
+  /* ---- Accent: Royal Blue ---- */
+  --pc-accent: #2563EB;
+  --pc-accent-hover: #1D4ED8;
+  --pc-accent-active: #1E40AF;
+  --pc-accent-subtle: #EFF6FF;
+  --pc-accent-rgb: 37, 99, 235;
+
+  /* ---- Secondary Accent: Amber ---- */
+  --pc-secondary: #F59E0B;
+  --pc-secondary-hover: #D97706;
+  --pc-secondary-subtle: rgba(245, 158, 11, 0.15);
+
+  /* ---- Text (DARK MODE DEFAULT) ---- */
+  --pc-text-primary: #F1F5F9;
+  --pc-text-secondary: #94A3B8;
+  --pc-text-tertiary: #64748B;
+  --pc-text-inverse: #0F172A;
+  --pc-text-on-accent: #FFFFFF;
+
+  /* ---- Borders & Dividers (DARK MODE DEFAULT) ---- */
+  --pc-border: rgba(255,255,255,0.08);
+  --pc-border-subtle: rgba(255,255,255,0.05);
+  --pc-border-strong: rgba(255,255,255,0.12);
+
+  /* ---- Typography ---- */
+  --pc-font-heading: 'Clash Display', system-ui, -apple-system, sans-serif;
+  --pc-font-body: 'Switzer', system-ui, -apple-system, sans-serif;
+  --pc-font-mono: 'JetBrains Mono', 'Menlo', 'Monaco', monospace;
+
+  /* ---- Font Sizes (fluid) ---- */
+  --pc-text-xs: clamp(0.6875rem, 0.65rem + 0.15vw, 0.75rem);
+  --pc-text-sm: clamp(0.8125rem, 0.78rem + 0.15vw, 0.875rem);
+  --pc-text-base: clamp(0.9375rem, 0.9rem + 0.15vw, 1rem);
+  --pc-text-lg: clamp(1.125rem, 1.05rem + 0.3vw, 1.25rem);
+  --pc-text-xl: clamp(1.375rem, 1.2rem + 0.6vw, 1.75rem);
+  --pc-text-2xl: clamp(1.75rem, 1.5rem + 1vw, 2.5rem);
+  --pc-text-3xl: clamp(2.25rem, 1.8rem + 1.5vw, 3.5rem);
+
+  /* ---- Font Weights ---- */
+  --pc-weight-normal: 400;
+  --pc-weight-medium: 500;
+  --pc-weight-semibold: 600;
+  --pc-weight-bold: 700;
+  --pc-weight-extrabold: 800;
+
+  /* ---- Spacing Scale ---- */
+  --pc-space-1: 0.25rem;
+  --pc-space-2: 0.5rem;
+  --pc-space-3: 0.75rem;
+  --pc-space-4: 1rem;
+  --pc-space-6: 1.5rem;
+  --pc-space-8: 2rem;
+  --pc-space-12: 3rem;
+  --pc-space-16: 4rem;
+  --pc-space-24: 6rem;
+
+  /* ---- Radius ---- */
+  --pc-radius-sm: 4px;
+  --pc-radius-md: 8px;
+  --pc-radius-lg: 12px;
+  --pc-radius-xl: 16px;
+  --pc-radius-full: 9999px;
+
+  /* ---- Shadows ---- */
+  --pc-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --pc-shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+  --pc-shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.5);
+  --pc-shadow-accent: 0 4px 16px rgba(var(--pc-accent-rgb), 0.25);
+
+  /* ---- Transitions ---- */
+  --pc-ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --pc-duration-fast: 150ms;
+  --pc-duration-normal: 250ms;
+  --pc-duration-slow: 400ms;
+
+  /* ---- Z-Index ---- */
+  --pc-z-dropdown: 100;
+  --pc-z-sticky: 200;
+  --pc-z-modal: 300;
+  --pc-z-toast: 400;
+}
+
+/* ---- Light Mode Override (for users who prefer light) ---- */
+@media (prefers-color-scheme: light) {
+  :root {
+    --pc-bg-primary: #F8FAFC;
+    --pc-bg-surface: #FFFFFF;
+    --pc-bg-tinted: #EFF6FF;
+    --pc-bg-dark: #0F172A;
+    --pc-bg-dark-surface: #1E293B;
+    --pc-bg-darker: #0F172A;
+    --pc-text-primary: #0F172A;
+    --pc-text-secondary: #475569;
+    --pc-text-tertiary: #94A3B8;
+    --pc-text-inverse: #F1F5F9;
+    --pc-border: #E2E8F0;
+    --pc-border-subtle: #F1F5F9;
+    --pc-border-strong: #CBD5E1;
+    --pc-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+    --pc-shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+    --pc-shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.12);
+  }
+}
+
+/* ---- Utility: force light on specific containers ---- */
+[data-theme="light"] {
+  --pc-bg-primary: #F8FAFC;
+  --pc-bg-surface: #FFFFFF;
+  --pc-bg-tinted: #EFF6FF;
+  --pc-text-primary: #0F172A;
+  --pc-text-secondary: #475569;
+  --pc-text-tertiary: #94A3B8;
+  --pc-text-inverse: #F1F5F9;
+  --pc-border: #E2E8F0;
+  --pc-border-subtle: #F1F5F9;
+  --pc-border-strong: #CBD5E1;
+}

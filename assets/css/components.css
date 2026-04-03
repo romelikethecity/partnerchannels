@@ -1,0 +1,275 @@
+/* ============================================================
+   Partner Channels — Reusable Components
+   Layer 2 of 3: tokens.css -> components.css -> styles.css
+   All values reference --pc-* tokens. Zero hardcoded hex. No forced specificity.
+   ============================================================ */
+
+/* ---- Reset ---- */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--pc-font-body);
+    color: var(--pc-text-primary);
+    background: var(--pc-bg-primary);
+    line-height: 1.65;
+    font-size: var(--pc-text-base);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* ---- Links ---- */
+a {
+    color: var(--pc-accent);
+    text-decoration: none;
+    transition: color var(--pc-duration-fast) var(--pc-ease);
+}
+
+a:hover {
+    color: var(--pc-accent-hover);
+}
+
+/* ---- Headings ---- */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--pc-font-heading);
+    font-weight: var(--pc-weight-bold);
+    color: var(--pc-text-primary);
+    line-height: 1.2;
+    margin-top: 0;
+}
+
+h1 { font-size: var(--pc-text-3xl); letter-spacing: -1px; }
+h2 { font-size: var(--pc-text-2xl); letter-spacing: -0.5px; }
+h3 { font-size: var(--pc-text-xl); }
+h4 { font-size: var(--pc-text-lg); }
+h5 { font-size: var(--pc-text-base); }
+h6 { font-size: var(--pc-text-sm); }
+
+/* ---- Container ---- */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--pc-space-6);
+}
+
+/* ---- Buttons ---- */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--pc-space-2);
+    padding: var(--pc-space-3) var(--pc-space-6);
+    border-radius: var(--pc-radius-md);
+    font-family: var(--pc-font-body);
+    font-weight: var(--pc-weight-semibold);
+    font-size: var(--pc-text-sm);
+    text-decoration: none;
+    cursor: pointer;
+    transition: all var(--pc-duration-fast) var(--pc-ease);
+    border: none;
+    line-height: 1.4;
+}
+
+.btn--primary {
+    background: var(--pc-accent);
+    color: var(--pc-text-on-accent);
+}
+
+.btn--primary:hover {
+    background: var(--pc-accent-hover);
+    box-shadow: var(--pc-shadow-accent);
+    color: var(--pc-text-on-accent);
+}
+
+.btn--ghost {
+    background: transparent;
+    color: var(--pc-text-primary);
+    border: 1px solid var(--pc-border);
+}
+
+.btn--ghost:hover {
+    background: var(--pc-bg-surface);
+    border-color: var(--pc-accent-hover);
+    color: var(--pc-accent-hover);
+}
+
+/* ---- Cards ---- */
+.card {
+    background: var(--pc-bg-surface);
+    border: 1px solid var(--pc-border);
+    border-radius: var(--pc-radius-xl);
+    padding: var(--pc-space-6);
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: var(--pc-space-6);
+}
+
+/* ---- Stat Blocks ---- */
+.stat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: var(--pc-space-4);
+}
+
+.stat-block {
+    text-align: center;
+}
+
+.stat-value {
+    display: block;
+    font-family: var(--pc-font-mono);
+    font-size: var(--pc-text-2xl);
+    font-weight: var(--pc-weight-bold);
+    color: var(--pc-secondary);
+    white-space: nowrap;
+}
+
+.stat-label {
+    display: block;
+    font-size: var(--pc-text-sm);
+    color: var(--pc-text-secondary);
+    margin-top: var(--pc-space-1);
+}
+
+/* ---- Breadcrumb ---- */
+.breadcrumb {
+    font-size: var(--pc-text-sm);
+    color: var(--pc-text-secondary);
+    margin-bottom: var(--pc-space-4);
+}
+
+.breadcrumb-link {
+    color: var(--pc-text-secondary);
+    text-decoration: none;
+}
+
+.breadcrumb-link:hover {
+    color: var(--pc-accent-hover);
+}
+
+.breadcrumb-sep {
+    margin: 0 var(--pc-space-2);
+}
+
+.breadcrumb-current {
+    color: var(--pc-text-primary);
+}
+
+/* ---- Data Tables ---- */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.data-table th,
+.data-table td {
+    padding: var(--pc-space-3) var(--pc-space-4);
+    text-align: left;
+    border-bottom: 1px solid var(--pc-border-subtle);
+}
+
+.data-table th {
+    font-weight: var(--pc-weight-semibold);
+    font-size: var(--pc-text-sm);
+    color: var(--pc-text-secondary);
+}
+
+/* ---- FAQ ---- */
+.faq-section {
+    margin-top: var(--pc-space-12);
+}
+
+.faq-item {
+    border-bottom: 1px solid var(--pc-border-subtle);
+    padding: var(--pc-space-4) 0;
+}
+
+.faq-question {
+    font-family: var(--pc-font-heading);
+    font-weight: var(--pc-weight-semibold);
+}
+
+.faq-answer {
+    color: var(--pc-text-secondary);
+    margin-top: var(--pc-space-2);
+}
+
+/* ---- Newsletter CTA ---- */
+.newsletter-cta {
+    background: var(--pc-bg-surface);
+    border: 1px solid var(--pc-border-strong);
+    border-radius: var(--pc-radius-lg);
+    padding: var(--pc-space-12) var(--pc-space-8);
+    text-align: center;
+    margin: var(--pc-space-12) auto;
+    max-width: 800px;
+}
+
+.newsletter-cta h2 {
+    color: var(--pc-text-primary);
+}
+
+.newsletter-cta p {
+    color: var(--pc-text-secondary);
+}
+
+.newsletter-cta-form {
+    display: flex;
+    gap: var(--pc-space-2);
+    max-width: 460px;
+    margin: 0 auto;
+}
+
+.newsletter-cta-form input {
+    flex: 1;
+    padding: var(--pc-space-3) var(--pc-space-4);
+    border-radius: var(--pc-radius-md);
+    border: 1px solid var(--pc-border-strong);
+    background: var(--pc-bg-primary);
+    color: var(--pc-text-primary);
+    font-family: var(--pc-font-body);
+    font-size: var(--pc-text-base);
+}
+
+.newsletter-cta-form input::placeholder {
+    color: var(--pc-text-tertiary);
+}
+
+.newsletter-cta-form input:focus {
+    outline: none;
+    border-color: var(--pc-accent);
+}
+
+/* ---- Page Header ---- */
+.page-header {
+    padding: var(--pc-space-12) 0 var(--pc-space-8);
+}
+
+.page-header h1 {
+    font-family: var(--pc-font-heading);
+    font-weight: var(--pc-weight-bold);
+    letter-spacing: -0.5px;
+}
+
+/* ---- Source Citation ---- */
+.source-citation {
+    margin-top: var(--pc-space-6);
+    padding: var(--pc-space-4);
+    border-left: 3px solid var(--pc-accent);
+    background: var(--pc-bg-surface);
+    border-radius: 0 var(--pc-radius-sm) var(--pc-radius-sm) 0;
+    font-size: 0.875rem;
+    color: var(--pc-text-secondary);
+}
+
+/* ---- Related Links ---- */
+.related-links {
+    margin-top: var(--pc-space-12);
+    padding-top: var(--pc-space-8);
+    border-top: 1px solid var(--pc-border-subtle);
+}

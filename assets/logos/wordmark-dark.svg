@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 36" width="280" height="36">
+  <defs>
+    <style>
+      @import url('https://api.fontshare.com/v2/css?f[]=clash-display@700&amp;display=swap');
+    </style>
+  </defs>
+  <text x="0" y="26" font-family="'Clash Display', sans-serif" font-weight="700" font-size="24" letter-spacing="-0.5" fill="#0F172A">Partner</text>
+  <text x="104" y="26" font-family="'Clash Display', sans-serif" font-weight="700" font-size="24" letter-spacing="-0.5" fill="#2563EB">Channels</text>
+</svg>

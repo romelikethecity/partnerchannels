@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 48" width="340" height="48">
+  <defs>
+    <style>
+      @import url('https://api.fontshare.com/v2/css?f[]=clash-display@700&amp;display=swap');
+    </style>
+  </defs>
+  <!-- Icon -->
+  <rect x="0" y="0" width="48" height="48" rx="11" fill="#2563EB"/>
+  <circle cx="24" cy="24" r="4" fill="white"/>
+  <circle cx="12" cy="14" r="3" fill="white" opacity="0.8"/>
+  <circle cx="36" cy="14" r="3" fill="white" opacity="0.8"/>
+  <circle cx="12" cy="34" r="3" fill="white" opacity="0.6"/>
+  <circle cx="36" cy="34" r="3" fill="white" opacity="0.6"/>
+  <line x1="21" y1="22" x2="14" y2="16" stroke="white" stroke-width="1.8" stroke-linecap="round" opacity="0.8"/>
+  <line x1="27" y1="22" x2="34" y2="16" stroke="white" stroke-width="1.8" stroke-linecap="round" opacity="0.8"/>
+  <line x1="21" y1="26" x2="14" y2="32" stroke="white" stroke-width="1.8" stroke-linecap="round" opacity="0.6"/>
+  <line x1="27" y1="26" x2="34" y2="32" stroke="white" stroke-width="1.8" stroke-linecap="round" opacity="0.6"/>
+  <!-- Wordmark (light background) -->
+  <text x="58" y="31" font-family="'Clash Display', sans-serif" font-weight="700" font-size="24" letter-spacing="-0.5" fill="#F1F5F9">Partner</text>
+  <text x="162" y="31" font-family="'Clash Display', sans-serif" font-weight="700" font-size="24" letter-spacing="-0.5" fill="#2563EB">Channels</text>
+</svg>
