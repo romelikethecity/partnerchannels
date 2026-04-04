@@ -1,0 +1,113 @@
+{
+  "date": "April 04, 2026",
+  "total_jobs": 1304,
+  "tools": {
+    "Rag": 838,
+    "Rust": 561,
+    "Aws": 270,
+    "Salesforce": 265,
+    "Tableau": 42,
+    "Hubspot": 38,
+    "Anthropic": 35,
+    "Gcp": 30,
+    "Azure": 29,
+    "Power Bi": 20,
+    "Catalyst": 16,
+    "Openai": 9,
+    "Python": 9,
+    "Kubernetes": 8,
+    "Cohere": 8,
+    "Linkedin Sales Navigator": 8,
+    "Gemini": 7,
+    "Looker": 6,
+    "G2": 6,
+    "Zoominfo": 6,
+    "Apollo": 5,
+    "Mailchimp": 5,
+    "Marketo": 5,
+    "Partnerstack": 4,
+    "Claude": 4,
+    "Aligned": 4,
+    "Mulesoft": 4,
+    "Docusign": 3,
+    "Dynamics 365": 3,
+    "Gong": 3,
+    "Prompt Engineering": 3,
+    "Embeddings": 3,
+    "Clay": 2,
+    "Trustpilot": 2,
+    "Streak": 2,
+    "Zapier": 2,
+    "Vertex Ai": 2,
+    "Bedrock": 2,
+    "Eloqua": 2,
+    "Zoho Crm": 2,
+    "Monday Sales": 2,
+    "Salesloft": 2,
+    "Second Nature Training": 2,
+    "Hubspot Marketing": 2,
+    "Typescript": 2,
+    "Javascript": 2,
+    "Chroma": 2,
+    "Docker": 2,
+    "Crossbeam": 2,
+    "Demandtools": 2
+  },
+  "motion": {
+    "Channel": 556,
+    "Direct": 101,
+    "Abm": 65,
+    "Inside": 27,
+    "Outbound": 7,
+    "Plg": 3
+  },
+  "team_structure": {
+    "Build Team": 621,
+    "Reports Cro": 90,
+    "First Hire": 74,
+    "Reports Vp": 33,
+    "Reports Ceo": 15,
+    "Player Coach": 6
+  },
+  "hiring_signals": {
+    "Growth Hire": 973,
+    "Turnaround": 318,
+    "Immediate": 85
+  },
+  "segment": {
+    "Enterprise": 333,
+    "Smb": 61,
+    "Fortune 500": 59,
+    "Mid Market": 2
+  },
+  "geo_focus": {
+    "Global": 606,
+    "North America": 408,
+    "Apac": 71,
+    "Emea": 66,
+    "Latam": 27
+  },
+  "comp_signals": {
+    "Equity": 842,
+    "Ote Mentioned": 100,
+    "Uncapped": 31
+  },
+  "methodology": {
+    "Solution Selling": 83,
+    "Value Selling": 54,
+    "Miller Heiman": 8,
+    "Sandler": 8,
+    "Meddic": 5,
+    "Bant": 1
+  },
+  "deal_size": {
+    "Transactional": 76,
+    "Enterprise Deal": 56,
+    "Seven Figure": 55,
+    "Mid Deal": 3
+  },
+  "sales_cycle": {
+    "Long": 90,
+    "Short": 72
+  }
+}

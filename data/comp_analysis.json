@@ -1,0 +1,217 @@
+{
+  "generated_at": "2026-04-04T16:06:38.677721",
+  "total_records": 1304,
+  "records_with_salary": 852,
+  "disclosure_rate": 65.3,
+  "salary_stats": {
+    "min": 10400,
+    "max": 624170,
+    "median": 120000,
+    "avg": 125801,
+    "count_with_salary": 852
+  },
+  "by_seniority": {
+    "Mid": {
+      "count": 252,
+      "min_base_avg": 104805,
+      "max_base_avg": 157570,
+      "median": 98000
+    },
+    "Director": {
+      "count": 124,
+      "min_base_avg": 146381,
+      "max_base_avg": 197366,
+      "median": 132800
+    },
+    "VP": {
+      "count": 50,
+      "min_base_avg": 177631,
+      "max_base_avg": 268097,
+      "median": 150000
+    },
+    "Entry": {
+      "count": 58,
+      "min_base_avg": 76412,
+      "max_base_avg": 104015,
+      "median": 67000
+    },
+    "Unknown": {
+      "count": 216,
+      "min_base_avg": 124537,
+      "max_base_avg": 174839,
+      "median": 132000
+    },
+    "Senior": {
+      "count": 128,
+      "min_base_avg": 141053,
+      "max_base_avg": 205734,
+      "median": 140000
+    },
+    "Head of": {
+      "count": 17,
+      "min_base_avg": 169307,
+      "max_base_avg": 221715,
+      "median": 175000
+    },
+    "SVP": {
+      "count": 6,
+      "min_base_avg": 234810,
+      "max_base_avg": 313465,
+      "median": 273500
+    }
+  },
+  "by_metro": {
+    "Unknown": {
+      "count": 397,
+      "min_base_avg": 117763,
+      "max_base_avg": 169578,
+      "median": 112680
+    },
+    "Seattle": {
+      "count": 21,
+      "min_base_avg": 133853,
+      "max_base_avg": 187374,
+      "median": 118200
+    },
+    "San Francisco": {
+      "count": 33,
+      "min_base_avg": 163409,
+      "max_base_avg": 230678,
+      "median": 166200
+    },
+    "New York": {
+      "count": 209,
+      "min_base_avg": 132314,
+      "max_base_avg": 185712,
+      "median": 128000
+    },
+    "Austin": {
+      "count": 15,
+      "min_base_avg": 138632,
+      "max_base_avg": 223352,
+      "median": 134800
+    },
+    "Washington DC": {
+      "count": 25,
+      "min_base_avg": 145304,
+      "max_base_avg": 213965,
+      "median": 125000
+    },
+    "Los Angeles": {
+      "count": 92,
+      "min_base_avg": 122457,
+      "max_base_avg": 182545,
+      "median": 120300
+    },
+    "Chicago": {
+      "count": 26,
+      "min_base_avg": 114069,
+      "max_base_avg": 151352,
+      "median": 107000
+    },
+    "Boston": {
+      "count": 17,
+      "min_base_avg": 143914,
+      "max_base_avg": 198219,
+      "median": 130000
+    },
+    "Denver": {
+      "count": 10,
+      "min_base_avg": 126600,
+      "max_base_avg": 164948,
+      "median": 115800
+    },
+    "Miami": {
+      "count": 5,
+      "min_base_avg": 136640,
+      "max_base_avg": 184900,
+      "median": 90000
+    }
+  },
+  "by_remote": {
+    "onsite": {
+      "count": 737,
+      "min_base_avg": 126864,
+      "max_base_avg": 182728,
+      "median": 120000
+    },
+    "remote": {
+      "count": 115,
+      "min_base_avg": 118989,
+      "max_base_avg": 163194,
+      "median": 115200
+    }
+  },
+  "top_paying_roles": [
+    {
+      "title": "Vice President, Global Cloud Partnerships",
+      "company": "Red Hat",
+      "salary_min": 367020.0,
+      "salary_max": 624170.0,
+      "seniority": "VP"
+    },
+    {
+      "title": "Senior Director, Strategic Partnerships (Visa Commercial Solutions, NA)",
+      "company": "Visa",
+      "salary_min": 305400.0,
+      "salary_max": 534500.0,
+      "seniority": "Senior"
+    },
+    {
+      "title": "Senior Director - NA Head of Business Development, B2B Fintech Partnerships",
+      "company": "Visa",
+      "salary_min": 305400.0,
+      "salary_max": 534500.0,
+      "seniority": "Director"
+    },
+    {
+      "title": "VP US Agency Partnerships",
+      "company": "Teads",
+      "salary_min": 300000.0,
+      "salary_max": 500000.0,
+      "seniority": "VP"
+    },
+    {
+      "title": "Revenue Leader, Brand Partnerships",
+      "company": "",
+      "salary_min": 175000.0,
+      "salary_max": 500000.0,
+      "seniority": ""
+    },
+    {
+      "title": "Vice President, Partner Ecosystem",
+      "company": "Perforce Software",
+      "salary_min": 225000.0,
+      "salary_max": 500000.0,
+      "seniority": "VP"
+    },
+    {
+      "title": "Product Design Director, Creator Ecosystem",
+      "company": "Roblox",
+      "salary_min": 432040.0,
+      "salary_max": 492950.0,
+      "seniority": ""
+    },
+    {
+      "title": "SVP, Global SI Partnerships and Alliances",
+      "company": "ADP",
+      "salary_min": 273500.0,
+      "salary_max": 457800.0,
+      "seniority": "SVP"
+    },
+    {
+      "title": "Vice President, U.S. Retail Merchant Partnerships",
+      "company": "Visa",
+      "salary_min": 219400.0,
+      "salary_max": 451800.0,
+      "seniority": "VP"
+    },
+    {
+      "title": "Director of Strategic Partnerships & Alliances",
+      "company": "vCluster Labs",
+      "salary_min": 380000.0,
+      "salary_max": 420000.0,
+      "seniority": "Director"
+    }
+  ]
+}

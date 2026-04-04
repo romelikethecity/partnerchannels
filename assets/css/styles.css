@@ -669,6 +669,11 @@ body.page-home .main-content {
         overflow-x: auto;
     }
 
+    /* Salary/tool comparison grids stack on tablet */
+    .container > div[style*="grid-template-columns: 1fr 1fr"] {
+        grid-template-columns: 1fr !important;
+    }
+
     .related-links-grid {
         grid-template-columns: 1fr 1fr;
     }

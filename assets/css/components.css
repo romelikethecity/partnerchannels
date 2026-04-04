@@ -267,6 +267,12 @@ h6 { font-size: var(--pc-text-sm); }
     color: var(--pc-text-secondary);
 }
 
+/* ---- Table Wrapper (horizontal scroll on mobile) ---- */
+.table-wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
 /* ---- Related Links ---- */
 .related-links {
     margin-top: var(--pc-space-12);
