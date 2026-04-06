@@ -279,3 +279,99 @@ h6 { font-size: var(--pc-text-sm); }
     padding-top: var(--pc-space-8);
     border-top: 1px solid var(--pc-border-subtle);
 }
+
+/* ---- Conference Cards ---- */
+.conferences-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: var(--pc-space-6);
+    margin: var(--pc-space-8) 0;
+    padding: 0 var(--pc-space-4);
+}
+
+.conference-card {
+    background: var(--pc-bg-surface);
+    border: 1px solid var(--pc-border);
+    border-radius: var(--pc-radius-md);
+    padding: var(--pc-space-6);
+    display: flex;
+    flex-direction: column;
+    gap: var(--pc-space-3);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.conference-card:hover {
+    border-color: var(--pc-accent);
+    box-shadow: 0 4px 12px rgba(var(--pc-accent-rgb), 0.15);
+}
+
+.conference-card-header h3 {
+    font-family: var(--pc-font-heading);
+    font-size: var(--pc-text-lg);
+    font-weight: var(--pc-weight-bold);
+    margin: 0;
+}
+
+.conference-card-header h3 a {
+    color: var(--pc-text-primary);
+    text-decoration: none;
+}
+
+.conference-card-header h3 a:hover {
+    color: var(--pc-accent);
+}
+
+.conference-organizer {
+    font-size: var(--pc-text-sm);
+    color: var(--pc-text-secondary);
+}
+
+.conference-description {
+    font-size: var(--pc-text-sm);
+    color: var(--pc-text-secondary);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.conference-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--pc-space-4);
+    font-size: var(--pc-text-sm);
+    color: var(--pc-text-tertiary);
+}
+
+.conference-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--pc-space-2);
+}
+
+.conference-tag {
+    display: inline-block;
+    padding: 2px 10px;
+    background: rgba(var(--pc-accent-rgb), 0.15);
+    color: var(--pc-accent);
+    border-radius: var(--pc-radius-full);
+    font-size: var(--pc-text-xs);
+    font-weight: var(--pc-weight-medium);
+}
+
+.conference-link {
+    display: inline-block;
+    margin-top: auto;
+    font-size: var(--pc-text-sm);
+    font-weight: var(--pc-weight-semibold);
+    color: var(--pc-accent);
+    text-decoration: none;
+}
+
+.conference-link:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 640px) {
+    .conferences-grid {
+        grid-template-columns: 1fr;
+    }
+}

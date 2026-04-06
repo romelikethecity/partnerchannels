@@ -1,0 +1,110 @@
+[
+  {
+    "name": "Catalyst",
+    "organizer": "Partnership Leaders",
+    "typical_attendees": 1500,
+    "location": "Various US Cities",
+    "website_url": "https://www.partnershipleaders.com/",
+    "relevance_tags": ["partnerships", "ecosystem", "co-selling", "strategy"],
+    "description": "Partnership Leaders' flagship conference for partnership professionals. Covers ecosystem strategy, co-selling motions, partner program design, and career development."
+  },
+  {
+    "name": "Supernode",
+    "organizer": "Crossbeam",
+    "typical_attendees": 2000,
+    "location": "Philadelphia, PA",
+    "website_url": "https://www.crossbeam.com/supernode/",
+    "relevance_tags": ["ecosystem", "partner data", "co-selling", "account mapping"],
+    "description": "Crossbeam's conference on ecosystem-led growth. Covers account mapping, partner data sharing, co-selling workflows, and the future of partner ecosystems."
+  },
+  {
+    "name": "PartnerStack Summit",
+    "organizer": "PartnerStack",
+    "typical_attendees": 800,
+    "location": "Toronto, Canada",
+    "website_url": "https://www.partnerstack.com/",
+    "relevance_tags": ["partner management", "affiliate", "referral", "marketplace"],
+    "description": "PartnerStack's annual summit focused on partner program management. Covers referral programs, affiliate partnerships, and marketplace strategy for SaaS companies."
+  },
+  {
+    "name": "Impartner Summit",
+    "organizer": "Impartner",
+    "typical_attendees": 1000,
+    "location": "Salt Lake City, UT",
+    "website_url": "https://www.impartner.com/",
+    "relevance_tags": ["PRM", "channel management", "partner enablement", "automation"],
+    "description": "Impartner's user conference for PRM and channel management professionals. Covers partner portal design, deal registration, MDF management, and channel automation."
+  },
+  {
+    "name": "Channel Partners Conference",
+    "organizer": "Channel Futures",
+    "typical_attendees": 5000,
+    "location": "Las Vegas, NV",
+    "website_url": "https://www.channelpartnersconference.com/",
+    "relevance_tags": ["channel sales", "MSP", "IT channel", "distribution"],
+    "description": "The largest channel-focused conference in the IT industry. Covers channel sales strategy, MSP partnerships, distribution, and vendor-partner relationship management."
+  },
+  {
+    "name": "CompTIA ChannelCon",
+    "organizer": "CompTIA",
+    "typical_attendees": 2000,
+    "location": "Various US Cities",
+    "website_url": "https://connect.comptia.org/channelcon",
+    "relevance_tags": ["IT channel", "MSP", "vendor relations", "certifications"],
+    "description": "CompTIA's annual channel event covering IT channel partnerships, MSP business models, vendor relationship management, and technology certifications."
+  },
+  {
+    "name": "CRN Channel Chiefs",
+    "organizer": "CRN (The Channel Company)",
+    "typical_attendees": 1000,
+    "location": "Various US Cities",
+    "website_url": "https://www.crn.com/",
+    "relevance_tags": ["channel leadership", "IT", "vendor strategy", "partner programs"],
+    "description": "Gathering of channel leadership from top IT vendors and partners. Focuses on channel program innovation, vendor strategy, and partner ecosystem development."
+  },
+  {
+    "name": "Partner Ecosystem Summit",
+    "organizer": "Jay McBain / Canalys",
+    "typical_attendees": 800,
+    "location": "Virtual + In-Person",
+    "website_url": "https://www.canalys.com/",
+    "relevance_tags": ["ecosystem", "channel strategy", "analytics", "research"],
+    "description": "Research-driven summit on the future of partner ecosystems. Covers ecosystem analytics, channel economics, and the shift from traditional channel to ecosystem models."
+  },
+  {
+    "name": "SaaStr Annual",
+    "organizer": "SaaStr",
+    "typical_attendees": 12500,
+    "location": "San Francisco, CA",
+    "website_url": "https://www.saastr.com/annual/",
+    "relevance_tags": ["SaaS", "partnerships", "go-to-market", "scale"],
+    "description": "The largest SaaS conference with growing partnership tracks. Covers partner-led growth, ecosystem strategy, and the role of partnerships in SaaS scaling."
+  },
+  {
+    "name": "Dreamforce (Partner Track)",
+    "organizer": "Salesforce",
+    "typical_attendees": 40000,
+    "location": "San Francisco, CA",
+    "website_url": "https://www.salesforce.com/dreamforce/",
+    "relevance_tags": ["Salesforce", "AppExchange", "ISV", "SI partnerships"],
+    "description": "Salesforce's massive conference with dedicated partner tracks. Essential for ISV partners, SI firms, and anyone building on the Salesforce AppExchange ecosystem."
+  },
+  {
+    "name": "Cloud Marketplace Summit",
+    "organizer": "Tackle.io",
+    "typical_attendees": 600,
+    "location": "Virtual",
+    "website_url": "https://tackle.io/",
+    "relevance_tags": ["cloud marketplace", "AWS", "Azure", "co-sell"],
+    "description": "Focused on cloud marketplace strategy across AWS, Azure, and GCP. Covers marketplace listing optimization, co-sell programs, and procurement-driven partnerships."
+  },
+  {
+    "name": "Pavilion Summit",
+    "organizer": "Pavilion",
+    "typical_attendees": 2000,
+    "location": "Various US Cities",
+    "website_url": "https://www.joinpavillion.com/",
+    "relevance_tags": ["go-to-market", "partnerships", "leadership", "revenue"],
+    "description": "Pavilion's flagship event for go-to-market leaders. Growing partnership content covering partner-led revenue, ecosystem strategy, and cross-functional alignment."
+  }
+]

@@ -50,6 +50,7 @@ NAV_ITEMS = [
             {"href": "/careers/", "label": "Career Guides"},
             {"href": "/careers/how-to-become-partner-manager/", "label": "How to Become a Partner Manager"},
             {"href": "/careers/job-growth/", "label": "Job Market Growth"},
+            {"href": "/companies/", "label": "Companies Hiring"},
         ],
     },
     {"href": "/glossary/", "label": "Glossary"},
