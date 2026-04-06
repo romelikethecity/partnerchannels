@@ -14,7 +14,7 @@ CTA_LABEL = "Get the Weekly Brief"
 
 SIGNUP_WORKER_URL = "https://pc-newsletter-signup.rome-workers.workers.dev/subscribe"
 
-GA_MEASUREMENT_ID = ""
+GA_MEASUREMENT_ID = "G-R29ZKXX0NX"
 GOOGLE_SITE_VERIFICATION = ""
 GOOGLE_SITE_VERIFICATION_META = ""
 
