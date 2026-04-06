@@ -20,6 +20,8 @@ from templates import (get_page_wrapper, write_page, get_homepage_schema,
 from build_salary import build_all_salary_pages
 from build_tools import build_all_tools_pages
 from build_glossary import build_all_glossary_pages
+from build_careers import build_all_careers_pages
+from build_insights import build_all_insights_pages
 
 # OG image generation state
 SKIP_OG = "--skip-og" in sys.argv
@@ -143,11 +145,11 @@ def build_homepage():
             <p>Clear definitions for partnerships terms. Co-sell, near-bound, ecosystem-led growth, and more.</p>
             <span class="preview-link">Browse glossary &rarr;</span>
         </a>
-        <a href="/jobs/" class="preview-card">
-            <div class="preview-icon"><span class="preview-emoji">&#128188;</span></div>
-            <h3>Job Board</h3>
-            <p>Curated partner and channel roles from top SaaS companies. Updated twice a week.</p>
-            <span class="preview-link">View all jobs &rarr;</span>
+        <a href="/insights/" class="preview-card">
+            <div class="preview-icon"><span class="preview-emoji">&#128161;</span></div>
+            <h3>Insights</h3>
+            <p>Analysis and trends shaping the partnerships and channel sales landscape. Data-backed takes on what matters.</p>
+            <span class="preview-link">Browse insights &rarr;</span>
         </a>
         <a href="/newsletter/" class="preview-card">
             <div class="preview-icon"><span class="preview-emoji">&#128232;</span></div>
@@ -418,6 +420,8 @@ def main():
     build_all_salary_pages()
     build_all_tools_pages()
     build_all_glossary_pages()
+    build_all_careers_pages()
+    build_all_insights_pages()
 
     print("\n  Building meta files...")
     build_sitemap()
