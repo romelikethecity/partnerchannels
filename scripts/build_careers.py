@@ -7,8 +7,8 @@ import json
 
 from nav_config import *
 from templates import (get_page_wrapper, write_page, get_breadcrumb_schema,
-                       get_faq_schema, breadcrumb_html, newsletter_cta_html,
-                       faq_html)
+                       get_faq_schema, get_article_schema, breadcrumb_html,
+                       newsletter_cta_html, faq_html)
 
 
 # ---------------------------------------------------------------------------
@@ -287,13 +287,14 @@ def build_how_to_become_partner_manager():
 
     body += faq_html(faq_pairs)
 
+    word_count = len(body.split())
     page = get_page_wrapper(
         title=title,
         description=description,
         canonical_path="/careers/how-to-become-partner-manager/",
         body_content=body,
         active_path="/careers/",
-        extra_head=get_breadcrumb_schema(crumbs) + get_faq_schema(faq_pairs),
+        extra_head=get_breadcrumb_schema(crumbs) + get_faq_schema(faq_pairs) + get_article_schema(title, description, "how-to-become-partner-manager", "2026-04-01", word_count, url_path="/careers/how-to-become-partner-manager/"),
         body_class="page-inner",
     )
     write_page("careers/how-to-become-partner-manager/index.html", page)
@@ -430,13 +431,14 @@ def build_job_growth():
 
     body += faq_html(faq_pairs)
 
+    word_count = len(body.split())
     page = get_page_wrapper(
         title=title,
         description=description,
         canonical_path="/careers/job-growth/",
         body_content=body,
         active_path="/careers/",
-        extra_head=get_breadcrumb_schema(crumbs) + get_faq_schema(faq_pairs),
+        extra_head=get_breadcrumb_schema(crumbs) + get_faq_schema(faq_pairs) + get_article_schema(title, description, "job-growth", "2026-04-01", word_count, url_path="/careers/job-growth/"),
         body_class="page-inner",
     )
     write_page("careers/job-growth/index.html", page)
