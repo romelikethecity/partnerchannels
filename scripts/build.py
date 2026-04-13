@@ -391,10 +391,110 @@ def build_sitemap():
 
 
 def build_robots():
-    content = f"User-agent: *\nAllow: /\n\nSitemap: {SITE_URL}/sitemap.xml\n"
+    content = f"""User-agent: *
+Allow: /
+
+Sitemap: {SITE_URL}/sitemap.xml
+
+# AI/LLM crawlers - explicitly allowed for AI search citations
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+"""
     with open(os.path.join(OUTPUT_DIR, "robots.txt"), "w", encoding="utf-8") as f:
         f.write(content)
     print(f"  Built: robots.txt")
+
+
+def build_llms_txt():
+    content = f"""# Partner Channels
+
+> Partner Channels is an independent career intelligence platform for partnerships and channel sales professionals. The site provides salary benchmarks by seniority and location, vendor-neutral reviews of PRM platforms, co-selling tools, and marketplace management software, a searchable glossary of channel and partnerships terminology, company hiring profiles, and career guides. All data is updated weekly and free to access.
+
+## Core Pages
+- [Homepage]({SITE_URL}/)
+- [About]({SITE_URL}/about/)
+- [Newsletter]({SITE_URL}/newsletter/)
+
+## Salary Data
+- [Salary Index]({SITE_URL}/salary/): Aggregate partner/channel salary benchmarks
+- [By Seniority]({SITE_URL}/salary/by-seniority/): Entry through SVP
+- [By Location]({SITE_URL}/salary/by-location/): 10 major metros
+- [Remote vs Onsite]({SITE_URL}/salary/remote-vs-onsite/)
+- [Salary Calculator]({SITE_URL}/salary/calculator/)
+
+### Salary Comparisons
+- [Partner Manager vs Account Executive]({SITE_URL}/salary/vs-account-executive/)
+- [Partner Manager vs BD Manager]({SITE_URL}/salary/vs-bd-manager/)
+- [Partner Manager vs Solutions Engineer]({SITE_URL}/salary/vs-solutions-engineer/)
+- [Partner Manager vs CSM]({SITE_URL}/salary/vs-customer-success-manager/)
+
+## Tool Reviews
+- [Tools Index]({SITE_URL}/tools/): All partnership tools reviewed
+- [PRM Platforms]({SITE_URL}/tools/category/prm/)
+- [Co-Selling Tools]({SITE_URL}/tools/category/co-selling/)
+- [Marketplace Management]({SITE_URL}/tools/category/marketplace/)
+
+### Tool Comparisons
+- [Crossbeam vs Reveal]({SITE_URL}/tools/compare/crossbeam-vs-reveal/)
+- [PartnerStack vs Impartner]({SITE_URL}/tools/compare/partnerstack-vs-impartner/)
+- [Salesforce PRM vs PartnerStack]({SITE_URL}/tools/compare/salesforce-prm-vs-partnerstack/)
+
+## Career Resources
+- [Career Guides]({SITE_URL}/careers/)
+- [How to Become a Partner Manager]({SITE_URL}/careers/how-to-become-partner-manager/)
+- [Companies Hiring]({SITE_URL}/companies/)
+
+## Glossary
+- [Glossary Index]({SITE_URL}/glossary/): Partnerships and channel terminology defined
+- [PRM]({SITE_URL}/glossary/prm-partner-relationship-management/)
+- [Channel Sales]({SITE_URL}/glossary/channel-sales/)
+- [Partner Ecosystem]({SITE_URL}/glossary/partner-ecosystem/)
+- [Co-Selling]({SITE_URL}/glossary/co-selling/)
+- [Deal Registration]({SITE_URL}/glossary/deal-registration/)
+- [Channel Conflict]({SITE_URL}/glossary/channel-conflict/)
+"""
+    with open(os.path.join(OUTPUT_DIR, "llms.txt"), "w", encoding="utf-8") as f:
+        f.write(content)
+    print(f"  Built: llms.txt")
 
 
 # ---------------------------------------------------------------------------
@@ -435,6 +535,7 @@ def main():
     print("\n  Building meta files...")
     build_sitemap()
     build_robots()
+    build_llms_txt()
 
     with open(os.path.join(OUTPUT_DIR, "CNAME"), "w", encoding="utf-8") as f:
         f.write("partnerchannels.com\n")
