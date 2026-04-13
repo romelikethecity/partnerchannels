@@ -73,10 +73,10 @@ def pad_description(desc, target_min=150, target_max=158):
 
 def build_homepage():
     """Generate the homepage with Organization+WebSite schema."""
-    title = "Partner & Channel Sales Career Intelligence"
+    title = "Channel Sales Career Intelligence"
     description = (
         "Salary benchmarks, tool reviews, and career data for partnerships and channel professionals."
-        " PRM platforms, co-selling tools, and ecosystem strategy. Updated weekly."
+        " PRM platforms, co-selling tools, and ecosystem strategy."
     )
 
     body = '''<section class="hero">
