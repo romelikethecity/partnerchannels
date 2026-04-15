@@ -1,0 +1,258 @@
+{
+  "title": "Top 25 Channel & Partnerships Voices of 2026",
+  "subtitle": "The analysts, operators, and executives with the most influence on how companies build and scale partner ecosystems",
+  "last_updated": "2026-04-14",
+  "methodology": "Ranked by direct influence on partnership and channel strategy, cross-list appearances on industry publications (Channel Futures, CRN, Forrester, Canalys, Partnership Leaders, Channel Partners Conference), LinkedIn engagement on partnerships-specific content, and real-world ecosystem results. We evaluated 55+ candidates and filtered for people whose work actively changes how companies sell with and through partners.",
+  "voices": [
+    {
+      "rank": 1,
+      "name": "Jay McBain",
+      "title": "Chief Analyst, Channels, Partnerships & Ecosystems",
+      "company": "Canalys",
+      "linkedin_url": "https://www.linkedin.com/in/jaymcbain/",
+      "bio": "The most-cited analyst in the channel ecosystem. 31-year career spanning IBM, Lenovo, Autotask, and Forrester before joining Canalys as Chief Analyst. Named Global Channel Influencer of the Year by Channel Futures. His research on the 'decade of the ecosystem' and the shift from traditional reselling to influence-based partnerships has defined how vendors think about indirect go-to-market.",
+      "tags": ["Channel Research", "Ecosystem Strategy", "Analyst"],
+      "tier": "leader"
+    },
+    {
+      "rank": 2,
+      "name": "Jared Fuller",
+      "title": "Co-Founder",
+      "company": "Reveal / PartnerHacker",
+      "linkedin_url": "https://www.linkedin.com/in/jaredfuller/",
+      "bio": "Created the 'nearbound' concept and wrote the book on it (literally, 'Nearbound' published 2024). Co-hosts PartnerUp, the #1 partnerships podcast globally. Previously built partner programs at PandaDoc, Drift, and HubSpot. His central argument that trust-based partner signals outperform cold outbound has given partnership teams the strategic language they needed to get executive buy-in.",
+      "tags": ["Nearbound", "Partner Strategy", "Ecosystem"],
+      "tier": "leader"
+    },
+    {
+      "rank": 3,
+      "name": "Rob Spee",
+      "title": "SVP, Partner Ecosystems",
+      "company": "BeyondTrust",
+      "linkedin_url": "https://www.linkedin.com/in/robertspee/",
+      "bio": "Hosts the Channel Journeys podcast (150+ episodes) and leads global partner ecosystems at BeyondTrust. Previously held channel leadership roles at OutSystems, AppDirect, and other high-growth companies. His podcast has surfaced more practical channel-building lessons from real operators than any other show in the space.",
+      "tags": ["Channel Podcast", "Partner Ecosystems", "Leadership"],
+      "tier": "leader"
+    },
+    {
+      "rank": 4,
+      "name": "Asher Mathew",
+      "title": "Co-Founder & CEO",
+      "company": "Partnership Leaders",
+      "linkedin_url": "https://www.linkedin.com/in/ashermathew/",
+      "bio": "Built Partnership Leaders into the largest community for partnership professionals, with thousands of members across SaaS, tech, and services. Previously led partnerships at Demandbase, LeanData, and AWS. His community has become the de facto networking and education hub for anyone in a partner role, filling a gap that conferences alone couldn't cover.",
+      "tags": ["Community", "Partnership Leaders", "SaaS Partnerships"],
+      "tier": "leader"
+    },
+    {
+      "rank": 5,
+      "name": "Allan Adler",
+      "title": "Managing Partner",
+      "company": "Digital Bridge Partners",
+      "linkedin_url": "https://www.linkedin.com/in/allanadler/",
+      "bio": "Wrote 'Mastering the New Digital Ecosystem Economy' and advises enterprise companies on transitioning from channel-centric to ecosystem-centric go-to-market. Former SVP at Cisco where he ran multi-billion dollar partner programs. His framework for measuring ecosystem value beyond resale revenue has influenced how the largest tech companies structure their partner economics.",
+      "tags": ["Ecosystem Economy", "Author", "Enterprise"],
+      "tier": "leader"
+    },
+    {
+      "rank": 6,
+      "name": "Sunir Shah",
+      "title": "Founder & CEO",
+      "company": "AppBind",
+      "linkedin_url": "https://www.linkedin.com/in/sunirshah/",
+      "bio": "Founded AppBind to solve the billing and provisioning problem that kills partner programs before they scale. Previously built and managed partner ecosystems at FreshBooks. His writing on partnership unit economics and why most partner programs fail at the operational level is required reading for anyone building a PRM or marketplace strategy.",
+      "tags": ["Partner Operations", "Marketplace", "SaaS"],
+      "tier": "leader"
+    },
+    {
+      "rank": 7,
+      "name": "Tai Rattigan",
+      "title": "CEO",
+      "company": "Prm.co",
+      "linkedin_url": "https://www.linkedin.com/in/tairattigan/",
+      "bio": "Runs Prm.co and previously led partnerships at Amplitude and other high-growth startups. Co-hosts the Partnership Unpacked podcast. He's been consistently vocal about the gap between partnership strategy and execution, especially in mid-market SaaS where teams have 1-2 partner managers trying to manage hundreds of relationships.",
+      "tags": ["PRM", "SaaS Partnerships", "Podcast"],
+      "tier": "leader"
+    },
+    {
+      "rank": 8,
+      "name": "Norma Watenpaugh",
+      "title": "CEO & Founding Principal",
+      "company": "Phoenix Consulting Group",
+      "linkedin_url": "https://www.linkedin.com/in/phoenixcg/",
+      "bio": "A global expert in collaborative business relationships with 20+ years advising Fortune 500 companies on alliance strategy. Led the development of the first certifications and handbook of alliance management for the Association of Strategic Alliance Professionals (ASAP). If Jay McBain covers the analyst side, Norma covers the practitioner governance side.",
+      "tags": ["Strategic Alliances", "ASAP", "Governance"],
+      "tier": "leader"
+    },
+    {
+      "rank": 9,
+      "name": "Cassandra Gholston",
+      "title": "CEO & Co-Founder",
+      "company": "PartnerTap",
+      "linkedin_url": "https://www.linkedin.com/in/cassandragholston/",
+      "bio": "Created the co-sell software category with PartnerTap, now used by HPE, ADP, SAP Concur, and Lumen to automate partner account mapping and co-selling at scale. Her career has been entirely focused on driving revenue with and through partners. She proved that co-selling could be systematized, not just left to relationship-driven heroics.",
+      "tags": ["Co-Selling", "Partner Tech", "Founder"],
+      "tier": "leader"
+    },
+    {
+      "rank": 10,
+      "name": "Theresa Caragol",
+      "title": "Founder & CEO",
+      "company": "AchieveUnite",
+      "linkedin_url": "https://www.linkedin.com/in/theresacaragol/",
+      "bio": "Founded AchieveUnite to help organizations build high-performance partner ecosystems. Runs the annual Next Gen Partnering Summit and publishes the Channel Ecosystem Trends report. Former channel executive at Intermec, Lenovo, and Motorola. She's trained more partner managers on leadership skills than probably anyone outside of the vendor certification programs.",
+      "tags": ["Partner Leadership", "Channel Training", "Events"],
+      "tier": "leader"
+    },
+    {
+      "rank": 11,
+      "name": "Daniel Lancioni",
+      "title": "VP of Partnerships",
+      "company": "Reveal",
+      "linkedin_url": "https://www.linkedin.com/in/daniellancioni/",
+      "bio": "Leads partnerships at Reveal (the nearbound platform) and previously built partner programs at multiple SaaS companies. His practical content on partner attribution, co-selling motions, and ecosystem-led growth gets consistent engagement from partnership professionals who are tired of theory and want execution playbooks.",
+      "tags": ["Nearbound", "Partner Attribution", "Ecosystem-Led Growth"],
+      "tier": "rising"
+    },
+    {
+      "rank": 12,
+      "name": "Dave Elkington",
+      "title": "Founder",
+      "company": "InsideSales.com (XANT)",
+      "linkedin_url": "https://www.linkedin.com/in/daveelkington/",
+      "bio": "Founded InsideSales.com and scaled it to $100M+ in revenue, largely through channel and partnership motions. His experience building one of the first AI-powered sales platforms gave him a unique perspective on how partnerships accelerate distribution in competitive markets. Now advises and invests in companies building partner-first go-to-market strategies.",
+      "tags": ["Founder", "Channel Strategy", "Investing"],
+      "tier": "rising"
+    },
+    {
+      "rank": 13,
+      "name": "Helen Curtis",
+      "title": "Chief Revenue Officer",
+      "company": "Impartner",
+      "linkedin_url": "https://www.linkedin.com/in/helen-curtis/",
+      "bio": "CRO at Impartner, the PRM platform used by companies like Xerox, Honeywell, and Splunk. She's built and led channel programs at multiple enterprise software companies. Her work at Impartner gives her a front-row seat to what's working and failing across thousands of partner programs, and she shares those patterns openly.",
+      "tags": ["PRM", "Enterprise Channels", "Revenue"],
+      "tier": "rising"
+    },
+    {
+      "rank": 14,
+      "name": "Vince Menzione",
+      "title": "Founder & CEO",
+      "company": "Ultimate Guide to Partnering",
+      "linkedin_url": "https://www.linkedin.com/in/vincemenzione/",
+      "bio": "Hosts the Ultimate Guide to Partnering podcast and advises companies on building partnership strategies with Microsoft, AWS, and Google Cloud. Spent 20+ years at Microsoft leading partner sales motions before launching his advisory practice. His deep expertise in hyperscaler partnerships makes him the go-to voice for ISVs figuring out cloud marketplace strategy.",
+      "tags": ["Cloud Partnerships", "Microsoft", "Podcast"],
+      "tier": "rising"
+    },
+    {
+      "rank": 15,
+      "name": "Aaron Howerton",
+      "title": "Head of Partnerships",
+      "company": "FlowState",
+      "linkedin_url": "https://www.linkedin.com/in/aaronhowerton/",
+      "bio": "Built partner programs at multiple SaaS companies and now runs FlowState's partnership practice. Active contributor to the Partnership Leaders community and a regular speaker at partner events. His content focuses on the operational side of partnerships: how to build processes that scale beyond the first 10 partners.",
+      "tags": ["Partner Operations", "SaaS", "Community"],
+      "tier": "rising"
+    },
+    {
+      "rank": 16,
+      "name": "Janet Schijns",
+      "title": "CEO",
+      "company": "JS Group",
+      "linkedin_url": "https://www.linkedin.com/in/janetschijns/",
+      "bio": "Founded JS Group after serving as Chief Channel Executive at Verizon and before that as VP of Channels at Motorola Solutions. Named to CRN's Women of the Channel Power 100 multiple times. She brings a rare combination of carrier, vendor, and advisory experience that makes her perspective on channel strategy more complete than most.",
+      "tags": ["Channel Strategy", "Telecom", "Women in Channel"],
+      "tier": "rising"
+    },
+    {
+      "rank": 17,
+      "name": "Larry Walsh",
+      "title": "CEO & Chief Analyst",
+      "company": "Channelnomics",
+      "linkedin_url": "https://www.linkedin.com/in/laborczfalvi/",
+      "bio": "Runs Channelnomics, one of the most respected independent research firms covering the IT channel. Former editor-in-chief of Channel Insider and Baseline Magazine. His annual channel surveys and market sizing reports are cited by every major vendor planning their indirect GTM strategy. He calls out channel program failures that others won't.",
+      "tags": ["Channel Research", "Analyst", "Media"],
+      "tier": "rising"
+    },
+    {
+      "rank": 18,
+      "name": "Kelly Dempski",
+      "title": "VP of Global Partner Strategy",
+      "company": "Salesforce",
+      "linkedin_url": "https://www.linkedin.com/in/kellydempski/",
+      "bio": "Leads global partner strategy at Salesforce, overseeing one of the largest and most complex partner ecosystems in B2B software. Previously held senior partnership roles at Accenture and IBM. Her work on Salesforce's partner tiering, marketplace strategy, and ISV programs has set the template that other platforms try to replicate.",
+      "tags": ["Salesforce", "Platform Ecosystems", "ISV"],
+      "tier": "rising"
+    },
+    {
+      "rank": 19,
+      "name": "Scott Brinker",
+      "title": "VP of Platform Ecosystem",
+      "company": "HubSpot",
+      "linkedin_url": "https://www.linkedin.com/in/sjbrinker/",
+      "bio": "Creator of the famous Marketing Technology Landscape (the 'martech supergraphic') and VP of Platform Ecosystem at HubSpot. He's the person who most clearly articulated why platforms need ecosystems, not just integrations. His Chief Martec blog has influenced how thousands of companies think about technology partnerships and platform strategy.",
+      "tags": ["Platform Ecosystem", "MarTech", "HubSpot"],
+      "tier": "rising"
+    },
+    {
+      "rank": 20,
+      "name": "Mark Brigman",
+      "title": "Founder",
+      "company": "Partnernomics",
+      "linkedin_url": "https://www.linkedin.com/in/markbrigman/",
+      "bio": "Created the Partnernomics methodology and podcast, focused on helping companies build profitable partnership programs from scratch. His framework for measuring partner ROI and building business cases for ecosystem investment has helped hundreds of partnership professionals justify headcount and budget to their CFOs.",
+      "tags": ["Partner ROI", "Methodology", "Podcast"],
+      "tier": "rising"
+    },
+    {
+      "rank": 21,
+      "name": "Will Taylor",
+      "title": "Head of Partnerships",
+      "company": "Nearbound",
+      "linkedin_url": "https://www.linkedin.com/in/wpt/",
+      "bio": "Co-hosts PartnerUp with Jared Fuller and has become one of the most visible practitioners executing the nearbound playbook in real partnership programs. His daily LinkedIn content on partnership tactics, co-selling cadences, and ecosystem-led growth reaches a growing audience of operators looking for specific, actionable advice.",
+      "tags": ["Nearbound", "Co-Selling", "Content"],
+      "tier": "rising"
+    },
+    {
+      "rank": 22,
+      "name": "Denise Pena",
+      "title": "VP of Global Channels",
+      "company": "SentinelOne",
+      "linkedin_url": "https://www.linkedin.com/in/denisepena/",
+      "bio": "Leads global channel strategy at SentinelOne and previously built partner programs at CrowdStrike and Cylance. Her experience scaling cybersecurity channels through hyper-growth gives her a practical perspective on how to build partner programs that keep up when ARR is doubling annually and every competitor is chasing the same MSPs.",
+      "tags": ["Cybersecurity Channels", "MSP", "Scaling"],
+      "tier": "rising"
+    },
+    {
+      "rank": 23,
+      "name": "Bernhard Friedrichs",
+      "title": "SVP of Alliances",
+      "company": "SAP",
+      "linkedin_url": "https://www.linkedin.com/in/bernhardfriedrichs/",
+      "bio": "Oversees SAP's global alliance portfolio, one of the most expansive partner ecosystems in enterprise software. His work on SAP's transition to cloud partnerships and marketplace co-selling has set the pace for how legacy enterprise vendors modernize their channel strategies without alienating long-standing SI partners.",
+      "tags": ["Enterprise Alliances", "SAP", "Cloud Transition"],
+      "tier": "rising"
+    },
+    {
+      "rank": 24,
+      "name": "Katie Landaal",
+      "title": "VP of Partnerships",
+      "company": "Pavilion",
+      "linkedin_url": "https://www.linkedin.com/in/katielandaal/",
+      "bio": "Runs partnerships at Pavilion, the professional community for go-to-market executives. Curated the '50 Partnership Executives to Watch in 2025' list that became a widely-shared resource. Her role at the intersection of community and partnerships gives her a unique view into what skills and strategies the best partnership professionals actually use.",
+      "tags": ["Community", "GTM", "Partnership Strategy"],
+      "tier": "rising"
+    },
+    {
+      "rank": 25,
+      "name": "Tyler Calder",
+      "title": "COO",
+      "company": "PartnerStack",
+      "linkedin_url": "https://www.linkedin.com/in/tylercalder/",
+      "bio": "COO at PartnerStack, the platform powering B2B SaaS partner programs for companies like Monday.com, Webflow, and Intuit. His data on partner program performance across thousands of companies gives him an unmatched empirical view into what separates high-performing partner programs from ones that stall after launch.",
+      "tags": ["Partner Tech", "B2B SaaS", "Data"],
+      "tier": "rising"
+    }
+  ]
+}

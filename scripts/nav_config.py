@@ -55,6 +55,7 @@ NAV_ITEMS = [
     },
     {"href": "/glossary/", "label": "Glossary"},
     {"href": "/insights/", "label": "Insights"},
+    {"href": "/voices/", "label": "Top Voices"},
 ]
 
 FOOTER_COLUMNS = {
@@ -78,6 +79,7 @@ FOOTER_COLUMNS = {
         {"href": "/careers/", "label": "Career Guides"},
         {"href": "/glossary/", "label": "Glossary"},
         {"href": "/insights/", "label": "Insights"},
+        {"href": "/voices/", "label": "Top Voices"},
         {"href": "/newsletter/", "label": "Newsletter"},
         {"href": "/about/", "label": "About"},
     ],
