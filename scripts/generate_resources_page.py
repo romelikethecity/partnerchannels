@@ -34,6 +34,7 @@ RESOURCE_DATA = {
             {"name": "Impartner Blog", "url": "https://impartner.com/resources/blog", "desc": "PRM and partner marketing automation content from the #1 rated partner management platform."},
             {"name": "Channel Insider", "url": "https://www.channelinsider.com/", "desc": "IT channel news, reviews, tutorials, and video interviews with industry leaders."},
             {"name": "Partner Channels", "url": "https://partnerchannels.com/", "desc": "Partner program directories, channel strategy resources, and ecosystem community hubs.", "owned": True},
+            {"name": "MOPs Report", "url": "https://mopsreport.com/", "desc": "Marketing operations intelligence — MOps teams manage the automation and data infrastructure that powers partner campaigns.", "owned": True},
         ]},
         {"title": "Communities", "items": [
             {"name": "Partnership Leaders", "url": "https://partnershipleaders.com/", "desc": "1,700+ member private network for partnerships, channel, alliances, and BD professionals with job board."},
