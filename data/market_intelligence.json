@@ -1,38 +1,38 @@
 {
   "date": "April 30, 2026",
-  "total_jobs": 1054,
+  "total_jobs": 1026,
   "tools": {
-    "Salesforce": 170,
-    "Aws": 48,
+    "Salesforce": 166,
     "Hubspot": 48,
-    "Gcp": 33,
-    "Azure": 21,
-    "Python": 18,
+    "Aws": 47,
+    "Gcp": 31,
+    "Azure": 20,
+    "Python": 17,
     "Tableau": 17,
     "Power Bi": 16,
     "Catalyst": 11,
     "Openai": 11,
     "Marketo": 10,
-    "Claude": 8,
-    "Kubernetes": 8,
     "Dynamics 365": 8,
-    "Javascript": 7,
+    "Kubernetes": 7,
     "Anthropic": 7,
+    "Javascript": 6,
     "Looker": 6,
-    "Rag": 6,
+    "Claude": 6,
     "Gemini": 5,
     "Mailchimp": 5,
-    "Zapier": 4,
+    "Rag": 5,
     "G2": 4,
     "6Sense": 4,
-    "Bedrock": 3,
     "Zoho Crm": 3,
+    "Zapier": 3,
     "Reveal": 3,
     "Docusign": 3,
     "Salesloft": 3,
     "Instantly": 3,
     "Zoominfo": 3,
     "Warmly": 3,
+    "Bedrock": 2,
     "Gartner Peer": 2,
     "Linkedin Sales Navigator": 2,
     "Allbound": 2,
@@ -40,7 +40,6 @@
     "Impact": 2,
     "Gong": 2,
     "Captivateiq": 2,
-    "Typescript": 2,
     "Clay": 2,
     "Atrium": 2,
     "Crossbeam": 2,
@@ -51,19 +50,20 @@
     "Gainsight": 2,
     "Hubspot Marketing": 2,
     "Embeddings": 2,
-    "Second Nature Training": 1
+    "Second Nature Training": 1,
+    "Vertex Ai": 1
   },
   "team_structure": {
-    "Build Team": 505,
-    "Reports Cro": 86,
-    "First Hire": 63,
+    "Build Team": 490,
+    "Reports Cro": 81,
+    "First Hire": 60,
     "Reports Vp": 34,
     "Reports Ceo": 17,
     "Player Coach": 2
   },
   "motion": {
-    "Channel": 411,
-    "Direct": 89,
+    "Channel": 402,
+    "Direct": 87,
     "Inside": 17,
     "Abm": 15,
     "Outbound": 11,
@@ -71,43 +71,43 @@
     "Inbound": 1
   },
   "geo_focus": {
-    "Global": 473,
-    "North America": 320,
+    "Global": 463,
+    "North America": 313,
     "Emea": 65,
     "Apac": 62,
-    "Latam": 16
+    "Latam": 13
   },
   "hiring_signals": {
-    "Growth Hire": 786,
-    "Turnaround": 237,
-    "Immediate": 69
+    "Growth Hire": 766,
+    "Turnaround": 231,
+    "Immediate": 64
   },
   "comp_signals": {
-    "Equity": 745,
-    "Ote Mentioned": 73,
-    "Uncapped": 25
+    "Equity": 724,
+    "Ote Mentioned": 72,
+    "Uncapped": 24
   },
   "segment": {
-    "Enterprise": 282,
+    "Enterprise": 273,
     "Fortune 500": 48,
     "Smb": 46
   },
   "methodology": {
     "Solution Selling": 44,
-    "Meddic": 6,
-    "Value Selling": 5,
+    "Meddic": 5,
+    "Value Selling": 4,
     "Miller Heiman": 3,
     "Sandler": 3,
     "Bant": 1
   },
   "deal_size": {
-    "Seven Figure": 70,
-    "Enterprise Deal": 48,
-    "Transactional": 20,
+    "Seven Figure": 67,
+    "Enterprise Deal": 47,
+    "Transactional": 19,
     "Mid Deal": 2
   },
   "sales_cycle": {
-    "Long": 47,
+    "Long": 46,
     "Short": 15
   }
 }

@@ -1,33 +1,33 @@
 {
-  "generated_at": "2026-04-30T03:13:53.950838",
-  "total_records": 1054,
-  "records_with_salary": 705,
-  "disclosure_rate": 66.9,
+  "generated_at": "2026-04-30T05:54:04.385624",
+  "total_records": 1026,
+  "records_with_salary": 691,
+  "disclosure_rate": 67.3,
   "salary_stats": {
     "min": 1,
     "max": 2179840,
     "median": 120000,
-    "avg": 125660,
-    "count_with_salary": 705
+    "avg": 125358,
+    "count_with_salary": 691
   },
   "by_seniority": {
     "Mid": {
-      "count": 182,
-      "min_base_avg": 106792,
-      "max_base_avg": 160275,
-      "median": 92000
+      "count": 180,
+      "min_base_avg": 106648,
+      "max_base_avg": 159507,
+      "median": 91800
+    },
+    "Senior": {
+      "count": 128,
+      "min_base_avg": 136896,
+      "max_base_avg": 199031,
+      "median": 130000
     },
     "Entry": {
       "count": 48,
       "min_base_avg": 67026,
       "max_base_avg": 91967,
       "median": 65000
-    },
-    "Senior": {
-      "count": 133,
-      "min_base_avg": 137216,
-      "max_base_avg": 198343,
-      "median": 130000
     },
     "Director": {
       "count": 124,
@@ -36,9 +36,9 @@
       "median": 150000
     },
     "Unknown": {
-      "count": 159,
-      "min_base_avg": 119565,
-      "max_base_avg": 198493,
+      "count": 153,
+      "min_base_avg": 119145,
+      "max_base_avg": 196561,
       "median": 115000
     },
     "Head of": {
@@ -48,41 +48,41 @@
       "median": 180000
     },
     "VP": {
-      "count": 40,
-      "min_base_avg": 165999,
-      "max_base_avg": 222269,
+      "count": 39,
+      "min_base_avg": 164614,
+      "max_base_avg": 220276,
       "median": 160000
     }
   },
   "by_metro": {
     "Unknown": {
-      "count": 342,
-      "min_base_avg": 115890,
-      "max_base_avg": 179305,
+      "count": 336,
+      "min_base_avg": 115252,
+      "max_base_avg": 178804,
       "median": 110000
     },
     "New York": {
-      "count": 219,
-      "min_base_avg": 130193,
-      "max_base_avg": 177985,
-      "median": 130000
+      "count": 214,
+      "min_base_avg": 130402,
+      "max_base_avg": 177315,
+      "median": 132000
     },
     "San Francisco": {
-      "count": 28,
-      "min_base_avg": 177437,
-      "max_base_avg": 248016,
+      "count": 27,
+      "min_base_avg": 178231,
+      "max_base_avg": 242846,
       "median": 169000
     },
     "Los Angeles": {
-      "count": 50,
-      "min_base_avg": 127177,
-      "max_base_avg": 182693,
+      "count": 49,
+      "min_base_avg": 127690,
+      "max_base_avg": 182268,
       "median": 118560
     },
     "Chicago": {
-      "count": 25,
-      "min_base_avg": 130757,
-      "max_base_avg": 235087,
+      "count": 24,
+      "min_base_avg": 128109,
+      "max_base_avg": 233195,
       "median": 120000
     },
     "Seattle": {
@@ -97,17 +97,17 @@
       "max_base_avg": 143931,
       "median": 90794
     },
-    "Washington DC": {
-      "count": 9,
-      "min_base_avg": 129686,
-      "max_base_avg": 164991,
-      "median": 140000
-    },
     "Denver": {
       "count": 4,
       "min_base_avg": 130000,
       "max_base_avg": 151250,
       "median": 160000
+    },
+    "Washington DC": {
+      "count": 9,
+      "min_base_avg": 129686,
+      "max_base_avg": 164991,
+      "median": 140000
     },
     "Austin": {
       "count": 4,
@@ -118,28 +118,28 @@
   },
   "by_remote": {
     "remote": {
-      "count": 135,
-      "min_base_avg": 117420,
-      "max_base_avg": 203092,
+      "count": 133,
+      "min_base_avg": 116895,
+      "max_base_avg": 203493,
       "median": 115000
     },
     "onsite": {
-      "count": 570,
-      "min_base_avg": 127612,
-      "max_base_avg": 180940,
+      "count": 558,
+      "min_base_avg": 127375,
+      "max_base_avg": 179820,
       "median": 122700
     }
   },
   "top_paying_roles": [
     {
-      "title": "Strategic Partnership Opportunity – Insurance & Employee Benefits Professionals (US and Canada)",
+      "title": "Strategic Partnership Opportunity for Real Estate & Financial Professionals (Value-Added Service)",
       "company": "Holliday Enterprises LLC",
       "salary_min": 166400.0,
       "salary_max": 2179840.0,
       "seniority": ""
     },
     {
-      "title": "Strategic Partnership Opportunity for Real Estate & Financial Professionals (Value-Added Service)",
+      "title": "Strategic Partnership Opportunity – Insurance & Employee Benefits Professionals (US and Canada)",
       "company": "Holliday Enterprises LLC",
       "salary_min": 166400.0,
       "salary_max": 2179840.0,
