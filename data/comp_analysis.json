@@ -1,217 +1,205 @@
 {
-  "generated_at": "2026-04-04T16:06:38.677721",
-  "total_records": 1304,
-  "records_with_salary": 852,
-  "disclosure_rate": 65.3,
+  "generated_at": "2026-04-30T03:13:53.950838",
+  "total_records": 1054,
+  "records_with_salary": 705,
+  "disclosure_rate": 66.9,
   "salary_stats": {
-    "min": 10400,
-    "max": 624170,
+    "min": 1,
+    "max": 2179840,
     "median": 120000,
-    "avg": 125801,
-    "count_with_salary": 852
+    "avg": 125660,
+    "count_with_salary": 705
   },
   "by_seniority": {
     "Mid": {
-      "count": 252,
-      "min_base_avg": 104805,
-      "max_base_avg": 157570,
-      "median": 98000
+      "count": 182,
+      "min_base_avg": 106792,
+      "max_base_avg": 160275,
+      "median": 92000
+    },
+    "Entry": {
+      "count": 48,
+      "min_base_avg": 67026,
+      "max_base_avg": 91967,
+      "median": 65000
+    },
+    "Senior": {
+      "count": 133,
+      "min_base_avg": 137216,
+      "max_base_avg": 198343,
+      "median": 130000
     },
     "Director": {
       "count": 124,
-      "min_base_avg": 146381,
-      "max_base_avg": 197366,
-      "median": 132800
-    },
-    "VP": {
-      "count": 50,
-      "min_base_avg": 177631,
-      "max_base_avg": 268097,
+      "min_base_avg": 147244,
+      "max_base_avg": 202502,
       "median": 150000
     },
-    "Entry": {
-      "count": 58,
-      "min_base_avg": 76412,
-      "max_base_avg": 104015,
-      "median": 67000
-    },
     "Unknown": {
-      "count": 216,
-      "min_base_avg": 124537,
-      "max_base_avg": 174839,
-      "median": 132000
-    },
-    "Senior": {
-      "count": 128,
-      "min_base_avg": 141053,
-      "max_base_avg": 205734,
-      "median": 140000
+      "count": 159,
+      "min_base_avg": 119565,
+      "max_base_avg": 198493,
+      "median": 115000
     },
     "Head of": {
-      "count": 17,
-      "min_base_avg": 169307,
-      "max_base_avg": 221715,
-      "median": 175000
+      "count": 15,
+      "min_base_avg": 189893,
+      "max_base_avg": 258660,
+      "median": 180000
     },
-    "SVP": {
-      "count": 6,
-      "min_base_avg": 234810,
-      "max_base_avg": 313465,
-      "median": 273500
+    "VP": {
+      "count": 40,
+      "min_base_avg": 165999,
+      "max_base_avg": 222269,
+      "median": 160000
     }
   },
   "by_metro": {
     "Unknown": {
-      "count": 397,
-      "min_base_avg": 117763,
-      "max_base_avg": 169578,
-      "median": 112680
-    },
-    "Seattle": {
-      "count": 21,
-      "min_base_avg": 133853,
-      "max_base_avg": 187374,
-      "median": 118200
-    },
-    "San Francisco": {
-      "count": 33,
-      "min_base_avg": 163409,
-      "max_base_avg": 230678,
-      "median": 166200
+      "count": 342,
+      "min_base_avg": 115890,
+      "max_base_avg": 179305,
+      "median": 110000
     },
     "New York": {
-      "count": 209,
-      "min_base_avg": 132314,
-      "max_base_avg": 185712,
-      "median": 128000
-    },
-    "Austin": {
-      "count": 15,
-      "min_base_avg": 138632,
-      "max_base_avg": 223352,
-      "median": 134800
-    },
-    "Washington DC": {
-      "count": 25,
-      "min_base_avg": 145304,
-      "max_base_avg": 213965,
-      "median": 125000
-    },
-    "Los Angeles": {
-      "count": 92,
-      "min_base_avg": 122457,
-      "max_base_avg": 182545,
-      "median": 120300
-    },
-    "Chicago": {
-      "count": 26,
-      "min_base_avg": 114069,
-      "max_base_avg": 151352,
-      "median": 107000
-    },
-    "Boston": {
-      "count": 17,
-      "min_base_avg": 143914,
-      "max_base_avg": 198219,
+      "count": 219,
+      "min_base_avg": 130193,
+      "max_base_avg": 177985,
       "median": 130000
     },
-    "Denver": {
-      "count": 10,
-      "min_base_avg": 126600,
-      "max_base_avg": 164948,
-      "median": 115800
+    "San Francisco": {
+      "count": 28,
+      "min_base_avg": 177437,
+      "max_base_avg": 248016,
+      "median": 169000
     },
-    "Miami": {
-      "count": 5,
-      "min_base_avg": 136640,
-      "max_base_avg": 184900,
-      "median": 90000
+    "Los Angeles": {
+      "count": 50,
+      "min_base_avg": 127177,
+      "max_base_avg": 182693,
+      "median": 118560
+    },
+    "Chicago": {
+      "count": 25,
+      "min_base_avg": 130757,
+      "max_base_avg": 235087,
+      "median": 120000
+    },
+    "Seattle": {
+      "count": 14,
+      "min_base_avg": 149674,
+      "max_base_avg": 230121,
+      "median": 147900
+    },
+    "Boston": {
+      "count": 8,
+      "min_base_avg": 98661,
+      "max_base_avg": 143931,
+      "median": 90794
+    },
+    "Washington DC": {
+      "count": 9,
+      "min_base_avg": 129686,
+      "max_base_avg": 164991,
+      "median": 140000
+    },
+    "Denver": {
+      "count": 4,
+      "min_base_avg": 130000,
+      "max_base_avg": 151250,
+      "median": 160000
+    },
+    "Austin": {
+      "count": 4,
+      "min_base_avg": 220525,
+      "max_base_avg": 300350,
+      "median": 240000
     }
   },
   "by_remote": {
-    "onsite": {
-      "count": 737,
-      "min_base_avg": 126864,
-      "max_base_avg": 182728,
-      "median": 120000
-    },
     "remote": {
-      "count": 115,
-      "min_base_avg": 118989,
-      "max_base_avg": 163194,
-      "median": 115200
+      "count": 135,
+      "min_base_avg": 117420,
+      "max_base_avg": 203092,
+      "median": 115000
+    },
+    "onsite": {
+      "count": 570,
+      "min_base_avg": 127612,
+      "max_base_avg": 180940,
+      "median": 122700
     }
   },
   "top_paying_roles": [
     {
-      "title": "Vice President, Global Cloud Partnerships",
-      "company": "Red Hat",
-      "salary_min": 367020.0,
-      "salary_max": 624170.0,
-      "seniority": "VP"
+      "title": "Strategic Partnership Opportunity – Insurance & Employee Benefits Professionals (US and Canada)",
+      "company": "Holliday Enterprises LLC",
+      "salary_min": 166400.0,
+      "salary_max": 2179840.0,
+      "seniority": ""
     },
     {
-      "title": "Senior Director, Strategic Partnerships (Visa Commercial Solutions, NA)",
-      "company": "Visa",
-      "salary_min": 305400.0,
-      "salary_max": 534500.0,
+      "title": "Strategic Partnership Opportunity for Real Estate & Financial Professionals (Value-Added Service)",
+      "company": "Holliday Enterprises LLC",
+      "salary_min": 166400.0,
+      "salary_max": 2179840.0,
+      "seniority": ""
+    },
+    {
+      "title": "Manager, Business Development & Partnerships (Battery Chargers) - Remote Based",
+      "company": "Delta-Q Technologies",
+      "salary_min": 150000.0,
+      "salary_max": 1700000.0,
+      "seniority": "Mid"
+    },
+    {
+      "title": "Director of Healthcare Sales & Partnerships",
+      "company": "Alethian",
+      "salary_min": 150000.0,
+      "salary_max": 500000.0,
+      "seniority": "Director"
+    },
+    {
+      "title": "Leadership Development – Remote Partnership / Fractional",
+      "company": "Relationship Media",
+      "salary_min": 1.0,
+      "salary_max": 500000.0,
       "seniority": "Senior"
     },
     {
-      "title": "Senior Director - NA Head of Business Development, B2B Fintech Partnerships",
-      "company": "Visa",
-      "salary_min": 305400.0,
-      "salary_max": 534500.0,
+      "title": "Leadership Development – Executive Partnership ( Remote / Fractional )",
+      "company": "Relationship Media",
+      "salary_min": 1.0,
+      "salary_max": 500000.0,
+      "seniority": "Senior"
+    },
+    {
+      "title": "Director, Developer Relations - Gaming Ecosystem",
+      "company": "NVIDIA",
+      "salary_min": 320000.0,
+      "salary_max": 488750.0,
       "seniority": "Director"
     },
     {
-      "title": "VP US Agency Partnerships",
-      "company": "Teads",
-      "salary_min": 300000.0,
-      "salary_max": 500000.0,
-      "seniority": "VP"
+      "title": "Venture Equity Principal: Own up to 45% Equity & Profit Share in our 85-Domain Ecosystem",
+      "company": "SantaClaus.Gold",
+      "salary_min": 70383.0,
+      "salary_max": 484763.0,
+      "seniority": ""
     },
     {
-      "title": "Revenue Leader, Brand Partnerships",
+      "title": "Senior Vice President, Strategic Partnerships",
       "company": "",
-      "salary_min": 175000.0,
-      "salary_max": 500000.0,
-      "seniority": ""
-    },
-    {
-      "title": "Vice President, Partner Ecosystem",
-      "company": "Perforce Software",
-      "salary_min": 225000.0,
-      "salary_max": 500000.0,
-      "seniority": "VP"
-    },
-    {
-      "title": "Product Design Director, Creator Ecosystem",
-      "company": "Roblox",
-      "salary_min": 432040.0,
-      "salary_max": 492950.0,
-      "seniority": ""
-    },
-    {
-      "title": "SVP, Global SI Partnerships and Alliances",
-      "company": "ADP",
-      "salary_min": 273500.0,
-      "salary_max": 457800.0,
+      "salary_min": 380000.0,
+      "salary_max": 460000.0,
       "seniority": "SVP"
     },
     {
-      "title": "Vice President, U.S. Retail Merchant Partnerships",
-      "company": "Visa",
-      "salary_min": 219400.0,
-      "salary_max": 451800.0,
-      "seniority": "VP"
-    },
-    {
-      "title": "Director of Strategic Partnerships & Alliances",
-      "company": "vCluster Labs",
-      "salary_min": 380000.0,
-      "salary_max": 420000.0,
-      "seniority": "Director"
+      "title": "Head of Growth Partnerships",
+      "company": "OpenAI",
+      "salary_min": 370000.0,
+      "salary_max": 445000.0,
+      "seniority": "Head of"
     }
   ]
 }
