@@ -1,113 +1,112 @@
 {
-  "date": "April 30, 2026",
-  "total_jobs": 1026,
+  "date": "May 04, 2026",
+  "total_jobs": 1114,
   "tools": {
-    "Salesforce": 166,
-    "Hubspot": 48,
-    "Aws": 47,
-    "Gcp": 31,
-    "Azure": 20,
-    "Python": 17,
-    "Tableau": 17,
-    "Power Bi": 16,
-    "Catalyst": 11,
+    "Salesforce": 177,
+    "Hubspot": 57,
+    "Aws": 45,
+    "Gcp": 26,
+    "Tableau": 20,
+    "Power Bi": 20,
+    "Python": 18,
+    "Azure": 17,
+    "Catalyst": 12,
+    "Marketo": 11,
     "Openai": 11,
-    "Marketo": 10,
-    "Dynamics 365": 8,
-    "Kubernetes": 7,
-    "Anthropic": 7,
-    "Javascript": 6,
-    "Looker": 6,
-    "Claude": 6,
-    "Gemini": 5,
+    "Anthropic": 10,
+    "Claude": 10,
+    "Gemini": 7,
+    "Javascript": 7,
+    "Looker": 7,
+    "Kubernetes": 6,
+    "6Sense": 6,
     "Mailchimp": 5,
     "Rag": 5,
+    "Zoominfo": 5,
+    "Dynamics 365": 4,
     "G2": 4,
-    "6Sense": 4,
-    "Zoho Crm": 3,
+    "Crossbeam": 4,
+    "Warmly": 4,
     "Zapier": 3,
+    "Allbound": 3,
+    "Partnerstack": 3,
     "Reveal": 3,
+    "Gong": 3,
     "Docusign": 3,
-    "Salesloft": 3,
     "Instantly": 3,
-    "Zoominfo": 3,
-    "Warmly": 3,
-    "Bedrock": 2,
-    "Gartner Peer": 2,
-    "Linkedin Sales Navigator": 2,
-    "Allbound": 2,
-    "Partnerstack": 2,
+    "Impartner": 3,
+    "Gainsight": 3,
+    "Braze": 3,
+    "Zoho Crm": 2,
+    "Vertex Ai": 2,
     "Impact": 2,
-    "Gong": 2,
-    "Captivateiq": 2,
-    "Clay": 2,
+    "Linkedin Sales Navigator": 2,
     "Atrium": 2,
-    "Crossbeam": 2,
+    "Highspot": 2,
     "Mulesoft": 2,
+    "Bedrock": 2,
     "Salesforce Marketing Cloud": 2,
-    "Impartner": 2,
     "N8N": 2,
-    "Gainsight": 2,
+    "Apollo": 2,
+    "Clay": 2,
     "Hubspot Marketing": 2,
-    "Embeddings": 2,
-    "Second Nature Training": 1,
-    "Vertex Ai": 1
+    "Salesloft": 2,
+    "Embeddings": 2
+  },
+  "geo_focus": {
+    "Global": 487,
+    "North America": 336,
+    "Emea": 67,
+    "Apac": 66,
+    "Latam": 11
   },
   "team_structure": {
-    "Build Team": 490,
-    "Reports Cro": 81,
-    "First Hire": 60,
-    "Reports Vp": 34,
+    "Build Team": 524,
+    "Reports Cro": 104,
+    "First Hire": 77,
+    "Reports Vp": 37,
     "Reports Ceo": 17,
-    "Player Coach": 2
+    "Player Coach": 4
+  },
+  "comp_signals": {
+    "Equity": 771,
+    "Ote Mentioned": 74,
+    "Uncapped": 29
+  },
+  "segment": {
+    "Enterprise": 290,
+    "Smb": 50,
+    "Fortune 500": 44
+  },
+  "hiring_signals": {
+    "Growth Hire": 823,
+    "Turnaround": 233,
+    "Immediate": 78
   },
   "motion": {
-    "Channel": 402,
-    "Direct": 87,
+    "Channel": 417,
+    "Direct": 83,
     "Inside": 17,
     "Abm": 15,
     "Outbound": 11,
-    "Plg": 1,
+    "Plg": 2,
     "Inbound": 1
   },
-  "geo_focus": {
-    "Global": 463,
-    "North America": 313,
-    "Emea": 65,
-    "Apac": 62,
-    "Latam": 13
-  },
-  "hiring_signals": {
-    "Growth Hire": 766,
-    "Turnaround": 231,
-    "Immediate": 64
-  },
-  "comp_signals": {
-    "Equity": 724,
-    "Ote Mentioned": 72,
-    "Uncapped": 24
-  },
-  "segment": {
-    "Enterprise": 273,
-    "Fortune 500": 48,
-    "Smb": 46
-  },
   "methodology": {
-    "Solution Selling": 44,
-    "Meddic": 5,
+    "Solution Selling": 43,
+    "Miller Heiman": 6,
+    "Meddic": 4,
     "Value Selling": 4,
-    "Miller Heiman": 3,
-    "Sandler": 3,
-    "Bant": 1
-  },
-  "deal_size": {
-    "Seven Figure": 67,
-    "Enterprise Deal": 47,
-    "Transactional": 19,
-    "Mid Deal": 2
+    "Sandler": 3
   },
   "sales_cycle": {
     "Long": 46,
-    "Short": 15
+    "Short": 14
+  },
+  "deal_size": {
+    "Seven Figure": 72,
+    "Enterprise Deal": 39,
+    "Transactional": 18,
+    "Mid Deal": 1
   }
 }
