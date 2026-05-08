@@ -1,149 +1,142 @@
 {
-  "generated_at": "2026-05-04T12:17:25.748847",
-  "total_records": 1114,
-  "records_with_salary": 751,
-  "disclosure_rate": 67.4,
+  "generated_at": "2026-05-08T11:40:33.330952",
+  "total_records": 1187,
+  "records_with_salary": 801,
+  "disclosure_rate": 67.5,
   "salary_stats": {
     "min": 1,
     "max": 2179840,
-    "median": 119700,
-    "avg": 123709,
-    "count_with_salary": 751
+    "median": 119400,
+    "avg": 124355,
+    "count_with_salary": 801
   },
   "by_seniority": {
-    "Entry": {
-      "count": 59,
-      "min_base_avg": 64399,
-      "max_base_avg": 86371,
-      "median": 60000
-    },
-    "Mid": {
-      "count": 375,
-      "min_base_avg": 111139,
-      "max_base_avg": 173734,
-      "median": 100000
-    },
     "Senior": {
-      "count": 130,
-      "min_base_avg": 134877,
-      "max_base_avg": 199338,
-      "median": 128000
+      "count": 129,
+      "min_base_avg": 135109,
+      "max_base_avg": 200428,
+      "median": 130000
     },
     "Director": {
-      "count": 122,
-      "min_base_avg": 148802,
-      "max_base_avg": 206579,
+      "count": 144,
+      "min_base_avg": 149372,
+      "max_base_avg": 203135,
       "median": 150000
     },
-    "Head of": {
-      "count": 15,
-      "min_base_avg": 190026,
-      "max_base_avg": 250226,
-      "median": 180000
+    "Mid": {
+      "count": 399,
+      "min_base_avg": 110406,
+      "max_base_avg": 167536,
+      "median": 100000
     },
     "SVP": {
-      "count": 3,
-      "min_base_avg": 268333,
-      "max_base_avg": 336666,
-      "median": 250000
+      "count": 6,
+      "min_base_avg": 218933,
+      "max_base_avg": 283400,
+      "median": 185000
     },
     "VP": {
-      "count": 45,
-      "min_base_avg": 169801,
-      "max_base_avg": 224652,
-      "median": 170000
+      "count": 42,
+      "min_base_avg": 169501,
+      "max_base_avg": 225953,
+      "median": 160000
+    },
+    "Entry": {
+      "count": 59,
+      "min_base_avg": 65387,
+      "max_base_avg": 89586,
+      "median": 60000
+    },
+    "Head of": {
+      "count": 20,
+      "min_base_avg": 194125,
+      "max_base_avg": 256300,
+      "median": 180000
     }
   },
   "by_metro": {
     "Unknown": {
-      "count": 377,
-      "min_base_avg": 115614,
-      "max_base_avg": 177105,
-      "median": 105786
-    },
-    "San Francisco": {
-      "count": 31,
-      "min_base_avg": 173993,
-      "max_base_avg": 251183,
-      "median": 169100
+      "count": 404,
+      "min_base_avg": 113823,
+      "max_base_avg": 174985,
+      "median": 104000
     },
     "New York": {
-      "count": 215,
-      "min_base_avg": 127120,
-      "max_base_avg": 173015,
-      "median": 120000
-    },
-    "Los Angeles": {
-      "count": 50,
-      "min_base_avg": 125607,
-      "max_base_avg": 178249,
-      "median": 120000
-    },
-    "Austin": {
-      "count": 5,
-      "min_base_avg": 221620,
-      "max_base_avg": 275880,
-      "median": 240000
-    },
-    "Washington DC": {
-      "count": 13,
-      "min_base_avg": 120544,
-      "max_base_avg": 152309,
-      "median": 128000
-    },
-    "Chicago": {
-      "count": 28,
-      "min_base_avg": 135633,
-      "max_base_avg": 237535,
+      "count": 224,
+      "min_base_avg": 129334,
+      "max_base_avg": 174406,
       "median": 125000
     },
-    "Miami": {
-      "count": 3,
-      "min_base_avg": 136033,
-      "max_base_avg": 281866,
-      "median": 194100
-    },
-    "Denver": {
-      "count": 4,
-      "min_base_avg": 107500,
-      "max_base_avg": 133750,
-      "median": 120000
+    "San Francisco": {
+      "count": 50,
+      "min_base_avg": 184146,
+      "max_base_avg": 257433,
+      "median": 175000
     },
     "Boston": {
-      "count": 9,
-      "min_base_avg": 85588,
-      "max_base_avg": 126939,
-      "median": 86500
+      "count": 10,
+      "min_base_avg": 102788,
+      "max_base_avg": 153059,
+      "median": 94000
+    },
+    "Los Angeles": {
+      "count": 52,
+      "min_base_avg": 124331,
+      "max_base_avg": 171942,
+      "median": 114628
+    },
+    "Washington DC": {
+      "count": 12,
+      "min_base_avg": 108384,
+      "max_base_avg": 131908,
+      "median": 125000
+    },
+    "Chicago": {
+      "count": 21,
+      "min_base_avg": 129225,
+      "max_base_avg": 176142,
+      "median": 120000
+    },
+    "Denver": {
+      "count": 6,
+      "min_base_avg": 100783,
+      "max_base_avg": 126605,
+      "median": 91000
     },
     "Seattle": {
-      "count": 16,
-      "min_base_avg": 139567,
-      "max_base_avg": 224953,
-      "median": 139500
+      "count": 14,
+      "min_base_avg": 141166,
+      "max_base_avg": 204689,
+      "median": 143700
+    },
+    "Miami": {
+      "count": 5,
+      "min_base_avg": 126500,
+      "max_base_avg": 250580,
+      "median": 137500
+    },
+    "Austin": {
+      "count": 3,
+      "min_base_avg": 241666,
+      "max_base_avg": 284666,
+      "median": 240000
     }
   },
   "by_remote": {
-    "remote": {
-      "count": 142,
-      "min_base_avg": 115048,
-      "max_base_avg": 199740,
-      "median": 105000
-    },
     "onsite": {
-      "count": 609,
-      "min_base_avg": 125729,
-      "max_base_avg": 178055,
+      "count": 665,
+      "min_base_avg": 127022,
+      "max_base_avg": 176709,
       "median": 120000
+    },
+    "remote": {
+      "count": 136,
+      "min_base_avg": 111317,
+      "max_base_avg": 195636,
+      "median": 96420
     }
   },
   "top_paying_roles": [
-    {
-      "title": "Strategic Partnership Opportunity for Real Estate & Financial Professionals (Value-Added Service)",
-      "company": "Holliday Enterprises LLC",
-      "salary_min": 166400.0,
-      "salary_max": 2179840.0,
-      "seniority": "Mid"
-    },
     {
       "title": "Strategic Partnership Opportunity – Insurance & Employee Benefits Professionals (US and Canada)",
       "company": "Holliday Enterprises LLC",
@@ -152,10 +145,17 @@
       "seniority": "Mid"
     },
     {
-      "title": "Manager, Business Development & Partnerships (Battery Chargers) - Remote Based",
-      "company": "Delta-Q Technologies",
-      "salary_min": 150000.0,
-      "salary_max": 1700000.0,
+      "title": "Strategic Partnership Opportunity for Real Estate & Financial Professionals (Value-Added Service)",
+      "company": "Holliday Enterprises LLC",
+      "salary_min": 166400.0,
+      "salary_max": 2179840.0,
+      "seniority": "Mid"
+    },
+    {
+      "title": "Channel Manager",
+      "company": "Service Champions Plumbing, Heating and A/C",
+      "salary_min": 200000.0,
+      "salary_max": 500000.0,
       "seniority": "Mid"
     },
     {
@@ -164,13 +164,6 @@
       "salary_min": 200000.0,
       "salary_max": 500000.0,
       "seniority": "Mid"
-    },
-    {
-      "title": "Director of Healthcare Sales & Partnerships",
-      "company": "Alethian",
-      "salary_min": 150000.0,
-      "salary_max": 500000.0,
-      "seniority": "Director"
     },
     {
       "title": "Leadership Development – Remote Partnership / Fractional",
@@ -206,6 +199,13 @@
       "salary_min": 380000.0,
       "salary_max": 460000.0,
       "seniority": "SVP"
+    },
+    {
+      "title": "Head of Growth Partnerships",
+      "company": "OpenAI",
+      "salary_min": 370000.0,
+      "salary_max": 445000.0,
+      "seniority": "Head of"
     }
   ]
 }
