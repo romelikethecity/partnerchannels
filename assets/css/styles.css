@@ -742,3 +742,200 @@ body.page-home .main-content {
 .content-sources ul { list-style: none; padding: 0; margin: 0; }
 .content-sources li { margin-bottom: 0.5rem; }
 .content-sources a { text-decoration: underline; }
+
+/* ---------- Insight cards (insights hub) ---------- */
+.insight-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    gap: 1.5rem;
+    margin: 2.5rem 0 3rem;
+}
+.insight-card {
+    display: flex;
+    flex-direction: column;
+    background: var(--pc-bg-surface);
+    border: 1px solid var(--pc-border-strong);
+    border-radius: 16px;
+    padding: 1.75rem;
+    text-decoration: none;
+    color: var(--pc-text-primary);
+    transition: all 0.2s var(--pc-ease);
+    min-height: 260px;
+}
+.insight-card:hover {
+    border-color: var(--pc-accent);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3);
+    transform: translateY(-4px);
+    color: var(--pc-text-primary);
+}
+.insight-card-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 1rem;
+}
+.insight-card-category {
+    color: var(--pc-accent);
+    font-weight: var(--pc-weight-semibold);
+}
+.insight-card-date {
+    color: var(--pc-text-secondary);
+    opacity: 0.7;
+}
+.insight-card-title {
+    font-size: 1.25rem;
+    font-weight: var(--pc-weight-bold);
+    margin: 0 0 0.75rem 0;
+    line-height: 1.3;
+}
+.insight-card-summary {
+    color: var(--pc-text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.55;
+    margin-bottom: auto;
+    padding-bottom: 1.25rem;
+}
+.insight-card-link {
+    font-weight: var(--pc-weight-semibold);
+    color: var(--pc-accent);
+    font-size: var(--pc-text-sm);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: gap 0.2s var(--pc-ease), color 0.2s var(--pc-ease);
+}
+.insight-card:hover .insight-card-link {
+    gap: 0.75rem;
+    color: var(--pc-accent-hover);
+}
+
+/* ---------- Article page (single insight) ---------- */
+.insight-article {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+}
+.article-header {
+    margin: 2rem 0 2.5rem;
+    padding-bottom: 1.75rem;
+    border-bottom: 1px solid var(--pc-border-subtle);
+}
+.article-meta {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 1rem;
+    color: var(--pc-text-secondary);
+}
+.article-category {
+    color: var(--pc-accent);
+    font-weight: var(--pc-weight-semibold);
+}
+.article-date {
+    opacity: 0.75;
+}
+.insight-article h1 {
+    font-size: 2.5rem;
+    line-height: 1.15;
+    margin: 0 0 1rem 0;
+}
+.article-summary {
+    font-size: 1.2rem;
+    color: var(--pc-text-secondary);
+    line-height: 1.55;
+    margin: 0;
+}
+.article-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 280px;
+    gap: 3rem;
+    align-items: start;
+}
+.article-content {
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+.article-content h2 {
+    font-size: 1.6rem;
+    margin: 2.5rem 0 1rem;
+    line-height: 1.25;
+}
+.article-content h3 {
+    font-size: 1.25rem;
+    margin: 1.75rem 0 0.75rem;
+}
+.article-content p,
+.article-content ul,
+.article-content ol {
+    margin: 0 0 1.1rem 0;
+}
+.article-content ul, .article-content ol {
+    padding-left: 1.5rem;
+}
+.article-content li {
+    margin-bottom: 0.4rem;
+}
+.article-sidebar {
+    position: sticky;
+    top: 1.5rem;
+    background: var(--pc-bg-surface);
+    border: 1px solid var(--pc-border-subtle);
+    border-radius: 14px;
+    padding: 1.5rem;
+}
+.article-sidebar h3 {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin: 0 0 1rem 0;
+    color: var(--pc-text-secondary);
+}
+.article-sidebar-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.article-sidebar-links li {
+    margin-bottom: 0.6rem;
+    font-size: 0.95rem;
+}
+.article-sidebar-links a {
+    color: var(--pc-accent);
+    text-decoration: none;
+}
+.article-sidebar-links a:hover {
+    text-decoration: underline;
+}
+.related-articles {
+    margin: 3rem 0 1.5rem;
+}
+.related-articles h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
+}
+
+@media (max-width: 900px) {
+    .article-layout {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .article-sidebar {
+        position: static;
+        order: 2;
+    }
+    .insight-article h1 {
+        font-size: 1.85rem;
+    }
+    .article-summary {
+        font-size: 1.05rem;
+    }
+    .insight-cards-grid {
+        grid-template-columns: 1fr;
+    }
+}

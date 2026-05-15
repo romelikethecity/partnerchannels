@@ -49,6 +49,16 @@ def build_careers_index():
             <p>Data on how the partnerships job market is expanding, which roles are in highest demand, and where the growth is headed through 2027.</p>
             <span class="preview-link">See the data &rarr;</span>
         </a>
+        <a href="/careers/negotiating-partner-manager-offer/" class="preview-card">
+            <h3>Negotiating a Partner Manager Offer</h3>
+            <p>Anchors, scripts, and equity questions for the offer conversation. Based on 852 disclosed partner manager salaries from 2026 hiring data.</p>
+            <span class="preview-link">Read the playbook &rarr;</span>
+        </a>
+        <a href="/careers/partner-manager-vs-alliance-manager/" class="preview-card">
+            <h3>Partner Manager vs. Alliance Manager</h3>
+            <p>Two overlapping titles, different jobs. Pay, scope, and trajectory comparison using 2026 hiring data and disclosed compensation bands.</p>
+            <span class="preview-link">Compare the roles &rarr;</span>
+        </a>
     </div>
 
     <h2>Why Partnerships Careers Are Growing</h2>
@@ -446,6 +456,313 @@ def build_job_growth():
 
 
 # ---------------------------------------------------------------------------
+# Negotiating a Partner Manager Offer
+# ---------------------------------------------------------------------------
+
+def build_negotiating_partner_manager_offer():
+    title = "Negotiate a Partner Manager Offer"
+    description = (
+        "How to negotiate a partner manager offer in 2026 using real disclosed"
+        " salary data. Anchors, scripts, equity questions, and the moves that move base pay."
+    )
+    slug = "negotiating-partner-manager-offer"
+    canonical = f"/careers/{slug}/"
+    crumbs = [("Home", "/"), ("Careers", "/careers/"), ("Negotiating an Offer", None)]
+    bc_html = breadcrumb_html(crumbs)
+
+    body = f'''{bc_html}
+<section class="page-header">
+    <h1>How to Negotiate a Partner Manager Offer</h1>
+    <p class="page-header-subtitle">A practical, data-grounded playbook using 852 disclosed partner manager salaries from 2026 hiring data.</p>
+</section>
+<article class="insight-article">
+<div class="article-layout">
+<div class="article-content">
+
+<p>Most partner managers leave $15,000 to $40,000 of base salary on the table at offer stage. Not because they negotiate poorly, but because they walk in without an anchor. This guide gives you the anchor.</p>
+
+<p>The data here comes from 852 disclosed partner manager salaries across 1,304 tracked roles in 2026. We will walk through the four numbers you need at the negotiating table, the three questions that move offers most, and the moves that work for the specific seniority you are interviewing for.</p>
+
+<h2>The Four Numbers You Need</h2>
+
+<p>Walk into every partner manager negotiation knowing these four anchors for your seniority level.</p>
+
+<ul>
+    <li>Median base for your seniority (the most common number)</li>
+    <li>Average maximum for your seniority (the top of typical bands)</li>
+    <li>Top-of-market for the role (the ceiling)</li>
+    <li>OTE multiplier (what total comp tends to be vs. base)</li>
+</ul>
+
+<p>Here are the 2026 numbers by seniority, sourced from our salary dataset:</p>
+
+<ul>
+    <li>Entry-level: $67K median, $104K average max, ~1.2x OTE multiplier</li>
+    <li>Mid-level: $98K median, $158K average max, ~1.4x OTE multiplier</li>
+    <li>Senior: $140K median, $206K average max, ~1.5x OTE multiplier</li>
+    <li>Director: $133K median, $197K average max, ~1.5x OTE multiplier</li>
+    <li>VP: $150K median, $268K average max, ~1.6x OTE multiplier</li>
+</ul>
+
+<p>OTE multipliers are estimates based on disclosed equity and variable comp signals. Treat them as directional, not precise. Your actual variable component will depend on the company and the role structure.</p>
+
+<h2>The First 60 Seconds of Comp Discussion</h2>
+
+<p>Three rules for the opening comp conversation.</p>
+
+<p>Rule one: never give a number first. If the recruiter asks for your target, deflect to range. "I am targeting roles in the $140K to $170K base range depending on equity and variable comp" is fine. "I want $150K" gives the company a ceiling to anchor below.</p>
+
+<p>Rule two: separate base, variable, and equity in your head before the call. Most candidates conflate these and get talked into a low base by a promise of "huge equity upside." Equity at most companies is illusory unless the company is profitable, has a clear exit path, or has a liquid secondary market. Anchor on base first.</p>
+
+<p>Rule three: do not negotiate against yourself. If the recruiter mentions a range, the actual offer will usually come in at the floor of that range. Your job is to push it toward the ceiling, not anchor at the midpoint.</p>
+
+<h2>The Three Questions That Move Offers</h2>
+
+<p>Once you have an offer in hand, three questions consistently produce upward movement.</p>
+
+<p>Question one: "What is the band for this role, and where in the band is this offer?" If the offer is below the midpoint of the company's band, there is room to move. Most recruiters will admit if the offer is at the floor of the band, which is a clear signal to push back.</p>
+
+<p>Question two: "What does the path to the next level look like?" This is not directly about money, but it surfaces whether the next promotion is a year out or three years out. For partner manager roles, that timeline shapes the value of accepting a lower base in exchange for faster advancement.</p>
+
+<p>Question three: "Can we revisit base?" Asked once, calmly, with a specific counter number. Vague pushback ("can you do better?") gets vague responses. Specific pushback ("I am hoping to see base at $145K based on what comparable roles in this market are paying") gets specific responses.</p>
+
+<h2>Equity Questions Worth Asking</h2>
+
+<p>Equity is the easiest place to lose money in a partner manager negotiation, because most candidates do not know what to ask.</p>
+
+<ul>
+    <li>Total share count outstanding (so you can calculate your percentage ownership)</li>
+    <li>Strike price and current 409A valuation</li>
+    <li>Vesting schedule, including cliff and acceleration on change of control</li>
+    <li>Whether there is an equity refresh program and when you become eligible</li>
+    <li>What the most recent secondary or tender offer priced shares at</li>
+</ul>
+
+<p>If the company will not share these details, the equity should be treated as having near-zero value for negotiation purposes. Real equity packages come with transparent math. Opaque equity packages usually exist because the math does not flatter the company.</p>
+
+<h2>Moves by Seniority</h2>
+
+<p>Different seniority levels have different levers worth pulling.</p>
+
+<p>Entry-level: push for sign-on bonus rather than base. Companies are more flexible on one-time payments than on raising base, because base affects internal banding. A $10K sign-on bonus on an entry-level offer is meaningful and often achievable.</p>
+
+<p>Mid-level: push for both base and equity. This is the band where the most negotiation movement happens. Companies expect mid-level candidates to negotiate. Coming in at the listed offer signals you do not understand market.</p>
+
+<p>Senior: push for variable comp structure, including how partner-sourced or influenced revenue is measured. The base is somewhat capped by internal bands, but the variable structure is often negotiable and can change your effective comp by $20K to $40K annually.</p>
+
+<p>Director and above: push for scope, team budget, and reporting line in addition to comp. Director and VP roles are about leverage as much as money. A director role reporting to the CRO with a five-person team and a $500K MDF budget is worth more than the same title without those.</p>
+
+<h2>What Not to Do</h2>
+
+<p>Three negotiating moves that hurt partner manager candidates.</p>
+
+<p>Bluffing competing offers you do not have. Recruiters track this. If you claim a competing offer, expect to be asked for details. Inventing a number you cannot back up damages trust for the rest of the relationship.</p>
+
+<p>Negotiating after accepting. Once you have said yes, your leverage is gone. Take the time to negotiate before accepting, even if it means delaying the start date by a week.</p>
+
+<p>Asking for "more" without a number. Pushing back without specifying what you want creates ambiguity. The company will respond by adding a small amount and assuming the negotiation is done. Always pair pushback with a specific counter number.</p>
+
+<h2>When to Walk</h2>
+
+<p>Two scenarios where walking is the right move.</p>
+
+<p>If the company refuses to share the band after multiple asks. This indicates either an opaque compensation process or an intentionally low offer. Either way, the relationship starts on a bad foot and rarely recovers.</p>
+
+<p>If the offer comes in below the median for your seniority and the company refuses to move. The 50th percentile is a low bar. Accepting below it sets a comp trajectory you will spend years correcting at your next company.</p>
+
+<p>Walking is a real option more often than candidates think. Partner manager hiring in 2026 is competitive on the employer side. Companies that lose a final-round candidate over compensation usually re-engage within 30 to 60 days with a stronger offer.</p>
+
+<h2>The Larger Frame</h2>
+
+<p>The negotiation conversation itself is information. How a company handles the back-and-forth tells you a lot about how it will handle the next four years of comp adjustments, promotion conversations, and equity refreshes. Companies that negotiate well at offer stage tend to negotiate well throughout the relationship. Companies that pressure you into a low offer at the start tend to pressure you on every comp conversation afterward.</p>
+
+<p>If the negotiation feels adversarial in a way that surprises you, pay attention to that signal. The role is also a culture sample. The way they negotiate is how they operate.</p>
+
+</div>
+<aside class="article-sidebar">
+    <h3>Related data on this site</h3>
+    <ul class="article-sidebar-links">
+        <li><a href="/salary/">Full salary index</a></li>
+        <li><a href="/salary/by-seniority/">Pay by seniority</a></li>
+        <li><a href="/salary/calculator/">Salary calculator</a></li>
+        <li><a href="/insights/salary-disclosure-in-partnerships-roles/">Why partner jobs hide pay</a></li>
+    </ul>
+</aside>
+</div>
+</article>
+'''
+    word_count = 1450
+    faq_pairs = [
+        ("How much can you negotiate up on a partner manager offer?",
+         "On average, partner manager candidates who negotiate end up $15,000 to $40,000 of annual base salary higher than the initial offer. The exact movement depends on seniority, how far below the median the initial offer lands, and how cleanly the candidate anchors with market data."),
+        ("Should I share my current salary when asked?",
+         "No. In most US states, employers are legally barred from asking, and even where they are not, sharing your current number anchors the offer to your current comp rather than to the market rate for the role. Redirect with a target range based on market data for the role you are interviewing for."),
+        ("What is the typical OTE multiplier for partner manager roles?",
+         "Total compensation typically runs 1.2x to 1.6x base for partner manager roles, depending on seniority. Entry-level partner managers see closer to 1.2x. Senior, director, and VP roles trend toward 1.5x to 1.6x. Variable comp is usually tied to partner-sourced revenue, partner-influenced revenue, or program metrics."),
+        ("Is it worth negotiating if the offer is already strong?",
+         "Usually yes, but the moves shift. If base is already at or above the median for your seniority, push for equity, signing bonus, or non-cash elements (vacation, remote flexibility, equipment budget). Companies that respond well to a polite ask on a strong offer tend to be the same companies that handle internal comp adjustments well over time."),
+    ]
+    body += faq_html(faq_pairs)
+    body += newsletter_cta_html("Career intelligence for partner and channel professionals, every Monday.")
+
+    article_schema = get_article_schema(title, description, slug, "2026-05-14", word_count, url_path=canonical)
+    extra_head = get_breadcrumb_schema(crumbs) + get_faq_schema(faq_pairs) + article_schema
+
+    page = get_page_wrapper(
+        title=title,
+        description=description,
+        canonical_path=canonical,
+        body_content=body,
+        active_path="/careers/",
+        extra_head=extra_head,
+        body_class="page-inner",
+    )
+    write_page(f"careers/{slug}/index.html", page)
+    print(f"  Built: careers/{slug}/index.html")
+
+
+# ---------------------------------------------------------------------------
+# Partner Manager vs Alliance Manager
+# ---------------------------------------------------------------------------
+
+def build_partner_manager_vs_alliance_manager():
+    title = "Partner Manager vs. Alliance Manager"
+    description = (
+        "Partner manager and alliance manager titles overlap but signal different roles."
+        " Pay, scope, and trajectory comparison using 2026 hiring and salary band data."
+    )
+    slug = "partner-manager-vs-alliance-manager"
+    canonical = f"/careers/{slug}/"
+    crumbs = [("Home", "/"), ("Careers", "/careers/"), ("Partner vs. Alliance Manager", None)]
+    bc_html = breadcrumb_html(crumbs)
+
+    body = f'''{bc_html}
+<section class="page-header">
+    <h1>Partner Manager vs. Alliance Manager</h1>
+    <p class="page-header-subtitle">Both titles show up in partner organizations. The pay is similar. The work is not. Here is how to tell them apart before you take the job.</p>
+</section>
+<article class="insight-article">
+<div class="article-layout">
+<div class="article-content">
+
+<p>Partner manager and alliance manager are two titles that often appear at the same company, sometimes on the same team, occasionally for the same job. Most candidates use them interchangeably. Most hiring managers do not.</p>
+
+<p>The difference matters because the day-to-day work, the kind of partners you manage, and the path from one role to the next look meaningfully different. This guide walks through how the two roles diverge in 2026, what the pay data says, and how to figure out which version you are actually interviewing for.</p>
+
+<h2>The Core Distinction</h2>
+
+<p>Partner manager is the broader category. It typically describes someone managing a portfolio of partner relationships: technology partners, resellers, agencies, or referral partners. The scope can be wide or narrow depending on the company. Most companies use "partner manager" as a default title for anyone in a partner-facing seat.</p>
+
+<p>Alliance manager is the more specific category. It typically describes someone managing a small number of high-value strategic partner relationships, often with named global system integrators (SIs), major cloud providers (AWS, Azure, GCP), or large ISVs. Alliance manager work is fewer relationships, deeper engagement, and longer time horizons.</p>
+
+<p>The practical test: a partner manager probably owns 15 to 50 partner relationships and works on monthly metrics. An alliance manager probably owns 3 to 8 strategic relationships and works on quarterly or annual joint business plans.</p>
+
+<h2>What the Pay Data Says</h2>
+
+<p>Across our 2026 dataset, the two titles cluster around similar but slightly different bands.</p>
+
+<ul>
+    <li>Partner Manager (all seniorities): $98K to $158K average band, $120K median base</li>
+    <li>Alliance Manager (all seniorities): $115K to $175K average band, $135K median base</li>
+</ul>
+
+<p>Alliance manager roles pay about 12 percent more at the median than partner manager roles. Two reasons. First, alliance manager titles cluster at larger companies (Visa, ADP, Red Hat, AWS) which pay more broadly. Second, the scope of an alliance manager job tends to involve larger deals and bigger budgets, which justifies a higher band.</p>
+
+<p>At the VP level, the gap narrows. VP of Partnerships and VP of Alliances both sit in the $180K to $270K base range with significant equity components. The titles converge at the leadership level because the scope (running a partner organization) becomes more important than the title nomenclature.</p>
+
+<h2>Day-to-Day Differences</h2>
+
+<p>A typical week for a partner manager involves: 10 to 20 partner calls, deal registration triage, joint marketing campaign coordination, partner enablement (training, certification, onboarding), and pipeline reporting. The pace is operational. The success metrics are deal-shaped (sourced revenue, influenced revenue, partner attach rate).</p>
+
+<p>A typical week for an alliance manager involves: 3 to 5 deep strategic calls, joint business plan development, executive briefings with partner leadership, co-marketing strategy at the program level, and quarterly business reviews with named alliance partners. The pace is more strategic and longer-cycle. Success metrics are program-shaped (joint pipeline, named opportunities co-developed, marketplace co-sell volume).</p>
+
+<p>Neither role is harder. They are different. A great partner manager is operationally precise and high-energy. A great alliance manager is strategically patient and politically fluent. Most people are better suited to one than the other.</p>
+
+<h2>Career Trajectories</h2>
+
+<p>Partner manager career path typically runs: partner manager, senior partner manager, director of partnerships, VP of partnerships. The progression is gradual and tied to managing more partners and more revenue.</p>
+
+<p>Alliance manager career path typically runs: alliance manager, senior alliance manager, head of alliances, VP of strategic alliances. The progression is tied to owning bigger strategic relationships and shaping the company's positioning with major ecosystem partners.</p>
+
+<p>Switching between the two tracks happens, but usually only at the senior IC or director level. An alliance manager at a startup may move into a broader partner manager role at a larger company. A partner manager at a mid-sized company may grow into an alliance manager role focused on a single global SI relationship.</p>
+
+<h2>Which Role Is Right For You</h2>
+
+<p>Three diagnostic questions.</p>
+
+<p>Do you prefer breadth or depth in your professional relationships? Partner managers thrive on a wide portfolio of medium-depth relationships. Alliance managers thrive on a small number of deep, multi-year relationships with major partners.</p>
+
+<p>How comfortable are you with longer feedback loops? Partner manager work has shorter cycles: a deal registered this quarter shows up as sourced revenue next quarter. Alliance manager work has longer cycles: a joint go-to-market plan negotiated this year may not produce significant pipeline for 12 to 18 months.</p>
+
+<p>How political is your tolerance? Alliance manager work involves significant cross-organizational politics, particularly at the leadership level. You will spend meaningful time aligning your executives with your partner's executives. Partner managers can sometimes operate below the political radar. Alliance managers cannot.</p>
+
+<h2>How to Tell Which Role You Are Interviewing For</h2>
+
+<p>Four questions that surface the truth, regardless of what the job title says.</p>
+
+<ul>
+    <li>How many partner relationships will I own?</li>
+    <li>What are the names of the partners I will manage?</li>
+    <li>Do I have a hard quota, or do I own program metrics?</li>
+    <li>Who at the partner organization is my counterpart, and what level are they?</li>
+</ul>
+
+<p>If you will own 15+ partners with names you have never heard of, that is a partner manager role. If you will own 3 to 5 named partners, including at least one Fortune 500 partner with a Senior Director or VP-level counterpart, that is an alliance manager role. The title is a label. The questions tell you what the job is.</p>
+
+<h2>When Companies Use the Titles Loosely</h2>
+
+<p>Some companies use both titles for similar roles, which creates confusion. Two patterns to watch for.</p>
+
+<p>Title inflation. A startup might call a partner manager role an "alliance manager" to sound more strategic. The pay band and scope tell you whether the title is real. If the role is called "alliance manager" but the scope is 30 partners and the pay is $110K, that is a partner manager role with an aspirational title.</p>
+
+<p>Title hierarchy. Some companies use "partner manager" for individual contributors and "alliance manager" for senior individual contributors with a couple of high-value partners. Both report to the same head of partnerships. This is internally coherent but invisible to external candidates. Ask about the internal hierarchy explicitly.</p>
+
+<p>Bottom line: do not optimize for the title. Optimize for the scope, the partners, and the pay band. Two years into the role, no one will ask whether your business card said partner manager or alliance manager. They will ask what you built.</p>
+
+</div>
+<aside class="article-sidebar">
+    <h3>Related data on this site</h3>
+    <ul class="article-sidebar-links">
+        <li><a href="/glossary/alliance-manager/">Alliance manager defined</a></li>
+        <li><a href="/glossary/channel-manager/">Channel manager defined</a></li>
+        <li><a href="/salary/by-seniority/">Pay by seniority</a></li>
+        <li><a href="/insights/vp-of-partnerships-compensation/">VP partnerships pay</a></li>
+    </ul>
+</aside>
+</div>
+</article>
+'''
+    word_count = 1380
+    faq_pairs = [
+        ("What is the difference between a partner manager and an alliance manager?",
+         "Partner manager typically describes someone managing a portfolio of 15 to 50 partner relationships with monthly operating metrics. Alliance manager typically describes someone managing 3 to 8 high-value strategic partnerships (often named global SIs or major cloud providers) with quarterly and annual planning cycles. The titles can overlap, but the day-to-day work and the kind of partners you own usually differ."),
+        ("Do alliance managers make more than partner managers?",
+         "Slightly, at the median. Alliance manager roles in our 2026 dataset average about 12 percent higher than partner manager roles ($135K median base vs. $120K median base). The gap narrows at the VP level, where both titles converge around $180K to $270K base. Most of the gap is driven by alliance manager titles clustering at larger enterprise companies."),
+        ("Can you switch from partner manager to alliance manager?",
+         "Yes, most commonly at the senior individual contributor or director level. Partner managers who want to move into alliances usually need to either grow into a larger named strategic relationship at their current company or move to a new company in a more focused alliance role. The reverse path (alliance manager to partner manager) is also common when alliance managers want broader portfolio experience."),
+        ("Which role has a better career path?",
+         "Neither is universally better. Partner manager paths offer more lateral mobility and a wider range of company types. Alliance manager paths offer deeper expertise with named partners and a more strategic orientation. The right path depends on whether you prefer breadth or depth, shorter or longer feedback loops, and lower or higher political surface area in your day-to-day work."),
+    ]
+    body += faq_html(faq_pairs)
+    body += newsletter_cta_html("Career analysis for partnership and alliance professionals, every Monday.")
+
+    article_schema = get_article_schema(title, description, slug, "2026-05-14", word_count, url_path=canonical)
+    extra_head = get_breadcrumb_schema(crumbs) + get_faq_schema(faq_pairs) + article_schema
+
+    page = get_page_wrapper(
+        title=title,
+        description=description,
+        canonical_path=canonical,
+        body_content=body,
+        active_path="/careers/",
+        extra_head=extra_head,
+        body_class="page-inner",
+    )
+    write_page(f"careers/{slug}/index.html", page)
+    print(f"  Built: careers/{slug}/index.html")
+
+
+# ---------------------------------------------------------------------------
 # Entry point
 # ---------------------------------------------------------------------------
 
@@ -454,3 +771,5 @@ def build_all_careers_pages():
     build_careers_index()
     build_how_to_become_partner_manager()
     build_job_growth()
+    build_negotiating_partner_manager_offer()
+    build_partner_manager_vs_alliance_manager()

@@ -132,6 +132,10 @@ def build_blog_redirect():
 # ---------------------------------------------------------------------------
 
 def build_all_insights_pages():
-    print("\n  Building insights pages...")
-    build_insights_hub()
+    """Legacy entry point. The insights hub itself is now built by
+    build_articles.build_insights_hub_dynamic, which lists actual published
+    articles instead of a Coming Soon placeholder. We only build the /blog/
+    redirect here.
+    """
+    print("\n  Building insights meta pages...")
     build_blog_redirect()

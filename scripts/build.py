@@ -22,6 +22,7 @@ from build_tools import build_all_tools_pages
 from build_glossary import build_all_glossary_pages
 from build_careers import build_all_careers_pages
 from build_insights import build_all_insights_pages
+from build_articles import build_all_articles
 from build_companies import build_all_company_pages
 from report_pages import build_all_report_pages
 from conferences_pages import build_conferences_index
@@ -682,6 +683,7 @@ def main():
     build_all_glossary_pages()
     build_all_careers_pages()
     build_all_insights_pages()
+    build_all_articles()
 
     build_all_company_pages(PROJECT_DIR)
 
