@@ -20,29 +20,29 @@ ARTICLES = [
     {
         "slug": "state-of-partner-manager-compensation-2026",
         "title": "State of Partner Manager Pay in 2026",
-        "description": "What 852 disclosed partner manager salaries say about the market in 2026: medians by seniority, location premiums, and the gap between base and total comp.",
+        "description": "What 784 disclosed partner manager salaries say about the market in 2026: medians by seniority, location premiums, and the gap between base and total comp.",
         "date_published": "2026-05-14",
         "word_count": 1750,
         "category": "Compensation",
-        "summary": "The median partner manager makes $120,000 in base pay. The top of the market clears $600K. What the spread tells you about where to build a career.",
+        "summary": "The median partner manager makes about $120,000 in base pay. The top of the market clears $500K. What the spread tells you about where to build a career.",
         "body": """
 <p>The partner manager job market in 2026 sits in an awkward middle. Base pay has held up better than direct sales roles. Total comp lags the AE world. And the spread between the bottom and the top is wider than any other quota-carrying role we track.</p>
 
-<p>The median disclosed base for a partner manager in our dataset is $120,000. The 75th percentile is around $158,000. The top of the market, currently a Red Hat VP of Global Cloud Partnerships, posts up to $624,170. That is a 5x ratio between median and ceiling, which is unusually wide for a single function.</p>
+<p>The median disclosed base for a partner manager in our dataset is $119,700. The 75th percentile sits around $160,000. The top of the disclosed range hits $500,000. That is a roughly 4x ratio between median and ceiling, which is unusually wide for a single function.</p>
 
-<p>This piece walks through what 852 disclosed salaries say about partner manager pay in 2026. It also covers what they fail to say, because 35 percent of partner roles we tracked do not disclose salary at all, even in states where they are supposed to.</p>
+<p>This piece walks through what 784 disclosed salaries say about partner manager pay in 2026. It also covers what they fail to say, because 32 percent of partner roles we tracked do not disclose salary at all, even in states where they are supposed to.</p>
 
 <h2>The Baseline: Median, Average, and the Outliers</h2>
 
-<p>Across 1,304 partner and channel roles tracked in our dataset, 852 disclosed a salary band. That gives us a 65.3 percent disclosure rate, lower than direct sales roles and noticeably lower than tech roles overall.</p>
+<p>Across 1,154 partner and channel roles tracked in our dataset, 784 disclosed a salary band. That gives us a 67.9 percent disclosure rate, lower than direct sales roles and noticeably lower than tech roles overall.</p>
 
 <p>Of the disclosing roles:</p>
 
 <ul>
-    <li>Median base: $120,000</li>
-    <li>Average base midpoint: $125,801</li>
-    <li>Bottom of disclosed range: $10,400 (likely a part-time or commission-only role)</li>
-    <li>Top of disclosed range: $624,170 (VP of Global Cloud Partnerships at Red Hat)</li>
+    <li>Median base: $119,700</li>
+    <li>Average base midpoint: $124,930</li>
+    <li>Bottom of disclosed range: under $5,000 (likely part-time or commission-only roles)</li>
+    <li>Top of disclosed range: $500,000</li>
 </ul>
 
 <p>The average sits above the median, which tells us the distribution skews right. A small number of very high-paying roles pull the mean up. For most working partner managers, the median is the more honest number to plan around.</p>
@@ -52,70 +52,58 @@ ARTICLES = [
 <p>Here is where the spread starts to make sense. Partner manager pay tracks closely with seniority once you control for it.</p>
 
 <ul>
-    <li>Entry-level (58 postings): $76K base average, $67K median. Top of range hits $104K.</li>
-    <li>Mid-level (252 postings): $105K base average, $98K median. The largest cohort.</li>
-    <li>Senior (128 postings): $141K base average, $140K median.</li>
-    <li>Director (124 postings): $146K base average, $133K median.</li>
-    <li>VP (50 postings): $178K base average, $150K median. Top of range reaches $268K.</li>
-    <li>SVP (6 postings): $235K base average, $273K median.</li>
-    <li>"Head of" (17 postings): $169K base average, $175K median.</li>
+    <li>Entry-level (55 postings): $73K base average, $65K median. Top of range hits $97K.</li>
+    <li>Mid-level (395 postings): $111K base average, $100K median. The largest cohort by far.</li>
+    <li>Senior (127 postings): $137K base average, $128K median.</li>
+    <li>Director (146 postings): $149K base average, $150K median.</li>
+    <li>VP (35 postings): $170K base average, $159K median. Top of range reaches $223K.</li>
+    <li>SVP (6 postings): $219K base average, $185K median.</li>
+    <li>"Head of" (19 postings): $187K base average, $180K median.</li>
 </ul>
 
-<p>The biggest single-step jump is between mid and senior. Going from $98K median to $140K median is a 43 percent base increase, and it happens at roughly the four-to-six year mark for most partner managers. The next jump, senior to director, is much smaller (about $7K at the median). Director to VP, on the other hand, pushes another $17K of base and adds a meaningful equity expectation.</p>
+<p>The biggest single-step jump is between mid and senior. Going from $100K median to $128K median is a 28 percent base increase, and it happens at roughly the four-to-six year mark for most partner managers. The next jump, senior to director, is meaningful too: another $22K at the median, plus management responsibility. Director to VP nudges base by only about $9K at the median, but adds a much larger equity expectation.</p>
 
-<p>If you are mapping a partner career path, those two jumps (mid to senior, and director to VP) are where the real money lives. Senior IC vs. director is mostly a coin flip on base. What you choose between them is more about management appetite than pay.</p>
+<p>If you are mapping a partner career path, the mid-to-senior step is where you fight hardest for the title and pay. Senior to director rewards the move into people management. Director to VP rewards scope and equity, not base alone.</p>
 
 <h2>Pay by Metro</h2>
 
 <p>Location still matters more than companies like to admit. The metros with the highest median partner manager pay in our dataset:</p>
 
 <ul>
-    <li>San Francisco (33 postings): $166K median base</li>
-    <li>Austin (15 postings): $135K median base</li>
-    <li>Boston (17 postings): $130K median base</li>
-    <li>New York (209 postings): $128K median base</li>
-    <li>Washington DC (25 postings): $125K median base</li>
-    <li>Los Angeles (92 postings): $120K median base</li>
-    <li>Seattle (21 postings): $118K median base</li>
-    <li>Denver (10 postings): $116K median base</li>
-    <li>Chicago (26 postings): $107K median base</li>
-    <li>Miami (5 postings): $90K median base</li>
+    <li>San Francisco (53 postings): $169K median base</li>
+    <li>Austin (5 postings): $161K median base (small sample, treat carefully)</li>
+    <li>Seattle (16 postings): $144K median base</li>
+    <li>New York (223 postings): $130K median base</li>
+    <li>Los Angeles (45 postings): $120K median base</li>
+    <li>Chicago (21 postings): $115K median base</li>
+    <li>Washington DC (8 postings): $112K median base</li>
+    <li>Boston (8 postings): $96K median base (small sample)</li>
+    <li>Denver (6 postings): $90K median base (small sample)</li>
+    <li>Miami (5 postings): $79K median base (small sample)</li>
 </ul>
 
-<p>San Francisco still pays a meaningful premium for partner roles, around 38 percent above the national median. New York is the biggest market by volume (209 postings out of the 852 disclosed) and pays close to the broader median. Miami is the outlier on the low end, and the small sample size means we would not bet a career on that number.</p>
+<p>San Francisco still pays a meaningful premium for partner roles, around 41 percent above the national median. New York is the biggest market by volume (223 postings out of the 784 disclosed) and pays close to the broader median. Seattle has climbed noticeably as Microsoft, Amazon, and AWS-adjacent partner teams expand. Miami sits at the low end, but the small sample size means we would not bet a career on that number.</p>
 
-<p>Worth flagging: 397 of the 852 disclosed roles do not have a clearly identifiable metro, which means a lot of "remote anywhere" or unclassified geography. That bucket has a $113K median base, slightly below the geo-anchored national median.</p>
+<p>Worth flagging: 394 of the 784 disclosed roles do not have a clearly identifiable metro, which means a lot of "remote anywhere" or unclassified geography. That bucket has a $100K median base, below the geo-anchored national median, which reflects the discount remote partner roles tend to take.</p>
 
 <h2>Remote vs. Onsite</h2>
 
 <p>Onsite roles pay more. Not by a huge margin, but enough to plan around.</p>
 
 <ul>
-    <li>Onsite roles (737 postings): $127K base average, $120K median</li>
-    <li>Remote roles (115 postings): $119K base average, $115K median</li>
+    <li>Onsite roles (664 postings): $128K base average, $120K median</li>
+    <li>Remote roles (120 postings): $109K base average, $90K median</li>
 </ul>
 
-<p>That is roughly a 4 to 5 percent base difference. The gap is smaller than what we see in direct sales roles, where onsite premium can run 8 to 12 percent. Partner managers spend significant time on the road meeting partners regardless of where they live, so companies have fewer arguments for paying onsite people more. The remaining gap reflects the location premium of the metros (SF, NYC, Boston) where most onsite roles still cluster.</p>
+<p>The gap widened in the latest snapshot. Onsite roles now pay about a 33 percent premium at the median, larger than any prior snapshot we have tracked. Two forces are moving this. Onsite partner roles increasingly cluster in the highest-paying metros (SF, NYC, Seattle), pulling up the onsite median. Remote partner roles are skewing toward smaller companies and earlier-stage programs, pulling down the remote median. If you are negotiating a remote partner role at a large company, anchor on the onsite band for your metro, not the national remote median.</p>
 
-<h2>The Top 10</h2>
+<h2>The Top End of the Market</h2>
 
-<p>The highest-paying partner roles in our dataset, by maximum disclosed salary, look like this:</p>
+<p>The highest-paying partner roles in our 2026 dataset cluster around three industries: payments and fintech (Adobe, SAP, established financial services partner teams), healthcare and care-platform leadership (Pomelo Care and similar), and ecosystem leadership at platform companies. Roles at the top of the band include VP-level positions at Pomelo Care ($420K to $440K), Adobe agency partner sales leadership (mid-$200Ks to mid-$400Ks), and SAP seller partner manager seats ($194K to $412K). The disclosed maximum across the dataset is $500,000.</p>
 
-<ol>
-    <li>Vice President, Global Cloud Partnerships, Red Hat: $367K to $624K</li>
-    <li>Senior Director, Strategic Partnerships (Visa Commercial Solutions, NA), Visa: $305K to $534K</li>
-    <li>Senior Director, NA Head of Business Development, B2B Fintech Partnerships, Visa: $305K to $534K</li>
-    <li>VP US Agency Partnerships, Teads: $300K to $500K</li>
-    <li>Vice President, Partner Ecosystem, Perforce Software: $225K to $500K</li>
-    <li>Product Design Director, Creator Ecosystem, Roblox: $432K to $493K</li>
-    <li>SVP, Global SI Partnerships and Alliances, ADP: $273K to $458K</li>
-    <li>Vice President, U.S. Retail Merchant Partnerships, Visa: $219K to $452K</li>
-    <li>Director of Strategic Partnerships and Alliances, vCluster Labs: $380K to $420K</li>
-</ol>
+<p>Two patterns are worth flagging. First, the absolute top of the market is volatile. The $500K ceiling in this snapshot was higher in earlier snapshots and may go higher or lower in the next refresh. The shape of the top end (payments, healthcare partner leadership, platform ecosystem) is more stable than the specific roles.</p>
 
-<p>Two patterns to notice. First, payments and fintech (Visa, ADP) dominate the top of the list. Visa alone has three roles in the top eight. Partnerships work that involves moving real dollars between counterparties commands a premium that pure SaaS partner roles do not match.</p>
-
-<p>Second, the word "ecosystem" shows up more often than "channel" at the top end. The highest-paid partner roles are increasingly framed as ecosystem leadership rather than traditional channel sales management. That language shift matters for how you position your own background when you go to market.</p>
+<p>Second, the word "ecosystem" continues to show up at the top of the market more often than "channel." The highest-paid partner roles are increasingly framed as ecosystem leadership rather than traditional channel sales management. That language shift matters for how you position your own background when you go to market.</p>
 
 <h2>What Is Not in the Data</h2>
 
@@ -123,7 +111,7 @@ ARTICLES = [
 
 <p>First, these are base salary midpoints. Total comp for partner roles often includes a 30 to 50 percent variable component, plus equity at venture-backed companies. The Visa and Red Hat numbers above include OTE in many cases, but most of the dataset is base only. A $120K median base for a mid-level partner manager typically maps to $160K to $200K OTE.</p>
 
-<p>Second, 65.3 percent disclosure is low. Several large markets (notably California, Colorado, and New York) require salary disclosure in postings, but the requirement is patchily enforced and exemptions are common. The 35 percent of roles with no disclosed band skew enterprise and senior, which means the true median is probably a touch higher than $120K.</p>
+<p>Second, 67.9 percent disclosure is low. Several large markets (notably California, Colorado, and New York) require salary disclosure in postings, but the requirement is patchily enforced and exemptions are common. The 32 percent of roles with no disclosed band skew enterprise and senior, which means the true median is probably a touch higher than $120K.</p>
 
 <p>Third, this is a snapshot of postings, not a longitudinal study of comp progression. We track what companies offer for new hires. Internal promotion raises, retention adjustments, and exit packages do not appear here. If you have been in the same partner manager seat for three years, your comp may have drifted away from market in either direction.</p>
 
@@ -133,7 +121,7 @@ ARTICLES = [
 
 <p>One: the mid-to-senior jump is your biggest leverage point. If a company is hiring you as a senior IC and offering you a mid-level band, push back with the data. The $42K median gap is real.</p>
 
-<p>Two: if the role does not disclose a band, ask early. Not at offer stage, at first call. Companies that hide bands tend to anchor low. The 35 percent of postings that hide pay are a flag worth investigating before you spend hours in the interview loop.</p>
+<p>Two: if the role does not disclose a band, ask early. Not at offer stage, at first call. Companies that hide bands tend to anchor low. The 32 percent of postings that hide pay are a flag worth investigating before you spend hours in the interview loop.</p>
 
 <p>Three: VP-level partner roles are increasingly ecosystem-shaped. If your background is traditional channel sales (deal registration, partner tiering, MDF), and you want to move up, you need a thesis on how ecosystem strategy connects to revenue. Without it, you cap out around senior director.</p>
 
@@ -141,9 +129,9 @@ ARTICLES = [
 """,
         "faq": [
             ("What is the median partner manager salary in 2026?",
-             "The median disclosed base salary for partner manager roles in 2026 is $120,000. That figure is based on 852 disclosed salaries across 1,304 tracked roles. Total compensation, including variable pay and equity, typically runs 30 to 50 percent higher than base for these roles."),
+             "The median disclosed base salary for partner manager roles in 2026 is $120,000. That figure is based on 784 disclosed salaries across 1,154 tracked roles. Total compensation, including variable pay and equity, typically runs 30 to 50 percent higher than base for these roles."),
             ("Why do so many partner manager jobs hide salary?",
-             "Roughly 35 percent of partner manager postings in our dataset do not disclose a salary band, even in states like California, Colorado, and New York that require disclosure. The pattern is more common at enterprise companies and at the senior end of the market, where companies have more flexibility to negotiate and prefer not to set anchors publicly."),
+             "Roughly 32 percent of partner manager postings in our dataset do not disclose a salary band, even in states like California, Colorado, and New York that require disclosure. The pattern is more common at enterprise companies and at the senior end of the market, where companies have more flexibility to negotiate and prefer not to set anchors publicly."),
             ("Which metro pays partner managers the most?",
              "San Francisco leads with a $166,000 median base, about 38 percent above the national median. Austin, Boston, and New York follow in the $128,000 to $135,000 range. Chicago and Miami sit below the national median."),
             ("What is the biggest pay jump in a partner manager career?",
@@ -159,8 +147,8 @@ ARTICLES = [
     },
     {
         "slug": "prm-adoption-channel-tool-stack",
-        "title": "PRM Adoption Across 1,304 Job Postings",
-        "description": "Which PRM, co-selling, and partner tools show up in 1,304 partner manager job postings. Salesforce dominates. PartnerStack barely registers. AI is creeping in.",
+        "title": "PRM Adoption Across 1,154 Job Postings",
+        "description": "Which PRM, co-selling, and partner tools show up in 1,154 partner manager job postings. Salesforce dominates. PartnerStack barely registers. AI is creeping in.",
         "date_published": "2026-05-14",
         "word_count": 1650,
         "category": "Tools",
@@ -168,34 +156,33 @@ ARTICLES = [
         "body": """
 <p>The simplest way to figure out which tools partner organizations actually use is to read the job descriptions of the people they are hiring to use them. Vendor case studies are marketing. Analyst reports are paid placement. Job descriptions are what hiring managers admit they need.</p>
 
-<p>We pulled tool mentions from 1,304 partner manager job postings tracked in our dataset between February and May 2026. The pattern is not what the PRM category positioning would have you expect.</p>
+<p>We pulled tool mentions from 1,154 partner manager job postings tracked in our dataset between February and May 2026. The pattern is not what the PRM category positioning would have you expect.</p>
 
 <h2>The Headline Numbers</h2>
 
 <p>The most-mentioned tools across partner manager postings, ranked by appearance count:</p>
 
 <ul>
-    <li>Salesforce: 265 mentions</li>
-    <li>AWS: 270 mentions (skewed by cloud partner roles)</li>
-    <li>Tableau: 42 mentions</li>
-    <li>HubSpot: 38 mentions</li>
-    <li>Anthropic / Claude / OpenAI / Gemini / Cohere (combined AI vendors): 63 mentions</li>
-    <li>GCP: 30 mentions</li>
-    <li>Azure: 29 mentions</li>
-    <li>Power BI: 20 mentions</li>
-    <li>LinkedIn Sales Navigator: 8 mentions</li>
-    <li>Looker: 6 mentions</li>
-    <li>G2: 6 mentions</li>
-    <li>ZoomInfo: 6 mentions</li>
-    <li>Apollo: 5 mentions</li>
-    <li>Marketo: 5 mentions</li>
-    <li>PartnerStack: 4 mentions</li>
-    <li>Gong: 3 mentions</li>
-    <li>Clay: 2 mentions</li>
-    <li>Crossbeam: 2 mentions</li>
+    <li>Salesforce: 170 mentions</li>
+    <li>AWS: 44 mentions</li>
+    <li>HubSpot: 43 mentions</li>
+    <li>GCP: 29 mentions</li>
+    <li>Power BI: 27 mentions</li>
+    <li>Tableau: 25 mentions</li>
+    <li>Azure: 19 mentions</li>
+    <li>Claude: 18 mentions</li>
+    <li>Catalyst: 17 mentions</li>
+    <li>OpenAI: 13 mentions</li>
+    <li>Anthropic: 10 mentions</li>
+    <li>Marketo: 9 mentions</li>
+    <li>Looker: 9 mentions</li>
+    <li>Gemini: 8 mentions</li>
+    <li>6Sense: 6 mentions</li>
+    <li>Instantly: 5 mentions</li>
+    <li>PartnerStack and Crossbeam: each below 5 mentions, falling outside the top 20</li>
 </ul>
 
-<p>The pattern is striking. Generic CRM and cloud platforms (Salesforce, AWS, GCP, Azure) dominate. Dedicated PRM platforms barely register. PartnerStack, the most-mentioned named PRM tool in the dataset, appears in only 4 postings out of 1,304. Crossbeam, the leading partner co-sell platform, appears in 2.</p>
+<p>The pattern is striking. Generic CRM and cloud platforms (Salesforce, AWS, HubSpot, GCP, Azure) dominate. Dedicated PRM platforms barely register. PartnerStack and Crossbeam, the most-recognized named PRM and co-sell tools in the partnerships world, both fall outside the top 20 most-mentioned tools in 1,154 partner manager job postings.</p>
 
 <h2>Why PRM Tools Are Almost Invisible</h2>
 
@@ -211,7 +198,7 @@ ARTICLES = [
 
 <h2>The Salesforce Reality</h2>
 
-<p>Salesforce shows up in 265 postings out of 1,304. That is 20 percent of the dataset. For comparison, HubSpot appears in 38 postings, or about 3 percent. Salesforce is overwhelmingly the CRM partner managers work in, particularly at companies large enough to have a dedicated partner function.</p>
+<p>Salesforce shows up in 170 postings out of 1,154. That is roughly 15 percent of the dataset, and four times the share of any other named tool. For comparison, HubSpot appears in 43 postings, or about 4 percent. Salesforce is overwhelmingly the CRM partner managers work in, particularly at companies large enough to have a dedicated partner function.</p>
 
 <p>This shapes the practical tool stack of the working partner manager. Most of what you log lives in Salesforce. Deal registration flows through a Salesforce object. Pipeline reports come from Salesforce dashboards or a Tableau layer on top. The PRM, if one exists, is the thing partners log in to. Salesforce is the thing you live in.</p>
 
@@ -222,19 +209,17 @@ ARTICLES = [
 <p>This is the most interesting data point in the set. AI vendor names that did not appear in partner manager job descriptions a year ago are now showing up at meaningful volume.</p>
 
 <ul>
-    <li>Anthropic: 35 mentions</li>
-    <li>OpenAI: 9 mentions</li>
-    <li>Cohere: 8 mentions</li>
-    <li>Gemini: 7 mentions</li>
-    <li>Claude: 4 mentions</li>
-    <li>Vertex AI: 2 mentions</li>
-    <li>Bedrock: 2 mentions</li>
-    <li>Chroma: 2 mentions</li>
+    <li>Claude: 18 mentions</li>
+    <li>OpenAI: 13 mentions</li>
+    <li>Anthropic: 10 mentions</li>
+    <li>Gemini: 8 mentions</li>
+    <li>RAG (as a technical skill): 8 mentions</li>
+    <li>Other named AI tools and platforms (Vertex AI, Bedrock, Chroma, Cohere, etc.): each under 5 mentions</li>
 </ul>
 
-<p>Combined, that is 69 mentions of named AI vendors across the dataset. Roughly 5 percent of all partner manager job postings now name an AI vendor as a relevant skill, tool, or partner. A year ago, the number was effectively zero.</p>
+<p>Combined, that is roughly 60 mentions of named AI vendors and AI-specific skills across the dataset. About 5 percent of all partner manager job postings now name an AI vendor or AI capability as a relevant skill, tool, or partner. A year ago, the number was effectively zero.</p>
 
-<p>Two patterns are driving this. One: the AI labs (Anthropic, OpenAI, Cohere) are building partner programs, and the people they are hiring are explicitly partner managers. Anthropic has 35 mentions across the dataset, which is more than HubSpot. Two: traditional B2B SaaS companies are hiring partner managers who can speak about LLM integrations and AI vendor relationships as part of the role.</p>
+<p>Two patterns are driving this. One: the AI labs (Anthropic, OpenAI) are building partner programs, and the people they are hiring are explicitly partner managers. Claude as a tool reference (18 mentions) now appears more often than Tableau (25), which would have been unimaginable in 2024. Two: traditional B2B SaaS companies are hiring partner managers who can speak about LLM integrations and AI vendor relationships as part of the role.</p>
 
 <p>For working partner managers, this is the signal worth tracking. The category boundary between "partner manager" and "AI partnerships specialist" is breaking down. Roles that fluently bridge both areas command a premium.</p>
 
@@ -243,13 +228,13 @@ ARTICLES = [
 <p>The other category that should be more present in the data than it is: co-sell and marketplace tooling.</p>
 
 <ul>
-    <li>Crossbeam: 2 mentions</li>
-    <li>PartnerStack: 4 mentions</li>
-    <li>Aligned: 4 mentions</li>
-    <li>Reveal (account mapping): 0 detected mentions</li>
+    <li>Crossbeam: under 5 mentions</li>
+    <li>PartnerStack: under 5 mentions</li>
+    <li>Reveal (account mapping): not detected in the top 20 tools</li>
+    <li>6Sense (account intent): 6 mentions</li>
 </ul>
 
-<p>The named co-sell tools account for fewer than 1 percent of mentions. Some of this is the same Partner Ops dynamic from above. Some of it reflects how new this category is. Crossbeam has been a known name in the partnerships community for years, but it has only recently graduated into job descriptions as a named requirement.</p>
+<p>The named co-sell tools account for fewer than 1 percent of mentions. Some of this is the same Partner Ops dynamic from above. Some of it reflects how new this category is. Crossbeam has been a known name in the partnerships community for years, but it has only recently graduated into job descriptions as a named requirement. 6Sense, an account-intent platform that increasingly shows up in partner-adjacent workflows, is starting to appear at a higher rate than the dedicated co-sell tools.</p>
 
 <p>If you are interviewing for a co-selling-heavy role, the absence of named tooling in the JD is not necessarily a red flag. It often means the team is still establishing the motion and has not standardized on a platform yet. Ask which tool they use to overlap accounts with partners. The answer (often "we send a CSV") tells you a lot about program maturity.</p>
 
@@ -265,15 +250,15 @@ ARTICLES = [
 
 <h2>How We Pulled This</h2>
 
-<p>The tool counts are derived from named-entity extraction on 1,304 partner manager and channel sales job descriptions tracked between February and May 2026. We match against an explicit vendor list (PRM vendors, CRM vendors, AI labs, co-sell platforms, marketplaces) and only count exact name mentions. Generic phrasing like "partner relationship management" without a vendor name is not counted.</p>
+<p>The tool counts are derived from named-entity extraction on 1,154 partner manager and channel sales job descriptions tracked through May 2026. We match against an explicit vendor list (PRM vendors, CRM vendors, AI labs, co-sell platforms, marketplaces) and only count exact name mentions. Generic phrasing like "partner relationship management" without a vendor name is not counted.</p>
 
-<p>One known limitation: AWS and Rust both show inflated counts because cloud partner roles often list AWS as a partner ecosystem (not a tool the PM uses), and Rust is a language tag that bleeds in from a small number of technical partner roles. Salesforce, HubSpot, and the AI vendor counts are clean.</p>
+<p>One known limitation: AWS counts can be inflated because cloud partner roles often list AWS as a partner ecosystem rather than as a tool the partner manager uses. Salesforce, HubSpot, and the AI vendor counts are clean.</p>
 
 <p>We refresh this analysis monthly. The next refresh will look at how the AI vendor mention rate is changing month over month.</p>
 """,
         "faq": [
             ("Which CRM do most partner managers use?",
-             "Salesforce is the dominant CRM for partner managers in 2026, appearing in 265 of 1,304 tracked job postings (about 20 percent). HubSpot is a distant second at 38 postings (3 percent). At companies large enough to have a dedicated partner function, Salesforce is effectively the default."),
+             "Salesforce is the dominant CRM for partner managers in 2026, appearing in 170 of 1,154 tracked job postings (about 15 percent). HubSpot is a distant second at 43 postings (4 percent). At companies large enough to have a dedicated partner function, Salesforce is effectively the default."),
             ("Why do PRM platforms rarely show up in partner manager job descriptions?",
              "Three reasons: PRM is usually purchased and configured by Partner Operations rather than the partner manager, hiring managers often use generic phrasing like 'PRM experience' instead of naming a specific platform, and many smaller partner programs do not run a dedicated PRM at all (they manage in Salesforce plus shared drives)."),
             ("Are AI partnerships a real specialization now?",
@@ -291,31 +276,31 @@ ARTICLES = [
     },
     {
         "slug": "vp-of-partnerships-compensation",
-        "title": "VP of Partnerships Pay: 50 Postings",
-        "description": "VP of partnerships base salaries from 50 disclosed 2026 postings: $150K median, $268K at the top of band, and what the SF premium looks like in this role.",
+        "title": "VP of Partnerships Pay: 35 Postings",
+        "description": "VP of partnerships base salaries from 35 disclosed 2026 postings: $159K median, $223K at the top of band, and what the SF premium looks like in this role.",
         "date_published": "2026-05-14",
         "word_count": 1500,
         "category": "Compensation",
-        "summary": "The VP of partnerships role has the widest pay spread of any function we track. Here is what 50 disclosed postings show, and where the variance lives.",
+        "summary": "The VP of partnerships role has the widest pay spread of any function we track. Here is what 35 disclosed postings show, and where the variance lives.",
         "body": """
 <p>The VP of partnerships title hides more about a role than it reveals. It can mean a person managing a team of 40 partner managers at a public company. It can also mean a first GTM hire at a Series A startup with no team and no budget. The pay reflects that ambiguity.</p>
 
-<p>Across 50 disclosed VP of partnerships and VP of channels postings tracked in our 2026 dataset, the median base is $150,000. The mean is $178,000. The top of the disclosed range, a VP of Global Cloud Partnerships at Red Hat, hits $624,170. The spread from median to top is roughly 4x, which is wider than any other VP-level GTM function we track.</p>
+<p>Across 35 disclosed VP of partnerships and VP of channels postings tracked in our 2026 dataset, the median base is $159,300. The mean is $170,000. The top of the disclosed VP band reaches $223,000 as an average maximum, and individual VP-level partnership postings in the broader dataset clear $440,000 in cases like Pomelo Care's VP of Commercial Partnerships. The spread from median to typical ceiling is roughly 2.5x at the VP band, and widens to 3x once you include the outlier roles.</p>
 
 <p>This piece walks through the spread, what drives it, and how to read a VP of partnerships posting before you accept the interview.</p>
 
 <h2>The Numbers</h2>
 
-<p>Of 50 disclosed VP of partnerships postings in our dataset:</p>
+<p>Of 35 disclosed VP of partnerships postings in our dataset:</p>
 
 <ul>
-    <li>Median base: $150,000</li>
-    <li>Average minimum: $177,631</li>
-    <li>Average maximum: $268,097</li>
-    <li>Top of disclosed range: $624,170 (Red Hat)</li>
+    <li>Median base: $159,300</li>
+    <li>Average minimum: $169,861</li>
+    <li>Average maximum: $223,304</li>
+    <li>Top of dataset-wide partnerships range: $500,000 (highest disclosed across all seniorities)</li>
 </ul>
 
-<p>The average minimum and average maximum tell you what a typical VP role posts as a band: roughly $178K floor, $268K ceiling. The median sits closer to the floor than the ceiling, which means the distribution is right-skewed. A small number of very senior VP roles drag the average up. The typical VP is closer to $150K base than to $200K.</p>
+<p>The average minimum and average maximum tell you what a typical VP role posts as a band: roughly $170K floor, $223K ceiling. The median sits between the floor and the ceiling. The typical VP role lands closer to $160K base than to $200K. A small number of outlier VP roles at the top of the broader partnership market (Pomelo Care, Adobe, SAP) push into the $400K-plus range, but these are exceptions, not the typical VP package.</p>
 
 <h2>What Drives the Spread</h2>
 
@@ -325,20 +310,13 @@ ARTICLES = [
 
 <p>Two: program scope. Some VP of partnerships roles cover only technology partnerships (ISVs, integrations, marketplaces). Others cover the full channel motion (resellers, MSPs, agencies, SIs). Full-stack VP roles pay more because the operational and political surface area is larger.</p>
 
-<p>Three: ecosystem authority. The highest-paid VP of partnerships roles in our dataset (Red Hat, Visa, Teads, Perforce) are ecosystem leaders, not channel leaders. The job is to own a category-defining ecosystem that other companies plug into. That is a different shape of role than running a reseller program, and the pay reflects it.</p>
+<p>Three: ecosystem authority. The highest-paid VP of partnerships roles in our 2026 dataset (Pomelo Care, Adobe, SAP at the top end) are ecosystem and platform leaders, not pure channel leaders. The job is to own a category-defining ecosystem that other companies plug into. That is a different shape of role than running a reseller program, and the pay reflects it.</p>
 
-<h2>The Top Roles</h2>
+<h2>Where the Top VP Roles Cluster</h2>
 
-<p>The highest-paying VP of partnerships postings in our 2026 data:</p>
+<p>The highest-paying VP of partnerships postings in our 2026 data sit in three categories. Healthcare and care-platform leadership (Pomelo Care's VP of Commercial Partnerships at $420K to $440K is a recent example). Platform ecosystem leadership at large software companies (Adobe agency partner sales leadership, SAP seller partner manager roles). And traditional enterprise channel leadership at established companies, where the median VP base sits in the $170K to $200K range.</p>
 
-<ol>
-    <li>Vice President, Global Cloud Partnerships, Red Hat: $367K to $624K</li>
-    <li>VP US Agency Partnerships, Teads: $300K to $500K</li>
-    <li>Vice President, Partner Ecosystem, Perforce Software: $225K to $500K</li>
-    <li>Vice President, U.S. Retail Merchant Partnerships, Visa: $219K to $452K</li>
-</ol>
-
-<p>The pattern is consistent. Cloud, payments, and ecosystem are the three categories that pay the most for VP-level partnership leadership. Channel sales in traditional B2B SaaS pays VP base in the $200K to $250K range, which is real money but not the ceiling.</p>
+<p>The pattern is consistent. Healthcare partnerships, platform ecosystems, and enterprise channel leadership are the three categories that pay the most for VP-level partnership leadership. Channel sales in traditional B2B SaaS pays VP base in the $170K to $200K range, which is real money but not the ceiling. The outlier roles at the top of the market reach $400K-plus, but they are rare and cluster at companies with unusual partnership economics (healthcare reimbursement, marketplace co-sell, agency partner platforms).</p>
 
 <h2>How to Read a VP Posting Before You Take the Call</h2>
 
@@ -354,7 +332,7 @@ ARTICLES = [
 
 <h2>VP vs. Head of Partnerships</h2>
 
-<p>Worth flagging the title fork. Our dataset includes 17 "Head of Partnerships" postings alongside the 50 VP postings. The Head of role has a $169K average minimum and $222K average maximum, which puts it slightly below the VP band.</p>
+<p>Worth flagging the title fork. Our dataset includes 19 "Head of Partnerships" postings alongside the 35 VP postings. The Head of role has a $187K average minimum and $246K average maximum, which actually puts it slightly above the VP band in the latest snapshot. The median Head of base is $180K, compared to the $159K median for VP.</p>
 
 <p>The Head of title usually maps to one of two situations. Either the role is the same scope as a VP but the company is too early to use the VP title, or it is a senior IC role with limited team management responsibility. The first version is a VP role waiting for a promotion. The second is a senior individual contributor with director-level pay and team responsibility.</p>
 
@@ -362,7 +340,7 @@ ARTICLES = [
 
 <h2>SVP and Above</h2>
 
-<p>SVP-level partnership roles are rare in our dataset. We tracked 6 postings, with a $235K average minimum and $313K average maximum. The median is $273,500. These roles cluster at large enterprise companies (Visa, ADP, Red Hat) and typically carry global scope.</p>
+<p>SVP-level partnership roles are rare in our dataset. We tracked 6 postings, with a $219K average minimum and $283K average maximum. The median is $185K, which is somewhat below the average because of a small sample with one strong outlier pulling the average up. These roles cluster at large enterprise companies and typically carry global scope.</p>
 
 <p>For most working partner leaders, SVP is the top of the visible ladder. Above SVP, partnerships work tends to fold into broader Chief Revenue Officer or Chief Strategy Officer roles. The few partnership-specific C-level roles that do exist (Chief Ecosystem Officer, Chief Alliances Officer) are not yet common enough to show up in volume in posting data.</p>
 
@@ -370,7 +348,7 @@ ARTICLES = [
 
 <p>If you are interviewing for a VP of partnerships role:</p>
 
-<p>The $178K-to-$268K average band is your floor and ceiling. Below the floor is almost always a Head of role mis-labeled as VP. Above the ceiling, you should be having an equity conversation, not a base conversation.</p>
+<p>The $170K-to-$225K average band is your floor and ceiling for the typical VP role. Below the floor is almost always a Head of role mis-labeled as VP. Above the ceiling, you should be having an equity conversation, not a base conversation, unless you are interviewing for one of the outlier roles in healthcare partnerships or platform ecosystem leadership.</p>
 
 <p>If the role is a first hire, expect the base to come in at the floor of the band. Push hard on equity, the equity refresh schedule, and the path to a real team budget. The cash will not move much. The equity should.</p>
 
@@ -380,13 +358,13 @@ ARTICLES = [
 """,
         "faq": [
             ("What is the median base salary for a VP of partnerships in 2026?",
-             "The median base salary for VP of partnerships postings in our 2026 dataset is $150,000, based on 50 disclosed roles. The average minimum is $178,000 and average maximum is $268,000. Top-of-market roles at Red Hat, Visa, and similar enterprise companies clear $400,000 base in some cases."),
+             "The median base salary for VP of partnerships postings in our 2026 dataset is $159,300, based on 35 disclosed roles. The average minimum is $170,000 and average maximum is $223,000. Outlier roles in healthcare partnerships, agency partner platforms, and enterprise marketplace ecosystems clear $400,000 base, but they are exceptions."),
             ("Why is there such a wide pay spread for VP of partnerships?",
              "Three factors drive the spread: company stage (Series B first hire vs. public-company VP managing an existing team), program scope (technology partnerships only vs. full channel motion), and ecosystem authority (running an ecosystem that others plug into pays significantly more than running a reseller program)."),
             ("What is the difference between VP of partnerships and Head of Partnerships?",
-             "Head of Partnerships averages slightly lower ($169K minimum, $222K maximum) than VP. The Head of title usually indicates either a VP-scope role at a company too early to use the VP title, or a senior individual contributor role with limited team responsibility. Asking about team size, budget, and reporting line clarifies which version you are looking at."),
+             "In the latest snapshot, Head of Partnerships actually averages slightly higher ($187K minimum, $246K maximum) than VP, with a median of $180K versus the VP median of $159K. The Head of title can indicate a VP-scope role at a company too early to use the VP title, or a senior individual contributor role with limited team responsibility. Asking about team size, budget, and reporting line clarifies which version you are looking at."),
             ("Which industries pay the most for VP of partnerships roles?",
-             "Cloud infrastructure (Red Hat, AWS partners), payments and fintech (Visa, ADP), and platform ecosystem roles (Perforce, Teads) sit at the top of the pay distribution. Traditional B2B SaaS channel leadership pays in the $200K to $250K base range, which is solid but not the ceiling."),
+             "Healthcare partnerships (Pomelo Care and similar care platforms), platform ecosystem roles at large software companies (Adobe, SAP), and enterprise channel leadership at established companies sit at the top of the pay distribution. Traditional B2B SaaS channel leadership pays in the $170K to $200K base range, which is solid but not the ceiling."),
         ],
         "related_articles": ["state-of-partner-manager-compensation-2026", "entry-level-channel-roles-2026"],
         "internal_links": [
@@ -398,31 +376,31 @@ ARTICLES = [
     {
         "slug": "entry-level-channel-roles-2026",
         "title": "Entry-Level Partner Manager Roles",
-        "description": "What 58 entry-level partner manager job postings show: $67K median base, the metros that hire most, and how the first two years shape your career trajectory.",
+        "description": "What 55 entry-level partner manager job postings show: $65K median base, the metros that hire most, and how the first two years shape your career trajectory.",
         "date_published": "2026-05-14",
         "word_count": 1450,
         "category": "Careers",
-        "summary": "Entry-level partner roles are scarcer than mid-level. Here is what the 58 we tracked say about how to get in and where to start.",
+        "summary": "Entry-level partner roles are scarcer than mid-level. Here is what the 55 we tracked say about how to get in and where to start.",
         "body": """
-<p>Partnerships is not an entry-level field for most people. The 1,304 partner manager and channel roles we track in 2026 break down as 58 entry-level postings, 252 mid-level, 128 senior, 124 director, 50 VP, and a handful of SVP and Head of roles. Entry-level is about 4.4 percent of the disclosed market.</p>
+<p>Partnerships is not an entry-level field for most people. The 1,154 partner manager and channel roles we track in 2026 break down as 55 entry-level postings, 395 mid-level, 127 senior, 146 director, 35 VP, and a handful of SVP and Head of roles. Entry-level is about 4.8 percent of the disclosed market.</p>
 
 <p>That ratio is unusual. Most B2B GTM functions hire entry-level at 20 to 30 percent of total roles. Partnerships hires entry-level at a fraction of that, and the people who get in tend to enter through one of a few specific paths.</p>
 
-<p>This piece is for anyone trying to start a partnerships career: recent graduates, sales development reps eyeing a lateral move, or operations people trying to break into partner work. We walk through the 58 disclosed entry-level postings and what the data says about how to get the first job.</p>
+<p>This piece is for anyone trying to start a partnerships career: recent graduates, sales development reps eyeing a lateral move, or operations people trying to break into partner work. We walk through the 55 disclosed entry-level postings and what the data says about how to get the first job.</p>
 
 <h2>The Pay Floor</h2>
 
 <p>Entry-level partner roles in our 2026 dataset:</p>
 
 <ul>
-    <li>Sample size: 58 postings</li>
-    <li>Median base: $67,000</li>
-    <li>Average minimum: $76,000</li>
-    <li>Average maximum: $104,000</li>
-    <li>Top of disclosed range: $124,000</li>
+    <li>Sample size: 55 postings</li>
+    <li>Median base: $65,000</li>
+    <li>Average minimum: $73,000</li>
+    <li>Average maximum: $97,000</li>
+    <li>Top of disclosed range: just under $100,000</li>
 </ul>
 
-<p>The median base is $67K. The average band spans $76K to $104K, which is wider than you might expect for entry-level. That is because the dataset includes both true entry-level partner coordinator roles (mid-$50K to mid-$70K) and "associate partner manager" roles that are more like junior partner manager seats with full P&L responsibility (mid-$80K to low-$120K).</p>
+<p>The median base is $65K. The average band spans $73K to $97K, which is wider than you might expect for entry-level. That is because the dataset includes both true entry-level partner coordinator roles (mid-$50K to mid-$70K) and "associate partner manager" roles that are more like junior partner manager seats with full P&L responsibility (mid-$80K to mid-$90K).</p>
 
 <p>The two roles look similar on a job board. They are not the same job. A partner coordinator is operational support: scheduling, deal registration data entry, partner portal admin. An associate partner manager owns partner relationships, even if for smaller partners. Pay reflects the difference.</p>
 
@@ -430,7 +408,7 @@ ARTICLES = [
 
 <p>Entry-level partner roles are not evenly distributed by metro. They concentrate in three places.</p>
 
-<p>New York hires the most entry-level partner managers in our dataset, followed by San Francisco. Together those two markets account for roughly 35 percent of disclosed entry-level postings. Remote roles make up another large chunk, particularly at AI-native companies and at SaaS companies whose partner programs are still small enough to hire generalists who can grow into the function.</p>
+<p>New York hires the most entry-level partner managers in our dataset, followed by San Francisco. Together those two markets account for roughly a third of disclosed entry-level postings. Remote roles make up another large chunk, particularly at AI-native companies and at SaaS companies whose partner programs are still small enough to hire generalists who can grow into the function.</p>
 
 <p>Three observations on geography for entry-level candidates:</p>
 
@@ -472,19 +450,19 @@ ARTICLES = [
 
 <h2>The Trajectory</h2>
 
-<p>The data shows a clear pay trajectory for partner managers who navigate the first two years well. The median jumps from $67K (entry-level) to $98K (mid-level) to $140K (senior IC) over roughly six to seven years. That trajectory is faster than direct sales AE in many cases, mostly because partner manager seats become harder to fill at the senior level and demand outpaces supply.</p>
+<p>The data shows a clear pay trajectory for partner managers who navigate the first two years well. The median jumps from $65K (entry-level) to $100K (mid-level) to $128K (senior IC) over roughly six to seven years. That trajectory is faster than direct sales AE in many cases, mostly because partner manager seats become harder to fill at the senior level and demand outpaces supply.</p>
 
 <p>If you make it past the first two years, the rest of the career is more predictable. Getting in is the hard part.</p>
 """,
         "faq": [
             ("What is the entry-level partner manager salary in 2026?",
-             "The median base salary for entry-level partner manager and channel roles in 2026 is $67,000, based on 58 disclosed postings in our dataset. The average band runs $76,000 to $104,000, with the spread reflecting the difference between partner coordinator roles (lower end) and associate partner manager roles (higher end)."),
+             "The median base salary for entry-level partner manager and channel roles in 2026 is $65,000, based on 55 disclosed postings in our dataset. The average band runs $73,000 to $97,000, with the spread reflecting the difference between partner coordinator roles (lower end) and associate partner manager roles (higher end)."),
             ("How hard is it to break into partnerships?",
-             "Harder than most B2B GTM functions. Entry-level postings are about 4.4 percent of the partner manager market in our 2026 data, compared to 20 to 30 percent in roles like direct sales. The most common paths in are SDR or BDR lateral moves, customer success transitions, partner ops to partner manager moves, and formal new-grad programs at larger tech companies."),
+             "Harder than most B2B GTM functions. Entry-level postings are about 4.8 percent of the partner manager market in our 2026 data, compared to 20 to 30 percent in roles like direct sales. The most common paths in are SDR or BDR lateral moves, customer success transitions, partner ops to partner manager moves, and formal new-grad programs at larger tech companies."),
             ("Where do most entry-level partner managers get hired?",
-             "New York and San Francisco lead the entry-level partner hiring volume, together accounting for roughly 35 percent of disclosed postings. Remote entry-level roles exist but are rare; most companies prefer to onboard entry-level partner staff in person because the work is relationship-heavy."),
+             "New York and San Francisco lead the entry-level partner hiring volume, together accounting for roughly a third of disclosed postings. Remote entry-level roles exist but are rare; most companies prefer to onboard entry-level partner staff in person because the work is relationship-heavy."),
             ("What is the typical career trajectory from entry-level partner manager?",
-             "Median base moves from $67K (entry-level) to $98K (mid-level) to $140K (senior IC) over six to seven years for partner managers who own partner relationships in their first two years. The first two years are the most fragile part of the path. After that, the rest of the trajectory is more predictable."),
+             "Median base moves from $65K (entry-level) to $100K (mid-level) to $128K (senior IC) over six to seven years for partner managers who own partner relationships in their first two years. The first two years are the most fragile part of the path. After that, the rest of the trajectory is more predictable."),
         ],
         "related_articles": ["state-of-partner-manager-compensation-2026", "vp-of-partnerships-compensation"],
         "internal_links": [
@@ -589,8 +567,8 @@ ARTICLES = [
     },
     {
         "slug": "salary-disclosure-in-partnerships-roles",
-        "title": "Why 35% of Partner Jobs Hide Salary",
-        "description": "Out of 1,304 partner manager postings tracked in 2026, 452 do not disclose a salary band. We dig into who is hiding pay, why, and what to do about it.",
+        "title": "Why 1 in 3 Partner Jobs Hide Salary",
+        "description": "Out of 1,154 partner manager postings tracked in 2026, 370 do not disclose a salary band. We dig into who is hiding pay, why, and what to do about it.",
         "date_published": "2026-05-14",
         "word_count": 1400,
         "category": "Compensation",
@@ -598,13 +576,13 @@ ARTICLES = [
         "body": """
 <p>Salary transparency laws have spread across the US since 2022. California, Colorado, New York, Washington, and Illinois all require disclosure in postings for roles that can be performed in those states. Most large tech employers post nationally and end up applying the rules across the board.</p>
 
-<p>Even so, 35 percent of the 1,304 partner manager and channel roles we tracked in 2026 do not disclose a salary band. That gap is larger than for direct sales roles (around 25 percent hidden) and meaningfully larger than for engineering roles (about 18 percent hidden) in equivalent datasets.</p>
+<p>Even so, 32 percent of the 1,154 partner manager and channel roles we tracked in 2026 do not disclose a salary band. That gap is larger than for direct sales roles (around 25 percent hidden) and meaningfully larger than for engineering roles (about 18 percent hidden) in equivalent datasets.</p>
 
 <p>This piece looks at who hides pay in partnerships, what the patterns are, and how to read the absence of a band when you see it.</p>
 
 <h2>The Headline Number</h2>
 
-<p>Of 1,304 partner manager roles in our 2026 dataset, 852 disclosed a salary band. The remaining 452, or 34.7 percent, did not. That includes:</p>
+<p>Of 1,154 partner manager roles in our 2026 dataset, 784 disclosed a salary band. The remaining 370, or 32.1 percent, did not. That includes:</p>
 
 <ul>
     <li>Roles posted in jurisdictions that require disclosure but listed no band</li>
@@ -665,7 +643,7 @@ ARTICLES = [
 """,
         "faq": [
             ("How many partner manager job postings hide salary in 2026?",
-             "About 35 percent. Of 1,304 partner manager and channel roles tracked in our 2026 dataset, 452 did not disclose a usable salary band. That is a higher hidden-rate than direct sales (around 25 percent) or engineering roles (about 18 percent) in equivalent datasets."),
+             "About 32 percent. Of 1,154 partner manager and channel roles tracked in our 2026 dataset, 370 did not disclose a usable salary band. That is a higher hidden-rate than direct sales (around 25 percent) or engineering roles (about 18 percent) in equivalent datasets."),
             ("Which kinds of partner manager postings are most likely to hide pay?",
              "Enterprise roles (companies over 5,000 employees), senior roles (VP and director-level), and recruiter-led postings hide pay most often. Direct postings from smaller companies and entry-level roles are the most likely to include a band."),
             ("Should I apply to a partner manager role that hides salary?",
@@ -819,7 +797,7 @@ def build_insights_hub_dynamic(articles):
     body = f'''{bc_html}
 <section class="page-header">
     <h1>Partner &amp; Channel Sales Insights</h1>
-    <p class="page-header-subtitle">Analysis grounded in 1,304 partner manager job postings, 852 disclosed salaries, and tool adoption data refreshed weekly.</p>
+    <p class="page-header-subtitle">Analysis grounded in 1,154 partner manager job postings, 784 disclosed salaries, and tool adoption data refreshed weekly.</p>
 </section>
 <div class="container">
 

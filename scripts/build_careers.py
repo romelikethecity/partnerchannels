@@ -51,7 +51,7 @@ def build_careers_index():
         </a>
         <a href="/careers/negotiating-partner-manager-offer/" class="preview-card">
             <h3>Negotiating a Partner Manager Offer</h3>
-            <p>Anchors, scripts, and equity questions for the offer conversation. Based on 852 disclosed partner manager salaries from 2026 hiring data.</p>
+            <p>Anchors, scripts, and equity questions for the offer conversation. Based on 784 disclosed partner manager salaries from 2026 hiring data.</p>
             <span class="preview-link">Read the playbook &rarr;</span>
         </a>
         <a href="/careers/partner-manager-vs-alliance-manager/" class="preview-card">
@@ -473,7 +473,7 @@ def build_negotiating_partner_manager_offer():
     body = f'''{bc_html}
 <section class="page-header">
     <h1>How to Negotiate a Partner Manager Offer</h1>
-    <p class="page-header-subtitle">A practical, data-grounded playbook using 852 disclosed partner manager salaries from 2026 hiring data.</p>
+    <p class="page-header-subtitle">A practical, data-grounded playbook using 784 disclosed partner manager salaries from 2026 hiring data.</p>
 </section>
 <article class="insight-article">
 <div class="article-layout">
@@ -481,7 +481,7 @@ def build_negotiating_partner_manager_offer():
 
 <p>Most partner managers leave $15,000 to $40,000 of base salary on the table at offer stage. Not because they negotiate poorly, but because they walk in without an anchor. This guide gives you the anchor.</p>
 
-<p>The data here comes from 852 disclosed partner manager salaries across 1,304 tracked roles in 2026. We will walk through the four numbers you need at the negotiating table, the three questions that move offers most, and the moves that work for the specific seniority you are interviewing for.</p>
+<p>The data here comes from 784 disclosed partner manager salaries across 1,154 tracked roles in 2026. We will walk through the four numbers you need at the negotiating table, the three questions that move offers most, and the moves that work for the specific seniority you are interviewing for.</p>
 
 <h2>The Four Numbers You Need</h2>
 
@@ -497,11 +497,11 @@ def build_negotiating_partner_manager_offer():
 <p>Here are the 2026 numbers by seniority, sourced from our salary dataset:</p>
 
 <ul>
-    <li>Entry-level: $67K median, $104K average max, ~1.2x OTE multiplier</li>
-    <li>Mid-level: $98K median, $158K average max, ~1.4x OTE multiplier</li>
-    <li>Senior: $140K median, $206K average max, ~1.5x OTE multiplier</li>
-    <li>Director: $133K median, $197K average max, ~1.5x OTE multiplier</li>
-    <li>VP: $150K median, $268K average max, ~1.6x OTE multiplier</li>
+    <li>Entry-level: $65K median, $97K average max, ~1.2x OTE multiplier</li>
+    <li>Mid-level: $100K median, $161K average max, ~1.4x OTE multiplier</li>
+    <li>Senior: $128K median, $201K average max, ~1.5x OTE multiplier</li>
+    <li>Director: $150K median, $201K average max, ~1.5x OTE multiplier</li>
+    <li>VP: $159K median, $223K average max, ~1.6x OTE multiplier</li>
 </ul>
 
 <p>OTE multipliers are estimates based on disclosed equity and variable comp signals. Treat them as directional, not precise. Your actual variable component will depend on the company and the role structure.</p>
@@ -662,13 +662,13 @@ def build_partner_manager_vs_alliance_manager():
 <p>Across our 2026 dataset, the two titles cluster around similar but slightly different bands.</p>
 
 <ul>
-    <li>Partner Manager (all seniorities): $98K to $158K average band, $120K median base</li>
-    <li>Alliance Manager (all seniorities): $115K to $175K average band, $135K median base</li>
+    <li>Partner Manager (all seniorities): $100K to $161K average band, around $120K median base</li>
+    <li>Alliance Manager (all seniorities): $115K to $175K average band, around $135K median base (estimate based on title sampling in our dataset)</li>
 </ul>
 
-<p>Alliance manager roles pay about 12 percent more at the median than partner manager roles. Two reasons. First, alliance manager titles cluster at larger companies (Visa, ADP, Red Hat, AWS) which pay more broadly. Second, the scope of an alliance manager job tends to involve larger deals and bigger budgets, which justifies a higher band.</p>
+<p>Alliance manager roles pay about 12 percent more at the median than partner manager roles. Two reasons. First, alliance manager titles cluster at larger companies (Visa, ADP, AWS, Adobe) which pay more broadly. Second, the scope of an alliance manager job tends to involve larger deals and bigger budgets, which justifies a higher band.</p>
 
-<p>At the VP level, the gap narrows. VP of Partnerships and VP of Alliances both sit in the $180K to $270K base range with significant equity components. The titles converge at the leadership level because the scope (running a partner organization) becomes more important than the title nomenclature.</p>
+<p>At the VP level, the gap narrows. VP of Partnerships and VP of Alliances both sit in roughly the same $170K to $225K base range in the latest snapshot, with significant equity components on top. The titles converge at the leadership level because the scope (running a partner organization) becomes more important than the title nomenclature.</p>
 
 <h2>Day-to-Day Differences</h2>
 
@@ -737,7 +737,7 @@ def build_partner_manager_vs_alliance_manager():
         ("What is the difference between a partner manager and an alliance manager?",
          "Partner manager typically describes someone managing a portfolio of 15 to 50 partner relationships with monthly operating metrics. Alliance manager typically describes someone managing 3 to 8 high-value strategic partnerships (often named global SIs or major cloud providers) with quarterly and annual planning cycles. The titles can overlap, but the day-to-day work and the kind of partners you own usually differ."),
         ("Do alliance managers make more than partner managers?",
-         "Slightly, at the median. Alliance manager roles in our 2026 dataset average about 12 percent higher than partner manager roles ($135K median base vs. $120K median base). The gap narrows at the VP level, where both titles converge around $180K to $270K base. Most of the gap is driven by alliance manager titles clustering at larger enterprise companies."),
+         "Slightly, at the median. Alliance manager roles in our 2026 dataset average about 12 percent higher than partner manager roles (around $135K median base vs. about $120K median base). The gap narrows at the VP level, where both titles converge around $170K to $225K base. Most of the gap is driven by alliance manager titles clustering at larger enterprise companies."),
         ("Can you switch from partner manager to alliance manager?",
          "Yes, most commonly at the senior individual contributor or director level. Partner managers who want to move into alliances usually need to either grow into a larger named strategic relationship at their current company or move to a new company in a more focused alliance role. The reverse path (alliance manager to partner manager) is also common when alliance managers want broader portfolio experience."),
         ("Which role has a better career path?",
