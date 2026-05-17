@@ -1,51 +1,51 @@
 {
-  "generated_at": "2026-05-15T05:09:08.759294",
-  "total_records": 1154,
-  "records_with_salary": 784,
-  "disclosure_rate": 67.9,
+  "generated_at": "2026-05-17T11:07:54.524798",
+  "total_records": 1233,
+  "records_with_salary": 835,
+  "disclosure_rate": 67.7,
   "salary_stats": {
     "min": 1,
-    "max": 500000,
-    "median": 119700,
-    "avg": 124930,
-    "count_with_salary": 784
+    "max": 1234567,
+    "median": 120000,
+    "avg": 125360,
+    "count_with_salary": 835
   },
   "by_seniority": {
-    "Entry": {
-      "count": 55,
-      "min_base_avg": 73326,
-      "max_base_avg": 96566,
-      "median": 65000
+    "Director": {
+      "count": 156,
+      "min_base_avg": 147470,
+      "max_base_avg": 198989,
+      "median": 147712
     },
     "Mid": {
-      "count": 395,
-      "min_base_avg": 110621,
-      "max_base_avg": 160661,
-      "median": 100000
+      "count": 419,
+      "min_base_avg": 112240,
+      "max_base_avg": 162335,
+      "median": 101202
+    },
+    "Entry": {
+      "count": 57,
+      "min_base_avg": 72597,
+      "max_base_avg": 117012,
+      "median": 65000
     },
     "Senior": {
-      "count": 127,
-      "min_base_avg": 136501,
-      "max_base_avg": 201402,
-      "median": 128280
-    },
-    "Director": {
-      "count": 146,
-      "min_base_avg": 149432,
-      "max_base_avg": 201197,
-      "median": 150000
-    },
-    "VP": {
-      "count": 35,
-      "min_base_avg": 169861,
-      "max_base_avg": 223304,
-      "median": 159300
+      "count": 138,
+      "min_base_avg": 138055,
+      "max_base_avg": 202762,
+      "median": 132000
     },
     "Head of": {
-      "count": 19,
-      "min_base_avg": 187394,
-      "max_base_avg": 245684,
-      "median": 180000
+      "count": 20,
+      "min_base_avg": 175500,
+      "max_base_avg": 230075,
+      "median": 170000
+    },
+    "VP": {
+      "count": 38,
+      "min_base_avg": 167984,
+      "max_base_avg": 222396,
+      "median": 160000
     },
     "SVP": {
       "count": 6,
@@ -56,87 +56,101 @@
   },
   "by_metro": {
     "Unknown": {
-      "count": 394,
-      "min_base_avg": 111975,
-      "max_base_avg": 162502,
-      "median": 100000
-    },
-    "New York": {
-      "count": 223,
-      "min_base_avg": 132220,
-      "max_base_avg": 179787,
-      "median": 130000
-    },
-    "San Francisco": {
-      "count": 53,
-      "min_base_avg": 182536,
-      "max_base_avg": 253650,
-      "median": 169100
-    },
-    "Chicago": {
-      "count": 21,
-      "min_base_avg": 129179,
-      "max_base_avg": 161354,
-      "median": 115000
+      "count": 424,
+      "min_base_avg": 112392,
+      "max_base_avg": 165916,
+      "median": 101202
     },
     "Denver": {
       "count": 6,
-      "min_base_avg": 88283,
-      "max_base_avg": 119105,
+      "min_base_avg": 85783,
+      "max_base_avg": 112438,
       "median": 90000
-    },
-    "Los Angeles": {
-      "count": 45,
-      "min_base_avg": 133284,
-      "max_base_avg": 194909,
-      "median": 120300
-    },
-    "Miami": {
-      "count": 5,
-      "min_base_avg": 79394,
-      "max_base_avg": 161332,
-      "median": 79286
     },
     "Boston": {
       "count": 8,
-      "min_base_avg": 109122,
-      "max_base_avg": 154940,
-      "median": 96000
+      "min_base_avg": 131247,
+      "max_base_avg": 184075,
+      "median": 130000
+    },
+    "Miami": {
+      "count": 6,
+      "min_base_avg": 83842,
+      "max_base_avg": 160443,
+      "median": 86900
+    },
+    "New York": {
+      "count": 233,
+      "min_base_avg": 132928,
+      "max_base_avg": 180455,
+      "median": 132000
+    },
+    "San Francisco": {
+      "count": 54,
+      "min_base_avg": 181802,
+      "max_base_avg": 252547,
+      "median": 172500
+    },
+    "Los Angeles": {
+      "count": 56,
+      "min_base_avg": 134687,
+      "max_base_avg": 191969,
+      "median": 128280
+    },
+    "Chicago": {
+      "count": 20,
+      "min_base_avg": 133438,
+      "max_base_avg": 171057,
+      "median": 115000
     },
     "Washington DC": {
       "count": 8,
-      "min_base_avg": 108555,
-      "max_base_avg": 135700,
-      "median": 112000
+      "min_base_avg": 98305,
+      "max_base_avg": 121950,
+      "median": 90000
+    },
+    "Seattle": {
+      "count": 15,
+      "min_base_avg": 144759,
+      "max_base_avg": 209336,
+      "median": 142000
     },
     "Austin": {
       "count": 5,
       "min_base_avg": 198940,
       "max_base_avg": 262080,
       "median": 161000
-    },
-    "Seattle": {
-      "count": 16,
-      "min_base_avg": 143386,
-      "max_base_avg": 206640,
-      "median": 143700
     }
   },
   "by_remote": {
     "onsite": {
-      "count": 664,
-      "min_base_avg": 127744,
-      "max_base_avg": 178678,
-      "median": 120000
+      "count": 705,
+      "min_base_avg": 128128,
+      "max_base_avg": 179844,
+      "median": 121250
     },
     "remote": {
-      "count": 120,
-      "min_base_avg": 109362,
-      "max_base_avg": 162850,
-      "median": 90000
+      "count": 130,
+      "min_base_avg": 110348,
+      "max_base_avg": 168840,
+      "median": 96420
     }
   },
   "top_paying_roles": [
+    {
+      "title": "Partnership & Impact Coordinator (Hybrid)",
+      "company": "",
+      "salary_min": 123456.0,
+      "salary_max": 1234567.0,
+      "seniority": "Entry"
+    },
+    {
+      "title": "Sales & Provider Partnerships Representative",
+      "company": "My Bump My Baby",
+      "salary_min": 24000.0,
+      "salary_max": 500000.0,
+      "seniority": "Mid"
+    },
     {
       "title": "Channel Manager",
       "company": "Service Champions Plumbing, Heating and A/C",
@@ -180,13 +194,6 @@
       "seniority": "Mid"
     },
     {
-      "title": "VP of Commercial Partnerships",
-      "company": "Pomelo Care",
-      "salary_min": 420000.0,
-      "salary_max": 440000.0,
-      "seniority": "VP"
-    },
-    {
       "title": "Seller Partner Manager",
       "company": "SAP",
       "salary_min": 194100.0,
@@ -194,18 +201,11 @@
       "seniority": "Mid"
     },
     {
-      "title": "Director, GTM Partnerships",
-      "company": "Adobe",
-      "salary_min": 253300.0,
-      "salary_max": 401400.0,
-      "seniority": "Director"
-    },
-    {
-      "title": "B2B Sales and Partnerships Executive",
-      "company": "Kenkeputa",
-      "salary_min": 250000.0,
-      "salary_max": 400000.0,
-      "seniority": "Mid"
+      "title": "Vice President of Channels & Strategic Alliances",
+      "company": "CodeRabbit",
+      "salary_min": 300000.0,
+      "salary_max": 410000.0,
+      "seniority": "VP"
     }
   ]
 }
