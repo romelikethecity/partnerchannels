@@ -17,11 +17,48 @@ from templates import (get_page_wrapper, write_page, get_breadcrumb_schema,
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_DIR = os.path.dirname(SCRIPT_DIR)
 DATA_FILE = os.path.join(PROJECT_DIR, "data", "comp_analysis.json")
+JOBS_FILE = os.path.join(PROJECT_DIR, "data", "jobs.json")
 
 
 def load_salary_data():
     with open(DATA_FILE, "r", encoding="utf-8") as f:
         return json.load(f)
+
+
+def load_jobs_data():
+    """Return list of job dicts from jobs.json."""
+    with open(JOBS_FILE, "r", encoding="utf-8") as f:
+        return json.load(f).get("jobs", [])
+
+
+# Substring keywords used to bucket job locations into our 11 metro buckets.
+# Order matters: longer / more specific matches first. A job is assigned to
+# the first metro whose keyword list matches its location string.
+METRO_LOC_KEYWORDS = {
+    "Boston": ["Boston", "Cambridge", "Waltham", "Newton, MA", "Burlington, MA", "Quincy, MA"],
+    "Denver": ["Denver", "Boulder", "Aurora, CO", "Englewood, CO", "Westminster, CO", "Centennial, CO"],
+    "Miami": ["Miami", "Coral Gables", "Aventura", "Doral", "Fort Lauderdale"],
+    "Austin": ["Austin"],
+    "Washington DC": ["Washington, DC", "Washington, D.C.", "Arlington, VA", "Bethesda", "McLean", "Reston", "Tysons"],
+    "New York": ["New York", "Manhattan", "Brooklyn", "Long Island City", "Jersey City", "Hoboken"],
+    "San Francisco": ["San Francisco", "Oakland", "Palo Alto", "Mountain View", "Sunnyvale", "Menlo Park", "Cupertino", "Redwood City", "South San Francisco", "Berkeley"],
+    "Los Angeles": ["Los Angeles", "Santa Monica", "Culver City", "Pasadena", "El Segundo", "Burbank", "Glendale, CA", "Beverly Hills"],
+    "Seattle": ["Seattle", "Bellevue", "Redmond", "Kirkland", "Bothell"],
+    "Chicago": ["Chicago", "Evanston", "Schaumburg", "Naperville", "Oak Brook"],
+}
+
+
+def get_metro_jobs(jobs, metro_name):
+    """Return jobs whose location string matches the metro's keyword list."""
+    keys = METRO_LOC_KEYWORDS.get(metro_name, [])
+    if not keys:
+        return []
+    out = []
+    for j in jobs:
+        loc = (j.get("location") or "")
+        if any(k.lower() in loc.lower() for k in keys):
+            out.append(j)
+    return out
 
 
 def fmt_salary(val):
@@ -408,7 +445,110 @@ METRO_CONTEXT = {
 }
 
 
-def build_location_page(name, d, data):
+METRO_DEEP = {
+    "Boston": {
+        "sectors": "Boston's partner manager market is shaped by three industries operating in parallel: enterprise SaaS (HubSpot in Cambridge, Klaviyo, Toast, DataRobot), biotech and pharma (Takeda, Bayer, Vertex, Moderna with partner roles tied to scientific platform partnerships), and edtech (HEI's institutional partnerships, 2U-adjacent vendors). The biotech overlay is what differentiates Boston from any other US partner market. A meaningful share of Boston partner roles involve scientific or clinical co-marketing rather than channel resale, and the comp structure follows pharma norms (high base, lower variable) rather than SaaS norms.",
+        "employers": "Datadog, HubSpot, Klaviyo, Takeda, Veracode, SAP, DraftKings, Wayfair, and Toast hire partner managers in greater Boston with some regularity. The biotech-adjacent partner roles cluster in Kendall Square and the I-95 belt; the SaaS partner roles cluster in the Seaport and Cambridge.",
+        "negotiation": "Boston partner manager offers tend to anchor on base, with variable comp tighter than SF or NYC. If you are coming from a pharma-adjacent partnerships background, push for the SaaS-style variable structure when interviewing at HubSpot, Klaviyo, or Toast. The pay gap closes meaningfully when you carry quota explicitly tied to partner-sourced revenue.",
+    },
+    "Denver": {
+        "sectors": "Denver's partner ecosystem skews cybersecurity (Ping Identity, Optiv, Arctic Wolf), cloud and infrastructure (DigitalOcean, JumpCloud, Pax8, Coalfire), and a growing fintech and edtech bench (Guild Education, Outdoorsy, Ibotta). The cybersecurity overlay matters because partner roles there often involve managing reseller and MSSP relationships rather than direct co-sell with software vendors, and the partner program economics reflect the security channel's tighter margin structure.",
+        "employers": "Arrow Electronics, Pax8, Housecall Pro, Ookla, Transamerica, Xcel Energy, and Suntory Global Spirits show up in partner hiring data for greater Denver. Arrow and Pax8 in particular run formal partner channel programs that pull experienced channel account managers from across the cybersecurity and IT distribution markets.",
+        "negotiation": "Denver partner manager comp tends to come in below the national median, partly because the metro's distributor and channel-heavy roles (Arrow, Pax8) carry lower base than venture-backed SaaS PM seats. If you are interviewing for a SaaS partner manager role in Denver and the offer comes in under the SF or NYC median, push back with the national benchmark and note that Boulder cost of living has climbed faster than salary bands.",
+    },
+    "Miami": {
+        "sectors": "Miami's partner manager market is the most recent of the major US metros to mature. The dominant sectors are fintech (Ramp, Marqeta-adjacent, Bitwise), payments (Visa's Miami office for LatAm partnerships, Mastercard regional roles), real estate and proptech (UPSIDEHOM, Lennar partner programs), and a growing LatAm market expansion bench. Many Miami partner roles are explicitly bilingual and explicitly LatAm-coverage, which changes the candidate pool significantly.",
+        "employers": "DoorDash, Visa, Mastercard, Amazon, Ramp, Elliptic, Legends Global, and Genentech run partner manager hiring in Miami at varying volumes. The LatAm partnerships seats at Visa and Mastercard pay above the metro median because of the regional coverage premium and language requirement.",
+        "negotiation": "Miami partner manager pay sits below other coastal metros at the median, but the variance is large because of the regional roles. If your offer is for a LatAm coverage partner role, anchor on the role's regional scope, not the metro median. The Miami median includes US-only partner coordinators, which drags the number down.",
+    },
+    "Austin": {
+        "sectors": "Austin's partner manager market spans three overlapping pools. The legacy enterprise hub (Dell partner programs, Indeed partnerships, Q2 Holdings, AT&T's enterprise channel), the SaaS growth wave (Braze, ShipperHQ, Dealerware, Auvik Networks), and the newer AI/agency partnerships emerging around TikTok's Austin office, AWS Partnerships in the Domain, and a growing AI-vendor presence. The metro's pay band runs higher than its sample size suggests because Austin attracts senior partner manager roles transferring from SF and NYC.",
+        "employers": "TikTok, AWS, Dell, Indeed, Braze, ShipperHQ, ASSA ABLOY, Natera, and the Austin offices of major California-headquartered SaaS companies hire partner managers regularly. The pattern is high-quality, low-volume: fewer postings than NYC, but the postings that do appear are senior and well-compensated.",
+        "negotiation": "Austin partner manager offers regularly come in at SF-adjacent pay without the SF cost of living, which is the main reason the metro continues to pull in senior partner talent. If your offer is below $130K base for a senior IC partner role, push back hard with reference to comparable SF, NYC, or Seattle bands. Austin partner pay is no longer the discount it was in 2020.",
+    },
+    "Washington DC": {
+        "sectors": "DC partner manager hiring is driven by three pools: federal channel sales and GovTech (Carahsoft as the dominant federal channel distributor, Peraton, REI Systems, ServiceNow's federal partner team, Salesforce.gov, Microsoft Federal), enterprise SaaS with federal exposure (Dataminr, Snowflake's DC team, Asana's federal seat), and a non-profit and association partnerships layer (NPR, United Way, multilateral and policy organizations). The federal channel partner roles operate by different rules than commercial SaaS PM roles, including security clearances, GWAC contract structure familiarity, and SEWP/CIO-SP3 expertise.",
+        "employers": "Thomson Reuters, Peraton, DAGA, Mastercard, Snowflake, NPR, Asana, Dataminr, The Carlyle Group, and Health Evolution show up in DC partner manager hiring data. For federal-specific channel roles, the dominant employer that does not appear directly in JD scrapes is Carahsoft, which runs the federal channel for hundreds of software vendors and is one of the largest single concentrations of federal channel talent in the country.",
+        "negotiation": "DC partner manager comp varies more than any other US metro because of the federal-vs-commercial split. A federal channel partner role at Carahsoft, Salesforce.gov, or Microsoft Federal typically pays 10 to 20 percent above the commercial SaaS partner median for the same seniority because the role requires clearance maintenance and federal acquisition expertise that few candidates carry. If you are interviewing for a federal channel partner role, anchor on federal premium, not the DC commercial median.",
+    },
+    "New York": {
+        "sectors": "New York is the largest US market for partner manager hiring by volume. The dominant sectors are fintech and payments (Visa, Mastercard, Ramp, Plaid, Stripe's NY office), media and adtech (NBCUniversal, Spotify, NPR's national programming, Roku, DoubleVerify), enterprise SaaS (Datadog, MongoDB, Asana's NY team), and the world's largest concentration of agency and ad-tech partnership roles.",
+        "employers": "Visa, Mastercard, Datadog, MongoDB, Ramp, NBCUniversal, Spotify, Stripe, Asana, and the NY-based teams of every major SaaS vendor run partner manager hiring continuously. NYC also hosts the largest concentration of media partnership roles in the world, which significantly broadens the candidate pool.",
+        "negotiation": "NYC partner manager median ($130K) sits close to the national median, but the spread is enormous. Top fintech partnership roles at Visa, Mastercard, and large card networks routinely clear $250K base. Media partnership roles at NBCUniversal, Spotify, and Roku pay in the $140K to $200K base range. If your NYC offer comes in at the metro median, you are probably looking at a generic SaaS partner role, not a fintech or media partnership seat. Push for the sector-specific band.",
+    },
+    "San Francisco": {
+        "sectors": "San Francisco remains the highest-paying US metro for partner manager roles. The dominant employers are the major platform vendors (Salesforce, Snowflake, Databricks, OpenAI, Anthropic), enterprise SaaS partner programs (HubSpot's SF team, Asana, Notion), and a deep bench of venture-backed companies hiring their first partner manager. SF partner roles increasingly involve technology partnerships (ISV integrations, marketplace co-sell) more than traditional channel resale.",
+        "employers": "Salesforce, Snowflake, Databricks, OpenAI, Anthropic, Google, Meta, Asana, Notion, Stripe, and a long tail of Series B to D venture-backed SaaS companies recruit partner managers regularly. The AI lab partner roles in particular are a recent and growing pool, and they pay above the SF SaaS median.",
+        "negotiation": "SF partner manager comp pays a 41 percent premium over the national median at the metro level. Within SF, the AI lab partner roles (OpenAI, Anthropic) and the major platform partner roles (Salesforce, Snowflake, Databricks) are the highest-paying. If your SF offer comes in below the $160K base mark for a senior IC partner role, push back hard with the metro median ($169K) and the SF AI lab premium as benchmarks.",
+    },
+    "Los Angeles": {
+        "sectors": "LA partner hiring spans entertainment and media partnerships (Disney, Warner Bros. Discovery, NBCUniversal LA team, Hulu, Roblox creator partnerships), adtech (Snap, TikTok, Trade Desk, Magnite), SaaS (Bird, ServiceTitan, ZipRecruiter), and a growing aerospace and direct-to-consumer brand partnerships layer. The entertainment partnership roles operate by different rules than tech partnerships and carry industry-specific compensation patterns.",
+        "employers": "Snap, Trade Desk, Disney, NBCUniversal, ServiceTitan, ZipRecruiter, Roblox, and a long tail of adtech and entertainment companies hire partner managers regularly. The Disney and Warner Bros. Discovery partnership roles are often in distribution or licensing rather than SaaS channel sales.",
+        "negotiation": "LA partner manager median ($120K) sits slightly above the national median. Entertainment-industry partnership roles often pay less in base but more in industry perks (premieres, screening access, brand connections). If you are coming from SaaS into an entertainment partnership role, expect a base cut and a different career economics. SaaS-to-SaaS moves within LA pay competitively against SF for senior IC roles.",
+    },
+    "Seattle": {
+        "sectors": "Seattle partner manager hiring is dominated by Microsoft and Amazon (and AWS partner roles specifically), plus a growing layer of Microsoft-orbit companies (Smartsheet, Outreach, Auth0, Avalara). The AWS Partner Network alone hires more partner managers in Seattle than most metros hire across all employers combined. Microsoft's ISV and CSP partner programs hire continuously.",
+        "employers": "AWS, Microsoft, Smartsheet, Outreach, Avalara, Auvik, Auth0, Tableau, Salesforce's Seattle office, and a long bench of Microsoft-ecosystem partner companies recruit partner managers regularly. Many roles require specific AWS or Azure partner program experience.",
+        "negotiation": "Seattle partner manager median ($144K) has climbed faster than any other US metro in the past 12 months, mostly because AWS and Microsoft are expanding partner teams aggressively. If your Seattle offer is below $130K base for a mid-level partner role, push back hard. AWS and Microsoft pay above the metro median, and they set the band for the rest of the local market.",
+    },
+    "Chicago": {
+        "sectors": "Chicago partner hiring spans enterprise SaaS (Salesforce Chicago, Trustwave, ServiceTitan partners), insurance and fintech (Allstate, CME Group, Discover, Morningstar), healthcare SaaS (Tempus, Sprout Social healthcare partnerships), and traditional B2B distribution (Grainger, Ulta Beauty partner programs). The mix gives Chicago a more diversified partner manager market than most metros, with fewer extreme outliers and tighter pay bands.",
+        "employers": "Trustwave, CME Group, Discover, Tempus, Sprout Social, Salesforce's Chicago team, Grainger, Allstate, Ulta, and Morningstar hire partner managers in Chicago with some regularity. The financial services and insurance partner roles often involve regulatory complexity that adds to comp but lengthens hiring cycles.",
+        "negotiation": "Chicago partner manager median ($115K) sits below the coastal metros. The cost-of-living adjustment partly justifies this, but the gap to SF and NYC is still meaningful. If you are interviewing for a SaaS partner role in Chicago after working in SF or NYC, push hard against the local band and reference the comparable national median. Insurance and fintech partner roles in Chicago can pay 15 to 20 percent above the SaaS metro median because the regulatory expertise carries a premium.",
+    },
+}
+
+
+def _metro_companies_html(metro_name, all_jobs):
+    """Return HTML listing top companies hiring partner managers in this metro."""
+    metro_jobs = get_metro_jobs(all_jobs, metro_name)
+    if not metro_jobs:
+        return ""
+    from collections import Counter
+    cc = Counter((j.get("company") or "").strip() for j in metro_jobs if j.get("company"))
+    top = [name for name, _ in cc.most_common(12)]
+    if not top:
+        return ""
+    items = "".join(f'<li><a href="/companies/{slug(name)}/">{name}</a></li>' for name in top)
+    return f'''
+    <h2 style="margin-top:var(--pc-space-12)">Companies Hiring Partner Managers in {metro_name}</h2>
+    <p style="color:var(--pc-text-secondary)">Top employers running partner manager and channel sales hiring in greater {metro_name}, ranked by recent posting volume.</p>
+    <ul class="metro-employer-list">{items}</ul>
+'''
+
+
+def _metro_sample_roles_html(metro_name, all_jobs, limit=5):
+    """Return HTML showing a few real open roles in this metro with salary if disclosed."""
+    metro_jobs = get_metro_jobs(all_jobs, metro_name)
+    if not metro_jobs:
+        return ""
+    # Prefer postings with disclosed salary, then trim to limit
+    disclosed = [j for j in metro_jobs if j.get("min_amount") and j.get("max_amount") and j["min_amount"] > 0 and j["max_amount"] > 0]
+    sample = (disclosed or metro_jobs)[:limit]
+    if not sample:
+        return ""
+    rows = ""
+    for j in sample:
+        title = (j.get("title") or "Untitled").strip()
+        co = (j.get("company") or "").strip()
+        loc = (j.get("location") or "").strip()
+        min_a, max_a = j.get("min_amount"), j.get("max_amount")
+        salary = ""
+        if min_a and max_a and min_a > 0 and max_a > 0:
+            salary = f"${int(min_a)//1000}K to ${int(max_a)//1000}K"
+        salary_cell = f'<td>{salary}</td>' if salary else '<td>Not disclosed</td>'
+        rows += f"<tr><td>{title}</td><td>{co}</td><td>{loc}</td>{salary_cell}</tr>"
+    return f'''
+    <h2 style="margin-top:var(--pc-space-12)">Open Partner Manager Roles in {metro_name}</h2>
+    <p style="color:var(--pc-text-secondary)">A small live sample of partner manager and channel sales postings tracked in greater {metro_name}.</p>
+    <table class="salary-table">
+        <thead><tr><th>Role</th><th>Company</th><th>Location</th><th>Posted Salary</th></tr></thead>
+        <tbody>{rows}</tbody>
+    </table>
+'''
+
+
+def build_location_page(name, d, data, all_jobs=None):
     m_slug = slug(name)
     title = f"Partnership Salary in {name} (2026)"
     description = f"Partnership salary in {name}: {fmt_k(d['median'])} median from {d['count']} postings. Range {salary_range_str(d)}."
@@ -419,6 +559,21 @@ def build_location_page(name, d, data):
     overall_median = data["salary_stats"]["median"]
     diff = d["median"] - overall_median
     diff_text = f"{fmt_k(abs(diff))} {'above' if diff > 0 else 'below'} the national median of {fmt_k(overall_median)}"
+
+    deep = METRO_DEEP.get(name, {})
+    sectors_html = f'''
+    <h2 style="margin-top:var(--pc-space-12)">What Drives Partner Hiring in {name}</h2>
+    <p>{deep["sectors"]}</p>''' if deep.get("sectors") else ""
+    employers_html = f'''
+    <h2 style="margin-top:var(--pc-space-12)">Where the Hiring Concentrates</h2>
+    <p>{deep["employers"]}</p>''' if deep.get("employers") else ""
+    negotiation_html = f'''
+    <h2 style="margin-top:var(--pc-space-12)">How to Negotiate in {name}</h2>
+    <p>{deep["negotiation"]}</p>
+    <p>For a fuller framework, see our <a href="/careers/negotiating-partner-manager-offer/">guide to negotiating a partner manager offer</a> and the <a href="/insights/state-of-partner-manager-compensation-2026/">state-of-partner-manager-compensation analysis</a>.</p>''' if deep.get("negotiation") else ""
+
+    live_companies_html = _metro_companies_html(name, all_jobs or [])
+    live_roles_html = _metro_sample_roles_html(name, all_jobs or [])
 
     # Other metros navigation
     metros = {k: v for k, v in data["by_metro"].items() if k != "Unknown" and k != name}
@@ -433,6 +588,8 @@ def build_location_page(name, d, data):
          f"The median base salary for partnership roles in {name} is {fmt_k(d['median'])}, based on {d['count']} job postings. The typical range is {salary_range_str(d)}."),
         (f"How does {name} partnership pay compare to the national average?",
          f"{name} partnership compensation is {diff_text}."),
+        (f"Which companies hire partner managers in {name}?",
+         f"Major employers actively hiring partner managers in greater {name} include {', '.join(METRO_DEEP.get(name, {}).get('employers', '').split(',')[:5]).strip() if METRO_DEEP.get(name, {}).get('employers') else 'a mix of established enterprise SaaS, fintech, and emerging technology companies'}."),
     ]
 
     body = f'''{bc_html}
@@ -448,11 +605,17 @@ def build_location_page(name, d, data):
 
     <p style="color:var(--pc-text-secondary);font-size:var(--pc-text-lg)">{context}</p>
 
-    <h2 style="margin-top:var(--pc-space-12)">How {name} Compares</h2>
-    <p style="color:var(--pc-text-secondary)">
+    <h2 style="margin-top:var(--pc-space-12)">How {name} Compares Nationally</h2>
+    <p>
         {name} partnership salaries are {diff_text}. With {d['count']} active postings,
-        it represents {d['count'] / data['salary_stats']['count_with_salary'] * 100:.1f}% of the national market.
+        {name} represents {d['count'] / data['salary_stats']['count_with_salary'] * 100:.1f} percent of the national disclosed partner manager market.
+        The spread between the 25th and 75th percentile for {name} runs {salary_range_str(d)}, which is wider than most comparable metros at this sample size.
     </p>
+    {sectors_html}
+    {employers_html}
+    {live_companies_html}
+    {live_roles_html}
+    {negotiation_html}
 
     <h2 style="margin-top:var(--pc-space-12)">Other Metro Areas</h2>
     {nav_html}
@@ -462,20 +625,14 @@ def build_location_page(name, d, data):
     body += newsletter_cta_html()
     body += "\n</div>"
 
-    # Metros with fewer than 15 postings produce numbers too small to be
-    # statistically credible. Mark them noindex so the analysis stays
-    # accessible but does not compete for indexation until the sample grows.
-    thin = d['count'] < 15
     page = get_page_wrapper(
         title=title, description=description, canonical_path=f"/salary/by-location/{m_slug}/",
         body_content=body, active_path="/salary/",
         extra_head=get_breadcrumb_schema(crumbs) + get_faq_schema(faq_pairs),
         body_class="page-inner",
-        noindex=thin,
     )
-    write_page(f"salary/by-location/{m_slug}/index.html", page, noindex=thin)
-    suffix = " (noindex, thin sample)" if thin else ""
-    print(f"  Built: salary/by-location/{m_slug}/index.html{suffix}")
+    write_page(f"salary/by-location/{m_slug}/index.html", page)
+    print(f"  Built: salary/by-location/{m_slug}/index.html")
 
 
 # ---------------------------------------------------------------------------
@@ -1023,6 +1180,7 @@ def build_comparison_page(comp, data):
 
 def build_all_salary_pages():
     data = load_salary_data()
+    all_jobs = load_jobs_data()
     print("\n  Building salary pages...")
 
     # 1. Index
@@ -1034,11 +1192,11 @@ def build_all_salary_pages():
         if level in data["by_seniority"]:
             build_seniority_page(level, data["by_seniority"][level], data)
 
-    # 3. Location index + individual metros
+    # 3. Location index + individual metros (with live company + role data)
     build_location_index(data)
     for name, d in data["by_metro"].items():
         if name != "Unknown":
-            build_location_page(name, d, data)
+            build_location_page(name, d, data, all_jobs=all_jobs)
 
     # 4. Remote vs Onsite
     build_remote_vs_onsite(data)

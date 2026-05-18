@@ -939,3 +939,28 @@ body.page-home .main-content {
         grid-template-columns: 1fr;
     }
 }
+
+/* ---------- Metro page employer list ---------- */
+.metro-employer-list {
+    list-style: none;
+    padding: 0;
+    margin: 1.25rem 0 1.75rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 0.6rem;
+}
+.metro-employer-list li {
+    background: var(--pc-bg-surface);
+    border: 1px solid var(--pc-border-subtle);
+    border-radius: 8px;
+    padding: 0.7rem 0.9rem;
+    font-size: 0.95rem;
+}
+.metro-employer-list li a {
+    color: var(--pc-text-primary);
+    text-decoration: none;
+    font-weight: var(--pc-weight-semibold);
+}
+.metro-employer-list li a:hover {
+    color: var(--pc-accent);
+}
