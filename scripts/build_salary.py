@@ -171,6 +171,26 @@ def build_salary_index(data):
         <a href="/salary/vs-solutions-engineer/" class="related-link-card">vs Solutions Engineer</a>
         <a href="/salary/vs-customer-success-manager/" class="related-link-card">vs Customer Success</a>
     </div>
+
+    <h2 style="margin-top:var(--pc-space-12)">Deeper Analysis</h2>
+    <p style="color:var(--pc-text-secondary)">Long-form analyses built on the salary dataset above.</p>
+    <div class="preview-grid">
+        <a href="/insights/state-of-partner-manager-compensation-2026/" class="preview-card">
+            <h3>State of Partner Manager Pay in 2026</h3>
+            <p>The median is around $120,000. The top of the market clears $500,000. What the spread tells you about where to build a career.</p>
+            <span class="preview-link">Read the analysis &rarr;</span>
+        </a>
+        <a href="/insights/vp-of-partnerships-compensation/" class="preview-card">
+            <h3>VP of Partnerships Pay</h3>
+            <p>What 35 disclosed VP postings show about the $170K floor, the $223K ceiling, and where the outlier roles cluster.</p>
+            <span class="preview-link">Read the analysis &rarr;</span>
+        </a>
+        <a href="/insights/salary-disclosure-in-partnerships-roles/" class="preview-card">
+            <h3>Why 1 in 3 Partner Jobs Hide Salary</h3>
+            <p>The 32 percent hidden-band rate is a signal, not a quirk. Who hides pay, why, and what it predicts about the offer.</p>
+            <span class="preview-link">Read the analysis &rarr;</span>
+        </a>
+    </div>
 '''
     body += newsletter_cta_html("Get weekly salary data for partnerships professionals.")
     body += "\n</div>"

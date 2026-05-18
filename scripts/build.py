@@ -164,6 +164,31 @@ def build_homepage():
     </div>
 </section>
 
+<section class="section-previews" style="padding-top:0">
+    <h2 class="section-previews-heading">Latest Insights</h2>
+    <p style="text-align:center;color:var(--pc-text-secondary);max-width:680px;margin:0 auto var(--pc-space-8);">Long-form analyses grounded in 1,154 partner manager job postings and 784 disclosed salaries.</p>
+    <div class="preview-grid">
+        <a href="/insights/state-of-partner-manager-compensation-2026/" class="preview-card">
+            <h3>State of Partner Manager Pay in 2026</h3>
+            <p>Median is around $120,000. Top of market clears $500,000. What the spread says about where to build a career.</p>
+            <span class="preview-link">Read &rarr;</span>
+        </a>
+        <a href="/insights/prm-adoption-channel-tool-stack/" class="preview-card">
+            <h3>PRM Adoption Across 1,154 Postings</h3>
+            <p>Salesforce dominates. PartnerStack and Crossbeam barely register. AI vendors are climbing the list.</p>
+            <span class="preview-link">Read &rarr;</span>
+        </a>
+        <a href="/insights/salary-disclosure-in-partnerships-roles/" class="preview-card">
+            <h3>Why 1 in 3 Partner Jobs Hide Salary</h3>
+            <p>The hidden-band rate is 32 percent across the dataset. The pattern predicts what the offer will look like.</p>
+            <span class="preview-link">Read &rarr;</span>
+        </a>
+    </div>
+    <div style="text-align:center;margin-top:var(--pc-space-6);">
+        <a href="/insights/" class="btn btn--ghost">All insights &rarr;</a>
+    </div>
+</section>
+
 '''
     body += newsletter_cta_html()
 

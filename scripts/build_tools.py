@@ -635,6 +635,18 @@ def build_tools_index(mi_data):
         body += f'<a href="/tools/best/{r["slug"]}/" class="related-link-card">{r["title"].split(":")[0]}</a>'
 
     body += "</div>"
+
+    body += '''
+    <h2 style="margin-top:var(--pc-space-12)">Deeper Analysis</h2>
+    <p style="color:var(--pc-text-secondary)">What the partner manager job market actually uses, based on named tool mentions in 1,154 job descriptions.</p>
+    <div class="preview-grid">
+        <a href="/insights/prm-adoption-channel-tool-stack/" class="preview-card">
+            <h3>PRM Adoption Across 1,154 Job Postings</h3>
+            <p>Salesforce dominates with 170 mentions. PartnerStack and Crossbeam each appear fewer than 5 times. Claude now shows up more often than Tableau.</p>
+            <span class="preview-link">Read the analysis &rarr;</span>
+        </a>
+    </div>
+'''
     body += newsletter_cta_html("Get weekly tool intel for partnerships professionals.")
     body += "\n</div>"
 

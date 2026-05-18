@@ -564,7 +564,9 @@ GLOSSARY_TERMS = [
 
 <p>Despite measurement challenges, influenced revenue is often larger than sourced revenue. Partners influence more deals than they source because the barrier is lower. Sourcing requires finding a net-new opportunity. Influencing requires adding value to an existing one.</p>
 
-<p>Tracking influenced revenue matters because it captures the full value of the partner program. If you only measure sourced revenue, you undercount partner contribution by 50 to 70 percent in most programs. This undercounting leads to underinvestment in partnerships and misallocation of resources.</p>""",
+<p>Tracking influenced revenue matters because it captures the full value of the partner program. If you only measure sourced revenue, you undercount partner contribution by 50 to 70 percent in most programs. This undercounting leads to underinvestment in partnerships and misallocation of resources.</p>
+
+<p>For a deeper read on how the sourced versus influenced distinction shapes partner manager hiring, comp structure, and career trajectory, see our analysis: <a href="/insights/partner-sourced-vs-partner-influenced-revenue/">Partner Sourced vs. Influenced Revenue</a>.</p>""",
         "faq": [
             ("What is the difference between influenced and sourced revenue?", "Sourced revenue: the partner found the customer and initiated the deal. Influenced revenue: the partner accelerated or expanded a deal that already existed. Both represent partner value, but sourced is easier to measure and attribute."),
             ("How do you accurately track influenced revenue?", "Require sales reps to tag partner involvement in CRM at deal creation, log partner activities like joint meetings and demos, and review attribution during deal reviews. Some companies survey closed-won customers about partner involvement for additional validation."),
@@ -583,7 +585,9 @@ GLOSSARY_TERMS = [
 
 <p>Sourced revenue is the metric that most directly justifies partner program investment. It represents incremental business that the vendor's direct team would not have captured. When leadership asks whether the partner program is worth the investment, sourced revenue provides the clearest answer.</p>
 
-<p>Growing sourced revenue requires investing in partner recruitment (more partners means more deal flow), partner enablement (trained partners source better-qualified opportunities), and partner incentives (commissions and deal protection that motivate partners to bring deals to you rather than to competitors). Tracking sourced revenue by partner, tier, and type helps identify which segments of the partner base are driving the most incremental business.</p>""",
+<p>Growing sourced revenue requires investing in partner recruitment (more partners means more deal flow), partner enablement (trained partners source better-qualified opportunities), and partner incentives (commissions and deal protection that motivate partners to bring deals to you rather than to competitors). Tracking sourced revenue by partner, tier, and type helps identify which segments of the partner base are driving the most incremental business.</p>
+
+<p>For a deeper read on how the sourced versus influenced distinction shapes partner manager hiring, comp structure, and career trajectory, see our analysis: <a href="/insights/partner-sourced-vs-partner-influenced-revenue/">Partner Sourced vs. Influenced Revenue</a>.</p>""",
         "faq": [
             ("How do you calculate sourced revenue?", "Sum the total contract value of all closed-won deals where the partner registered the opportunity first and no prior direct engagement existed on the account. Most PRM and CRM systems can automate this calculation."),
             ("What percentage of revenue should be partner-sourced?", "Benchmarks vary by industry and company maturity. SaaS companies with established partner programs typically see 15 to 30 percent sourced. Enterprise software companies with deep channel roots may see 40 to 60 percent."),
