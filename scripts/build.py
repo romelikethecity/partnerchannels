@@ -17,6 +17,7 @@ from templates import (get_page_wrapper, write_page, get_homepage_schema,
                        get_breadcrumb_schema, get_faq_schema,
                        get_article_schema,
                        breadcrumb_html, newsletter_cta_html, faq_html, ALL_PAGES)
+from templates import NOINDEX_PAGES
 from build_salary import build_all_salary_pages
 from build_tools import build_all_tools_pages
 from build_glossary import build_all_glossary_pages
@@ -394,10 +395,10 @@ def build_404_page():
 '''
     page = get_page_wrapper(
         title=title, description=description, canonical_path="/404.html",
-        body_content=body, body_class="page-error",
+        body_content=body, body_class="page-error", noindex=True,
     )
-    write_page("404.html", page)
-    print(f"  Built: 404.html")
+    write_page("404.html", page, noindex=True)
+    print(f"  Built: 404.html (noindex)")
 
 
 # ---------------------------------------------------------------------------
@@ -406,7 +407,13 @@ def build_404_page():
 
 def build_sitemap():
     urls = ""
+    indexed_count = 0
     for page_path in ALL_PAGES:
+        # Skip noindex pages and the 404 template
+        if page_path in NOINDEX_PAGES:
+            continue
+        if page_path == "404.html" or page_path.endswith("/404.html"):
+            continue
         clean = page_path.replace("index.html", "")
         if not clean.startswith("/"):
             clean = "/" + clean
@@ -415,11 +422,13 @@ def build_sitemap():
         if clean == "//":
             clean = "/"
         urls += f"  <url>\n    <loc>{SITE_URL}{clean}</loc>\n    <lastmod>{BUILD_DATE}</lastmod>\n  </url>\n"
+        indexed_count += 1
 
     sitemap = f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{urls}</urlset>\n'
     with open(os.path.join(OUTPUT_DIR, "sitemap.xml"), "w", encoding="utf-8") as f:
         f.write(sitemap)
-    print(f"  Built: sitemap.xml ({len(ALL_PAGES)} URLs)")
+    excluded = len(ALL_PAGES) - indexed_count
+    print(f"  Built: sitemap.xml ({indexed_count} URLs, {excluded} noindex excluded)")
 
 
 def build_robots():

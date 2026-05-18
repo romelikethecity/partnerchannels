@@ -462,14 +462,20 @@ def build_location_page(name, d, data):
     body += newsletter_cta_html()
     body += "\n</div>"
 
+    # Metros with fewer than 15 postings produce numbers too small to be
+    # statistically credible. Mark them noindex so the analysis stays
+    # accessible but does not compete for indexation until the sample grows.
+    thin = d['count'] < 15
     page = get_page_wrapper(
         title=title, description=description, canonical_path=f"/salary/by-location/{m_slug}/",
         body_content=body, active_path="/salary/",
         extra_head=get_breadcrumb_schema(crumbs) + get_faq_schema(faq_pairs),
         body_class="page-inner",
+        noindex=thin,
     )
-    write_page(f"salary/by-location/{m_slug}/index.html", page)
-    print(f"  Built: salary/by-location/{m_slug}/index.html")
+    write_page(f"salary/by-location/{m_slug}/index.html", page, noindex=thin)
+    suffix = " (noindex, thin sample)" if thin else ""
+    print(f"  Built: salary/by-location/{m_slug}/index.html{suffix}")
 
 
 # ---------------------------------------------------------------------------

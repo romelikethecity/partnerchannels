@@ -166,12 +166,18 @@ def build_company_page(company_name, jobs, all_companies):
     body += newsletter_cta_html(f"Get {ROLE_NAME.lower()} job alerts in your inbox.")
 
     extra_head = get_breadcrumb_schema(crumbs)
+    # Companies with fewer than 3 open postings produce thin, templated pages
+    # that Google rejects ("Crawled, currently not indexed"). Mark them
+    # noindex so they stay live for direct navigation and internal linking
+    # but stop competing for indexation.
+    thin = n_jobs < 3
     page = get_page_wrapper(
         title=meta_title, description=description,
         canonical_path=canonical, body_content=body,
-        active_path="/companies/", extra_head=extra_head
+        active_path="/companies/", extra_head=extra_head,
+        noindex=thin,
     )
-    write_page(f"companies/{slug}/index.html", page)
+    write_page(f"companies/{slug}/index.html", page, noindex=thin)
 
 
 def build_companies_index(all_companies):

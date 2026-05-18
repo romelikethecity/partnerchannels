@@ -10,6 +10,7 @@ from nav_config import *
 
 # Module-level state (set by build.py at startup)
 ALL_PAGES = []
+NOINDEX_PAGES = set()  # rel_paths that should be excluded from sitemap
 OUTPUT_DIR = ""
 SKIP_OG = False
 
@@ -18,14 +19,16 @@ SKIP_OG = False
 # HTML Head
 # ---------------------------------------------------------------------------
 
-def get_html_head(title, description, canonical_path, extra_head="", og_image=""):
+def get_html_head(title, description, canonical_path, extra_head="", og_image="", noindex=False):
     """Generate complete <head> section."""
     canonical = f"{SITE_URL}{canonical_path}"
     full_title = f"{title} - {SITE_NAME}" if title != SITE_NAME else SITE_NAME
 
-    # Always provide an OG image — fall back to site-wide default
+    # Always provide an OG image, fall back to site-wide default
     og_image = og_image or "/assets/og-default.png"
     og_image_url = f"{SITE_URL}{og_image}"
+
+    robots_content = "noindex, follow" if noindex else "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
 
     return f'''<!DOCTYPE html>
 <html lang="en">
@@ -36,7 +39,7 @@ def get_html_head(title, description, canonical_path, extra_head="", og_image=""
     <title>{full_title}</title>
     <meta name="description" content="{description}">
     <link rel="canonical" href="{canonical}">
-    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="robots" content="{robots_content}">
 {"" if not GOOGLE_SITE_VERIFICATION_META else f'    <meta name="google-site-verification" content="{GOOGLE_SITE_VERIFICATION_META}">'}
 
     <!-- Open Graph -->
@@ -176,7 +179,7 @@ def get_footer_html():
 # ---------------------------------------------------------------------------
 
 def get_page_wrapper(title, description, canonical_path, body_content,
-                     active_path="", extra_head="", body_class=""):
+                     active_path="", extra_head="", body_class="", noindex=False):
     """Assemble a full HTML document."""
     bc = f' class="{body_class}"' if body_class else ""
 
@@ -188,7 +191,7 @@ def get_page_wrapper(title, description, canonical_path, body_content,
             og_stem = og_stem[:-5]
         og_image = f"/assets/og/{og_stem}.png" if og_stem else "/assets/og/index.png"
 
-    head = get_html_head(title, description, canonical_path, extra_head, og_image=og_image)
+    head = get_html_head(title, description, canonical_path, extra_head, og_image=og_image, noindex=noindex)
     nav = get_nav_html(active_path)
     footer = get_footer_html()
 
@@ -290,13 +293,19 @@ def get_page_wrapper(title, description, canonical_path, body_content,
 # Page Writer
 # ---------------------------------------------------------------------------
 
-def write_page(rel_path, content):
-    """Write an HTML file and register it for sitemap."""
+def write_page(rel_path, content, noindex=False):
+    """Write an HTML file and register it for sitemap.
+
+    If noindex=True, the page is still written and tracked in ALL_PAGES,
+    but added to NOINDEX_PAGES so the sitemap builder skips it.
+    """
     full_path = os.path.join(OUTPUT_DIR, rel_path.lstrip("/"))
     os.makedirs(os.path.dirname(full_path), exist_ok=True)
     with open(full_path, "w", encoding="utf-8") as f:
         f.write(content)
     ALL_PAGES.append(rel_path)
+    if noindex:
+        NOINDEX_PAGES.add(rel_path)
 
 
 # ---------------------------------------------------------------------------
