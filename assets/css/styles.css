@@ -964,3 +964,60 @@ body.page-home .main-content {
 .metro-employer-list li a:hover {
     color: var(--pc-accent);
 }
+
+/* ---------- Enriched company page ---------- */
+.company-enriched section { margin-top: 2rem; }
+.company-enriched h2 { margin-top: 2rem; margin-bottom: 0.75rem; }
+.company-source-note {
+    font-size: 0.85rem;
+    color: var(--pc-text-secondary);
+    opacity: 0.75;
+    font-style: italic;
+}
+.company-signals-list,
+.company-loc-list,
+.company-link-list,
+.company-related-list {
+    list-style: none;
+    padding: 0;
+    margin: 0.75rem 0 1.25rem;
+}
+.company-signals-list li {
+    background: var(--pc-bg-surface);
+    border: 1px solid var(--pc-border-subtle);
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+    line-height: 1.55;
+}
+.company-loc-list, .company-link-list, .company-related-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 0.4rem 1rem;
+}
+.company-loc-list li, .company-link-list li, .company-related-list li {
+    padding: 0.45rem 0;
+    border-bottom: 1px solid var(--pc-border-subtle);
+    font-size: 0.95rem;
+}
+.company-link-list li a, .company-related-list li a {
+    color: var(--pc-accent);
+    text-decoration: none;
+    font-weight: var(--pc-weight-semibold);
+}
+.tool-chip-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 0.75rem 0 1.5rem;
+}
+.tool-chip {
+    background: var(--pc-bg-tinted);
+    border: 1px solid var(--pc-border-subtle);
+    border-radius: 999px;
+    padding: 0.35rem 0.9rem;
+    font-size: 0.85rem;
+    font-weight: var(--pc-weight-semibold);
+    color: var(--pc-text-primary);
+}

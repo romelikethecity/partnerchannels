@@ -7,7 +7,7 @@ SITE_URL = "https://partnerchannels.com"
 SITE_TAGLINE = "Career intelligence for partnerships and channel professionals"
 COPYRIGHT_YEAR = "2026"
 CURRENT_YEAR = 2026
-CSS_VERSION = "3"
+CSS_VERSION = "4"
 
 CTA_HREF = "/newsletter/"
 CTA_LABEL = "Get the Weekly Brief"
